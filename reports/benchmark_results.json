@@ -1,0 +1,952 @@
+[
+  {
+    "test_case": "Trong năm 1975, tiểu thủ công nghiệp đóng góp bao nhiêu phần trăm vào giá trị sản lượng công nghiệp địa phương?",
+    "agent_response": "Dựa trên các tài liệu đã thu thập, kết quả về đóng góp của tiểu thủ công nghiệp đối với công nghiệp địa phương năm 1975 như sau:\n\n*   **Tỷ trọng đóng góp:** Trong năm 1975, tiểu thủ công nghiệp chiếm **51%** giá trị sản lượng công nghiệp địa phương.\n*   **Giá trị sản lượng cụ thể:** Tổng giá trị sản lượng công nghiệp địa phương năm 1975 đạt 2.229 triệu đồng, trong đó tiểu thủ công nghiệp đạt 1.132 triệu đồng. Phần còn lại (1.097 triệu đồng, tương đương 49%) thuộc về khu vực công nghiệp địa phương quốc doanh.\n*   **Tốc độ tăng trưởng:** Giai đoạn 1972-1975, tiểu thủ công nghiệp duy trì tốc độ tăng trưởng bình quân hằng năm là 10,4%.\n*   **Vai trò:** Tiểu thủ công nghiệp giữ vị trí rất quan trọng, đặc biệt trong việc sản xuất các sản phẩm phục vụ dân sinh. Trong một số mặt hàng như công cụ thông thường, vôi, gạch, ngói, cá, muối, gỗ, chiếu cói và tơ tằm, tiểu thủ công nghiệp đã đảm nhận việc sản xuất trên 80% sản lượng.\n\n*Lưu ý:* Một nguồn tài liệu khác trong tập hợp dữ liệu có đề cập con số 28% giá trị sản lượng công nghiệp chung (toàn ngành), tuy nhiên khi xét riêng trong phạm vi cơ cấu **công nghiệp địa phương**, con số 51% là tỷ lệ chính xác được ghi nhận.",
+    "latency": 22.74311139999918,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI không chỉ đưa ra đáp án chính xác (51% nằm trong khoảng 'trên 50%' của đáp án chuẩn) mà còn cung cấp thêm dữ liệu chi tiết, bối cảnh lịch sử và làm rõ sự khác biệt giữa tỷ trọng trong công nghiệp địa phương và công nghiệp toàn ngành, giúp người dùng có cái nhìn đầy đủ và thấu đáo hơn."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Những sản phẩm nào chiếm trên 80% sản lượng nhờ vào tiểu thủ công nghiệp?",
+    "agent_response": "Dựa trên các tài liệu lịch sử về giai đoạn sau năm 1975 tại miền Bắc Việt Nam, các sản phẩm tiểu thủ công nghiệp chiếm tỷ trọng trên 80% sản lượng bao gồm:\n\n*   **Các loại công cụ thông thường**\n*   **Vôi**\n*   **Gạch**\n*   **Ngói**\n*   **Cá** (chế biến/đánh bắt thủ công)\n*   **Muối**\n*   **Gỗ**\n*   **Chiếu cói**\n*   **Tơ tằm**\n\n**Thông tin bổ sung:**\nTrong năm 1975, tiểu thủ công nghiệp giữ vị trí rất quan trọng trong cơ cấu công nghiệp địa phương. Dù chỉ chiếm 28% giá trị sản lượng công nghiệp chung, nhưng khu vực này đóng góp tới hơn 50% giá trị sản lượng công nghiệp địa phương. Trong giai đoạn này, so với năm 1965, tài sản cố định của tiểu thủ công nghiệp đã tăng 220%, giá trị sản lượng tăng 65% và số lượng lao động tăng 28%.",
+    "latency": 20.605869399998483,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI liệt kê đầy đủ và chính xác 100% các mặt hàng được nêu trong đáp án chuẩn. Ngoài ra, AI còn cung cấp thêm bối cảnh lịch sử và số liệu thống kê liên quan, giúp tăng giá trị thông tin cho người đọc mà không làm sai lệch nội dung chính."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Tại sao nhiều làng nghề thủ công truyền thống bị mai một trong giai đoạn này?",
+    "agent_response": "Dựa trên các nguồn tài liệu đã thu thập, sự mai một của các làng nghề thủ công truyền thống trong giai đoạn này là kết quả của sự tác động tổng hợp từ cơ chế quản lý kinh tế, áp lực cạnh tranh và những biến động do chiến tranh gây ra. Dưới đây là các nguyên nhân chính:\n\n### 1. Tại miền Bắc: Cơ chế quản lý và chuyển dịch lao động\n*   **Cơ chế quản lý cứng nhắc:** Các chính sách quản lý thời bấy giờ được mô tả là thiếu sự linh hoạt, không tạo điều kiện cho khu vực tiểu thủ công nghiệp phát triển, thậm chí gây chèn ép, dẫn đến việc hạn chế hoặc làm mai một nhiều ngành nghề truyền thống.\n*   **Chuyển dịch lao động:** Một bộ phận lớn lao động tại các làng nghề đã chuyển sang làm xã viên trong các hợp tác xã nông nghiệp. Các hợp tác xã tiểu thủ công nghiệp tại nông thôn chỉ tồn tại như một khâu trung gian, dẫn đến tình trạng thiếu hụt lao động tay nghề cao cho sản xuất thủ công.\n*   **Khủng hoảng mô hình sản xuất:** Sự lúng túng giữa yêu cầu cải tiến quản lý với yêu cầu cải tạo xã hội chủ nghĩa, cộng với công tác thu mua, cung ứng nguyên liệu và tiêu thụ sản phẩm của hệ thống thương nghiệp quá yếu kém đã khiến sản xuất sút giảm. Nhiều lao động đã tự ý bỏ hợp tác xã để làm ăn cá thể hoặc hoạt động theo kiểu \"chân trong, chân ngoài\", làm mất đi tính tổ chức của làng nghề.\n\n### 2. Tại miền Nam: Áp lực từ hàng hóa ngoại nhập và chính sách hành chính\n*   **Cạnh tranh từ hàng hóa nhập ngoại:** Nền kinh tế miền Nam thời kỳ này phát triển theo hướng tư bản với hàng hóa ngoại nhập tràn lan, đa dạng và số lượng lớn. Các sản phẩm thủ công truyền thống do không cạnh tranh được về giá và mẫu mã nên dần suy giảm.\n*   **Tác động của các chính sách xã hội:** Việc chính quyền Sài Gòn lập \"Khu trù mật\", \"Ấp chiến lược\" đã gây xáo trộn nghiêm trọng trong cơ cấu làng xã cổ truyền. Ngoài ra, việc khống chế hoàn toàn cơ chế hành chính làng xã cả về ngân sách lẫn nhân sự đã làm mất đi sự tự chủ của các cộng đồng sản xuất thủ công địa phương.\n*   **Biến động dân cư:** Sự di tản của hàng triệu nông dân vào các đô thị để mưu sinh đã làm thay đổi lực lượng lao động tại nông thôn, khiến các làng nghề mất đi nguồn nhân lực kế thừa truyền thống.\n\n### 3. Nguyên nhân chung (tác động lên cả hai miền)\n*   **Sự cạnh tranh của hàng hóa công nghiệp:** Việc chuyển dịch sang sản xuất công nghiệp và sự xuất hiện của các hàng hóa công nghiệp sản xuất hàng loạt đã thay thế dần các sản phẩm thủ công truyền thống.\n*   **Thiếu hụt nguồn lực:** Các làng nghề thiếu vốn, thiếu nguyên liệu đầu vào và bị hạn chế trong khâu tiêu thụ sản phẩm, khiến nhiều ngành nghề không duy trì được quy mô sản xuất.\n\n**Lưu ý:** Các tài liệu cung cấp tập trung nhiều vào bối cảnh chính trị - kinh tế vĩ mô (chính sách nhà nước, chuyển dịch lao động, ảnh hưởng chiến tranh) mà chưa cung cấp chi tiết số liệu cụ thể về sự sụt giảm của từng ngành nghề thủ công cụ thể.",
+    "latency": 35.04876009999862,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 0.95,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ các ý chính trong đáp án chuẩn (cơ chế quản lý, thiếu vốn/nguyên liệu, cạnh tranh công nghiệp, chuyển dịch lao động) mà còn mở rộng phân tích bối cảnh lịch sử theo vùng miền (Bắc/Nam) rất sâu sắc và logic. Việc bổ sung các yếu tố đặc thù như chính sách xã hội và tác động của chiến tranh giúp giải thích đầy đủ hơn về 'giai đoạn này' (thường ám chỉ thời kỳ bao cấp hoặc chiến tranh), vượt xa yêu cầu cơ bản của đáp án."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Lực lượng lao động công nghiệp trong thời kỳ này bao gồm những thành phần nào?",
+    "agent_response": "Trong giai đoạn 1954–1975, lực lượng lao động công nghiệp tại miền Bắc Việt Nam đã phát triển mạnh mẽ cả về số lượng và chất lượng để phục vụ công cuộc xây dựng chủ nghĩa xã hội và kháng chiến chống Mỹ. Dưới đây là tổng hợp các thành phần chính cấu thành nên lực lượng này:\n\n### 1. Phân loại theo hình thức sở hữu và tổ chức\nLực lượng lao động công nghiệp trong thời kỳ này bao gồm hai thành phần chính:\n*   **Khu vực kinh tế quốc doanh và công tư hợp doanh:** Đây là lực lượng nòng cốt, tập trung vào các ngành sản xuất vật chất. Đến năm 1975, số lượng công nhân trong các xí nghiệp quốc doanh đạt gần 300.000 người.\n*   **Khu vực tiểu công nghiệp - thủ công nghiệp:** Bao gồm:\n    *   Lực lượng lao động trong các hợp tác xã tiểu thủ công nghiệp (chiếm gần 30% tổng số lao động công nghiệp năm 1975).\n    *   Lực lượng lao động cá thể (chiếm khoảng 600.000 người vào năm 1975).\n    *   Tổng thể lực lượng tiểu thủ công nghiệp chiếm khoảng 44% lực lượng lao động công nghiệp vào năm 1975.\n\n### 2. Phân loại theo trình độ và vị trí công tác\nBên cạnh công nhân trực tiếp sản xuất, đội ngũ này còn bao gồm các thành phần chuyên môn kỹ thuật quan trọng:\n*   **Cán bộ khoa học kỹ thuật và nghiệp vụ:** Đến năm 1975, lực lượng này đạt 41.358 người (tăng 190% so với năm 1965), trong đó có 13.160 người có trình độ đại học và trên đại học.\n*   **Công nhân kỹ thuật:** Đến năm 1975, đội ngũ này có gần 250.000 người, tăng 93% so với năm 1965.\n\n### 3. Những đặc điểm nổi bật của lực lượng lao động\n*   **Sự gia tăng tỷ lệ nữ giới:** Trong thời kỳ chiến tranh phá hoại (1965-1968), tỷ lệ nữ công nhân viên chức nhà nước tăng mạnh từ 5% (sau năm 1954) lên 35% vào cuối năm 1968. Tính đến tháng 10/1968, trong lao động công nghiệp thuộc khu vực nhà nước, nữ giới chiếm 39,5%.\n*   **Sự dịch chuyển theo địa phương:** Trong thời kỳ chiến tranh phá hoại của Mỹ, sự phát triển của công nghiệp địa phương diễn ra nhanh hơn so với công nghiệp trung ương. Số lượng công nhân công nghiệp địa phương tăng thêm 5 vạn người trong giai đoạn 1965-1967.\n*   **Lĩnh vực trọng tâm:** Lực lượng lao động tập trung ở nhiều ngành như điện lực, nhiên liệu, luyện kim, hóa chất, cơ khí, vật liệu xây dựng, dệt-da-may, thực phẩm... Trong đó, ngành **cơ khí** có tốc độ tăng trưởng nhân lực mạnh mẽ nhất (đạt 553,1% vào năm 1975 so với mốc 100% năm 1960).\n\n### 4. Tổng quan số liệu (Tính đến năm 1975)\n*   **Tổng số lực lượng lao động công nghiệp:** 911.400 người.\n*   **Cơ cấu:** Bao gồm sự kết hợp giữa lao động quốc doanh, lao động trong hợp tác xã tiểu thủ công nghiệp và lao động cá thể, cùng với đội ngũ cán bộ khoa học kỹ thuật chuyên môn cao.\n\n*Lưu ý: Các số liệu trên tập trung chủ yếu vào khu vực miền Bắc trong giai đoạn 1954-1975 dựa trên các tài liệu đã cung cấp. Thông tin về lực lượng lao động tại miền Nam trong cùng thời kỳ không có trong nguồn dữ liệu này.*",
+    "latency": 32.45433869999761,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "AI không chỉ trả lời đúng và đủ theo đáp án chuẩn (công nhân quốc doanh và tiểu công nghiệp - thủ công nghiệp) mà còn mở rộng thông tin một cách chính xác, khoa học với các số liệu cụ thể, giúp làm rõ bản chất lực lượng lao động trong giai đoạn lịch sử được hỏi. Cách trình bày mạch lạc, phân loại rõ ràng và có tính chuyên môn cao."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Vị trí của các hợp tác xã tiểu thủ công nghiệp ở vùng nông thôn đã thay đổi như thế nào so với trước đây?",
+    "agent_response": "Dựa trên các tài liệu đã thu thập, vị trí và vai trò của các hợp tác xã (HTX) tiểu thủ công nghiệp tại nông thôn Việt Nam đã trải qua những biến chuyển quan trọng, đặc biệt là trong giai đoạn khôi phục và phát triển kinh tế sau chiến tranh.\n\nDưới đây là tổng hợp chi tiết về sự thay đổi này:\n\n### 1. Vai trò trong giai đoạn trước (Thời kỳ chiến tranh và xây dựng chủ nghĩa xã hội)\nTrong những năm chiến tranh phá hoại ở miền Bắc, các HTX tiểu thủ công nghiệp đóng vai trò quan trọng như một bộ phận hỗ trợ tích cực cho nền kinh tế quốc doanh:\n*   **Bù đắp thiếu hụt:** Lực lượng lao động trong các HTX tiểu thủ công nghiệp, thương nghiệp và dịch vụ đã đóng góp lớn trong việc phục vụ đời sống nhân dân, bù đắp những khiếm khuyết của nền kinh tế quốc doanh vốn còn hạn chế.\n*   **Sản xuất phục vụ thiết yếu:** Các HTX sản xuất các loại công cụ thông thường, vôi, gạch, ngói, cá, muối, gỗ, chiếu cói, tơ tằm... đáp ứng nhu cầu sản xuất và sinh hoạt tại địa phương.\n*   **Kết quả tích cực:** So với năm 1965, giai đoạn này ghi nhận sự tăng trưởng đáng kể: lao động tiểu thủ công nghiệp tăng 28%, tài sản cố định tăng 220% và giá trị sản lượng tăng 65%.\n\n### 2. Sự thay đổi vị trí trong giai đoạn sau (Giai đoạn khôi phục kinh tế)\nSau khi hòa bình lập lại, vị trí của HTX tiểu thủ công nghiệp nông thôn đã thay đổi đáng kể theo chiều hướng khó khăn hơn:\n*   **Trở thành bộ phận trung gian:** Các HTX tiểu thủ công nghiệp không còn giữ vai trò sản xuất độc lập như trước mà chuyển thành bộ phận \"trung gian\" giữa sản xuất công nghiệp và sản xuất nông nghiệp.\n*   **Sự mai một của làng nghề:** Nhiều làng nghề thủ công truyền thống bị mai một do sản phẩm không tiêu thụ được và chịu sự cạnh tranh trực tiếp từ các loại hàng hóa công nghiệp.\n*   **Chuyển dịch lao động:** Phần lớn lao động trong lĩnh vực tiểu thủ công nghiệp đã chuyển sang sản xuất nông nghiệp để trở thành xã viên hợp tác xã nông nghiệp. Nguyên nhân là do tình trạng thiếu vốn, thiếu nguyên liệu và thiếu hụt lao động.\n\n### 3. Nguyên nhân của sự thay đổi\nSự thay đổi này chủ yếu xuất phát từ các yếu tố chính sách và cơ chế quản lý kinh tế thời bấy giờ:\n*   **Cơ chế cứng nhắc:** Chính sách và cơ chế quản lý kinh tế lúc đó mang tính tập trung, có những mặt chưa phù hợp với thực tế cuộc sống.\n*   **Sự chèn ép kinh tế:** Việc thiếu tạo điều kiện thuận lợi và cơ chế quản lý cứng nhắc đã hạn chế hoặc làm \"bóp chết\" nhiều ngành nghề sản xuất tiểu thủ công nghiệp, dẫn đến hậu quả tiêu cực cho sự phát triển của khu vực nông thôn.\n\n**Lưu ý:** Thông tin thu thập được tập trung vào giai đoạn miền Bắc trong thời kỳ xây dựng chủ nghĩa xã hội và những năm đầu sau thống nhất đất nước. Các dữ liệu cụ thể về cơ chế quản lý chi tiết hoặc các chính sách thay đổi sau năm 1975 (ngoài việc đề cập đến sự mai một của làng nghề) chưa được nêu rõ trong các tài liệu hiện có.",
+    "latency": 16.07797489999939,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.3333333333333333
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI đã bao hàm đầy đủ và chính xác ý cốt lõi trong đáp án chuẩn (vị trí trung gian giữa công - nông nghiệp và sự dịch chuyển lao động về nông nghiệp). Ngoài ra, AI còn cung cấp bối cảnh lịch sử, nguyên nhân và sự thay đổi vị thế một cách logic, chi tiết và chuyên sâu hơn so với đáp án chuẩn, thể hiện sự hiểu biết thấu đáo về vấn đề."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Vào năm 1969, lực lượng công nhân vận tải tại miền Nam Việt Nam có số lượng là bao nhiêu?",
+    "agent_response": "Dựa trên các dữ liệu lịch sử đã thu thập được, dưới đây là câu trả lời cho câu hỏi của bạn:\n\n**Về số lượng lực lượng công nhân vận tải tại miền Nam Việt Nam năm 1969:**\n\n*   **Thông tin chưa tìm thấy:** Hiện tại, trong kho dữ liệu được cung cấp, không có con số thống kê cụ thể nào về tổng số lượng lực lượng công nhân vận tải tại miền Nam Việt Nam vào năm 1969.\n*   **Thông tin liên quan hiện có:**\n    *   Các dữ liệu chỉ cung cấp số liệu về đội ngũ công nhân nói chung trong giai đoạn trước đó: Năm 1966, tổng số công nhân là 69.584 người.\n    *   Về lĩnh vực vận tải trong giai đoạn chiến tranh, tài liệu ghi nhận sự đóng góp quan trọng của các phương tiện vận tải do chính công nhân tự trang bị và tự chế (như toa xe, ca nô, xà lan). Đồng thời, trong các chiến dịch chi viện, lực lượng vận tải nhân dân (sử dụng xe thồ, thuyền nan, bè mảng) đã đóng vai trò thiết yếu trong việc vận chuyển hàng hóa qua các vùng trọng điểm bị địch bắn phá.\n    *   Hệ thống vận tải chiến lược Bắc - Nam (đường bộ và đường ống dẫn xăng dầu dài gần 1.000km) đã được mở rộng mạnh mẽ trong giai đoạn này để đảm bảo giao thông thông suốt cho tiền tuyến.\n\nNhư vậy, tài liệu hiện có không đưa ra con số thống kê riêng biệt cho lực lượng công nhân vận tải tại miền Nam vào năm 1969.",
+    "latency": 28.527319799999532,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 1,
+      "agreement_rate": 0.2,
+      "reasoning": "AI đã thất bại trong việc truy xuất dữ liệu cụ thể theo câu hỏi, dẫn đến kết luận sai lệch là thông tin không tồn tại. Mặc dù AI có đưa ra các thông tin liên quan khác, nhưng việc bỏ lỡ con số chính xác (175.500) là một lỗi thiếu hụt kiến thức nghiêm trọng đối với một câu hỏi có đáp án cụ thể."
+    },
+    "status": "fail"
+  },
+  {
+    "test_case": "Tại sao số lượng công nhân trong các đồn điền trồng cây công nghiệp ở miền Nam lại giảm mạnh trong giai đoạn này?",
+    "agent_response": "Dựa trên các tài liệu đã thu thập được, sự suy giảm mạnh mẽ số lượng công nhân trong các đồn điền cây công nghiệp ở miền Nam Việt Nam (từ 51.500 người năm 1958 xuống còn 26.000 người vào năm 1966) chủ yếu xuất phát từ các nguyên nhân chính sau:\n\n### 1. Tác động trực tiếp của chiến tranh\n*   **Tàn phá hạ tầng đồn điền:** Chiến tranh đã gây ra sự tàn phá nặng nề đối với các đồn điền cây công nghiệp (như cao su, bông...). Sự hủy hoại này khiến diện tích canh tác bị thu hẹp đáng kể, không còn duy trì được quy mô sản xuất như trước, dẫn đến việc không cần sử dụng lượng lớn lao động.\n*   **Mất an toàn tại khu vực sản xuất:** Các đồn điền thường nằm ở vùng ven hoặc khu vực có chiến sự, nơi chịu ảnh hưởng trực tiếp từ các cuộc tấn công quân sự và các hoạt động bình định.\n\n### 2. Sự dịch chuyển lực lượng lao động sang các khu vực khác\nTrong khi số lượng công nhân đồn điền giảm, lực lượng lao động miền Nam lại có sự dịch chuyển lớn sang các ngành nghề khác phục vụ cho bộ máy chiến tranh của Mỹ và chính quyền Sài Gòn:\n*   **Ngành xây dựng và vận tải:** Do nhu cầu xây dựng cơ sở hạ tầng phục vụ chiến tranh (căn cứ quân sự, đường sá...), số lượng công nhân xây dựng và vận tải tăng nhanh chóng (ví dụ: số công nhân xây dựng tăng từ 69.584 người năm 1966 lên 80.000 người năm 1968).\n*   **Làm việc cho quân đội Mỹ:** Lực lượng lao động trong các công sở Mỹ tăng vọt, từ 7.600 người năm 1964 lên 145.000 người vào năm 1968. Điều này cho thấy có sự chuyển dịch lao động từ khu vực sản xuất nông nghiệp (đồn điền) sang khu vực dịch vụ và hậu cần phục vụ quân đội Mỹ.\n\n### 3. Hệ quả xã hội từ \"di tản\"\n*   Hàng triệu nông dân miền Nam buộc phải rời bỏ ruộng vườn, đồn điền để di tản vào các thành phố do tác động của chiến tranh và các chính sách \"bình định\". Sự thay đổi này làm thay đổi cơ cấu lao động, khiến nguồn cung lao động cho các đồn điền trở nên thiếu hụt hoặc bị chuyển hướng sang các công việc khác tại đô thị.\n\n**Tóm lại:** Sự suy giảm số lượng công nhân đồn điền là hệ quả tất yếu của việc diện tích sản xuất bị thu hẹp do chiến tranh, kết hợp với xu hướng chuyển dịch lao động mạnh mẽ sang các ngành phục vụ trực tiếp cho hoạt động quân sự và bộ máy hậu cần của Mỹ tại các đô thị.",
+    "latency": 52.953133799997886,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "AI không chỉ trả lời đúng và đủ ý chính của đáp án chuẩn (tàn phá đồn điền làm thu hẹp diện tích) mà còn mở rộng phân tích các nguyên nhân kinh tế - xã hội sâu sắc hơn như sự dịch chuyển lao động sang khu vực phục vụ quân đội Mỹ và làn sóng di cư đô thị. Câu trả lời có tính logic, dẫn chứng số liệu cụ thể và phản ánh chính xác bối cảnh lịch sử giai đoạn này."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Những yếu tố nào đã góp phần nâng cao trình độ của bộ phận công nhân kỹ thuật tại miền Nam lúc bấy giờ?",
+    "agent_response": "Dựa trên các nguồn tài liệu đã thu thập, việc nâng cao trình độ của bộ phận công nhân kỹ thuật tại miền Nam trước năm 1975 chịu tác động bởi nhiều yếu tố khách quan và chủ quan. Dưới đây là tổng hợp các yếu tố chính:\n\n### 1. Sự tiếp cận với thiết bị và công nghệ hiện đại\nKhác với thời kỳ Pháp thuộc, đội ngũ công nhân miền Nam giai đoạn này có cơ hội tiếp xúc trực tiếp với các loại máy móc, thiết bị và kỹ thuật tiên tiến hơn (từ Mỹ và các nước phương Tây). Việc làm việc dưới sự hướng dẫn, điều hành của các chuyên viên nước ngoài và sự quản lý chặt chẽ của các chủ tư bản đã buộc công nhân phải học hỏi, làm quen và thích nghi với trình độ kỹ thuật không còn lạc hậu, từ đó nâng cao tay nghề thực tế.\n\n### 2. Sự phát triển của hệ thống đào tạo chuyên nghiệp\nTừ giữa thập kỷ 1960, giáo dục tại miền Nam có bước phát triển mạnh mẽ về quy mô đào tạo:\n* **Tốc độ tăng trưởng:** Trong giai đoạn 1965-1973, số lượng người được đào tạo chuyên nghiệp tăng gấp 14 lần.\n* **Vai trò của các trường huấn nghệ:** Các trường huấn nghệ đóng vai trò quan trọng trong việc cung cấp lực lượng lao động có tay nghề cao cho xã hội.\n* **Kết quả:** Nhờ nỗ lực đào tạo trong 10 năm (1964-1975), miền Nam đã xây dựng được một đội ngũ công nhân và cán bộ thực hành nghề có trình độ kỹ thuật được đánh giá là không thua kém các nước trong khu vực thời bấy giờ.\n\n### 3. Chính sách giáo dục theo hướng thông dụng và đại chúng\nSau năm 1968, nền giáo dục miền Nam chuyển hướng theo nguyên tắc thông dụng và đại chúng (mô hình của Mỹ). Việc cải cách giáo dục, bao gồm các nội dung như giáo dục tiểu học cộng đồng và trung học tổng hợp, đã tạo nền tảng kiến thức phổ thông tốt hơn cho người lao động, giúp họ dễ dàng hơn trong việc tiếp thu các kỹ thuật mới trong quá trình sản xuất.\n\n### 4. Những hạn chế cần lưu ý\nMặc dù trình độ công nhân kỹ thuật được nâng cao đáng kể, nhưng thông tin cho thấy việc đào tạo ngành nghề vẫn tồn tại một số bất cập:\n* **Cơ cấu ngành nghề không cân đối:** Sự phát triển kỹ thuật và đào tạo diễn ra nhanh nhưng chưa đồng bộ với nhu cầu thực tế của xã hội trong thời kỳ chiến tranh.\n* **Tác động từ chiến tranh:** Chiến tranh đã làm thu hẹp quy mô sản xuất ở nhiều ngành (ví dụ: công nhân đồn điền cao su giảm từ 51.500 người năm 1958 xuống còn 26.000 người năm 1966), gây ảnh hưởng đến tính ổn định và phân bố của lực lượng lao động kỹ thuật.\n\n*Lưu ý: Các thông tin trên tập trung vào các yếu tố tác động đến đội ngũ công nhân kỹ thuật tại miền Nam trước năm 1975. Các dữ liệu về chính sách giáo dục của phía Cách mạng (vùng giải phóng) chủ yếu nhấn mạnh vào đào tạo cán bộ cách mạng và phổ cập văn hóa, không đề cập trực tiếp đến đào tạo kỹ thuật công nghiệp.*",
+    "latency": 12.623959299999115,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ các ý trong đáp án chuẩn mà còn mở rộng kiến thức bằng các dẫn chứng lịch sử cụ thể, khoa học (hệ thống đào tạo, chính sách giáo dục). Việc bổ sung thêm các phân tích về bối cảnh giáo dục và hạn chế khách quan giúp câu trả lời có tính chuyên sâu, logic và độ tin cậy cao."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Nguồn gốc xuất thân chủ yếu của đội ngũ công nhân ở miền Nam thời kỳ này là gì?",
+    "agent_response": "Dựa trên các tài liệu lịch sử đã thu thập, nguồn gốc xuất thân và đặc điểm của đội ngũ công nhân miền Nam Việt Nam trong thời kỳ chiến tranh được tổng hợp như sau:\n\n### 1. Nguồn gốc xuất thân của công nhân\nĐội ngũ công nhân ở miền Nam thời kỳ này có nguồn gốc xuất thân rất đa dạng, chủ yếu đến từ các thành phần bị ảnh hưởng bởi những biến động của chiến tranh và sự phá sản của nền kinh tế nông thôn:\n* **Nông dân:** Đây là nguồn bổ sung đông đảo nhất. Hàng triệu nông dân miền Nam buộc phải di tản vào các đô thị do chiến tranh tàn phá đồn điền và diện tích canh tác.\n* **Các tầng lớp lao động khác:** Bao gồm thợ thủ công, dân nghèo thành thị, tiểu thương và tiểu thủ bị phá sản.\n* **Công chức mất việc:** Một bộ phận người làm việc trong bộ máy cũ bị mất việc làm cũng gia nhập đội ngũ công nhân.\n* **Thế hệ trẻ:** Học sinh, con em của chính các công nhân và các tầng lớp lao động khác.\n\n### 2. Sự biến động về số lượng và chất lượng\n* **Sự sụt giảm ở các đồn điền:** Do ảnh hưởng của chiến tranh, nhiều đồn điền bị tàn phá. Điển hình như ngành cao su, từ 51.500 công nhân (năm 1958) đã giảm mạnh xuống còn 26.000 công nhân (năm 1966).\n* **Sự hình thành đội ngũ kỹ thuật:** Trái lại với đồn điền, trình độ của một bộ phận công nhân kỹ thuật lại tăng lên nhờ được tiếp xúc với máy móc và thiết bị hiện đại hơn thời Pháp thuộc. Đội ngũ này tập trung chủ yếu tại Sài Gòn, Biên Hòa và Gia Định.\n\n### 3. Điều kiện sống và làm việc\n* **Đời sống:** Nhìn chung rất cực khổ. Đa số công nhân phải hưởng mức lương thấp (thuộc loại thấp trong khu vực Đông Nam Á).\n* **Môi trường làm việc:** Chịu sự kiểm soát chặt chẽ của giới chủ tư bản và các chuyên viên nước ngoài. Thủ đoạn bóc lột của giới chủ được đánh giá là tinh vi hơn so với thời kỳ Pháp thuộc.\n* **Ngành nghề:** Công nhân tập trung đông đảo trong các ngành công nghiệp nhẹ như thực phẩm, đồ uống, thuốc lá, dệt và giấy – những lĩnh vực phục vụ trực tiếp cho nhu cầu của cuộc chiến tranh hoặc thu lợi nhuận nhanh cho giới tư sản (trong đó có cả tư sản gốc Hoa).\n\n*Lưu ý: Các dữ liệu về việc khôi phục kinh tế miền Bắc (như ga Gia Lâm, nhà máy dệt Nam Định, nhà máy xi măng Hải Phòng) trong kết quả tìm kiếm không nằm trong phạm vi nguồn gốc xuất thân của công nhân miền Nam, nên đã không được đưa vào câu trả lời này.*",
+    "latency": 29.724103900000046,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI đã bao quát đầy đủ và chính xác tất cả các ý chính trong đáp án chuẩn. Không những vậy, AI còn mở rộng thêm thông tin về bối cảnh, sự biến động và điều kiện làm việc giúp làm rõ hơn bức tranh lịch sử mà không bị lạc đề, đồng thời thể hiện kỹ năng sàng lọc thông tin rất tốt."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Tại sao Mỹ và chính quyền Sài Gòn lại cần một tầng lớp trí thức và công chức đông đảo?",
+    "agent_response": "Dựa trên các tài liệu đã thu thập, việc Mỹ và chính quyền Sài Gòn nỗ lực xây dựng một tầng lớp trí thức và công chức đông đảo xuất phát từ các mục tiêu chiến lược và thực tiễn trong chính sách thực dân mới tại miền Nam Việt Nam như sau:\n\n### 1. Phục vụ mục tiêu cai trị và quản lý bộ máy chính quyền\n*   **Duy trì sự vận hành bộ máy:** Để thực hiện chính sách thực dân mới, Mỹ và chính quyền Sài Gòn cần một bộ máy hành chính hoạt động hiệu quả. Tầng lớp này được hình thành từ nguồn nhân sự cũ thời Pháp kết hợp với đội ngũ trí thức, công chức mới được đào tạo để đảm bảo sự ổn định và kiểm soát xã hội.\n*   **Công cụ giáo dục và định hướng tư tưởng:** Mỹ coi giáo dục là công cụ then chốt để đào tạo thế hệ con người mới. Qua việc cải cách giáo dục (như Đại hội Giáo dục toàn quốc năm 1964, xây dựng hệ thống 12 năm kiểu Mỹ), họ hướng tới mục tiêu tạo ra tầng lớp người \"vong bản\", có tư tưởng chống cộng, sợ Mỹ, phục Mỹ và sống theo chủ nghĩa cá nhân thực dụng.\n\n### 2. Xây dựng cơ sở kinh tế - xã hội cho chế độ\n*   **Tạo cơ sở chính trị vững chắc:** Thông qua các chính sách như \"hiện đại hóa nông thôn\", \"canh tân hóa nông nghiệp\" và Luật \"Người cày có ruộng\", Mỹ và chính quyền Sài Gòn tìm cách tạo dựng một tầng lớp trung lưu và những người làm việc trong hệ thống nhà nước nhằm tạo chỗ dựa kinh tế và sự ổn định cho chính quyền.\n\n### 3. Sự phức tạp về mặt chính trị của tầng lớp này\nDù được đầu tư và xây dựng để phục vụ chế độ, bản thân tầng lớp trí thức và công chức ở miền Nam thời kỳ này không đồng nhất mà phân hóa thành ba bộ phận chính:\n1.  **Bộ phận có tinh thần yêu nước:** Phần lớn trí thức và sinh viên trẻ có xu hướng ủng hộ cách mạng.\n2.  **Bộ phận chống phá cách mạng:** Xuất thân từ con em đại tư sản, tư sản mại bản hoặc giới chóp bu trong bộ máy chiến tranh.\n3.  **Bộ phận chịu ảnh hưởng văn hóa phương Tây:** Xuất thân từ gia đình tư sản, tiểu tư sản, địa chủ, mang tư tưởng chịu ảnh hưởng sâu sắc từ văn hóa phương Tây.\n\n### 4. Kết quả thực tế trái với mục tiêu của Mỹ\nThay vì là chỗ dựa ổn định như dự tính, tầng lớp trí thức, sinh viên, học sinh tại các đô thị miền Nam (đặc biệt trong giai đoạn 1971) đã trở thành lực lượng tích cực tham gia các phong trào đấu tranh:\n*   Họ cùng với công nhân và các tầng lớp nhân dân khác xuống đường đả đảo chính quyền Nixon - Nguyễn Văn Thiệu, đặc biệt trong các phong trào chống \"trò hề bầu cử\" năm 1971.\n*   Nhiều tổ chức như \"Mặt trận Nhân dân Tranh thủ Hòa bình\", \"Phong trào Phụ nữ Đòi quyền Sống\", \"Tổng hội Sinh viên\" đã tập hợp đông đảo nhân sĩ, trí thức, tạo thành làn sóng đấu tranh mạnh mẽ đòi chấm dứt chiến tranh, đòi Mỹ rút quân và lật đổ chính phủ độc tài.\n\n**Tổng kết:** Mỹ và chính quyền Sài Gòn cần đội ngũ này để xây dựng một chính thể thân Mỹ vững chắc và thực hiện chiến lược \"Việt Nam hóa chiến tranh\". Tuy nhiên, thực tế lịch sử cho thấy tầng lớp này đã có sự phân hóa mạnh mẽ, trong đó bộ phận đông đảo trí thức, học sinh, sinh viên đã quay sang chống lại chính sách của Mỹ và chính quyền Sài Gòn.",
+    "latency": 11.839246499999717,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI không chỉ đáp ứng chính xác và đầy đủ yêu cầu của câu hỏi mà còn mở rộng kiến thức theo hướng phân tích sâu sắc, khoa học. AI đã bao quát được cả mục đích ban đầu (vận hành bộ máy, định hướng tư tưởng) và sự phân hóa thực tế của tầng lớp này trong lịch sử, giúp người đọc có cái nhìn toàn diện và khách quan hơn so với đáp án chuẩn ngắn gọn."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Trong giai đoạn khôi phục sau chiến tranh, sản phẩm nào ghi nhận mức sụt giảm nghiêm trọng nhất về lượng từ 89,4 triệu lít xuống còn 24,29 triệu lít?",
+    "agent_response": "Trong giai đoạn khôi phục kinh tế sau chiến tranh (cụ thể là giai đoạn 1968–1970 tại miền Bắc), sản phẩm ghi nhận mức sụt giảm nghiêm trọng từ 89,4 triệu lít xuống còn 24,29 triệu lít là **nước mắm**.\n\nThông tin này được ghi nhận trong bối cảnh phân tích sản lượng công nghiệp, nơi các sản phẩm được chia thành hai nhóm: nhóm bị giảm sút và nhóm tăng trưởng:\n\n*   **Các sản phẩm bị giảm sút:** Ngoài nước mắm (giảm từ 89,4 triệu lít xuống 24,29 triệu lít), một số mặt hàng khác cũng ghi nhận mức giảm trong giai đoạn này bao gồm:\n    *   Điện: từ 633,6 triệu kWh xuống 501 triệu kWh.\n    *   Than: từ 4,2 triệu tấn xuống mức thấp hơn (số liệu gốc ghi chú là \"UY\" triệu tấn).\n    *   Máy cắt gọt kim loại: từ 1.866 cái xuống 1.857 cái.\n    *   Xi măng: từ 573 ngàn tấn xuống 524 ngàn tấn.\n    *   Vải: từ 100,3 triệu m xuống 89,9 triệu m.\n\nNgược lại, nhiều sản phẩm khác đã ghi nhận mức tăng trưởng như máy phát lực diesel, động cơ điện, máy bơm thủy lợi, phân bón hóa học, vải màn, nước chấm (tăng từ 4,24 triệu lít lên 22,36 triệu lít) và mì chính.",
+    "latency": 31.575739100000646,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "AI đã trả lời chính xác sản phẩm theo đáp án chuẩn. Đồng thời, AI còn cung cấp thêm bối cảnh lịch sử và số liệu đối chứng chi tiết, giúp làm rõ câu hỏi, thể hiện kiến thức chuyên sâu và độ chính xác cao."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Kết quả sản xuất công nghiệp và tiểu thủ công nghiệp năm 1971 so với kế hoạch đề ra như thế nào?",
+    "agent_response": "Dựa trên các tài liệu đã thu thập được, kết quả sản xuất công nghiệp và tiểu thủ công nghiệp năm 1971 tại miền Bắc Việt Nam được tổng hợp như sau:\n\n### 1. Kết quả chung so với kế hoạch\nNăm 1971 là năm cuối cùng của thời kỳ 3 năm khôi phục sau chiến tranh. Mặc dù gặp khó khăn do hậu quả thiên tai (lũ lụt lớn tại đồng bằng Bắc Bộ), ngành công nghiệp và tiểu thủ công nghiệp đã đạt được những tiến bộ đáng kể:\n*   **Giá trị sản lượng:** Toàn ngành đã tăng **14% so với kế hoạch** đề ra.\n*   **Tăng trưởng cụ thể:** Công nghiệp trung ương tăng 17,5% và công nghiệp địa phương tăng 11,2%.\n*   **So sánh lịch sử:** Nhìn chung, giá trị sản lượng toàn ngành đã vượt 2,7% so với thời điểm trước chiến tranh.\n*   **Dữ liệu thống kê:** Theo số liệu từ Tổng cục Thống kê, giá trị sản lượng công nghiệp năm 1971 đạt **3.242 triệu đồng**, tương ứng mức tăng **13,4%** so với năm 1970.\n\n### 2. Các sản phẩm chủ lực\nCác sản phẩm quan trọng của ngành đều hoàn thành và vượt kế hoạch đề ra, đồng thời vượt mức sản xuất của năm 1965. Các sản phẩm tiêu biểu bao gồm:\n*   Điện, than.\n*   Quặng crôm, thiếc thỏi.\n*   Máy cắt gọt kim loại.\n*   Vải, giấy, gỗ, đường.\n\n### 3. Những lưu ý về bối cảnh thực hiện\n*   **Ảnh hưởng của thiên tai:** Mặc dù đạt kết quả vượt kế hoạch, tài liệu cũng ghi nhận rằng lũ lụt năm 1971 đã gây ra hậu quả lớn, ảnh hưởng đến việc thực hiện kế hoạch sản xuất và làm giảm đáng kể nhịp độ phát triển của các ngành ở vùng đồng bằng Bắc Bộ trong giai đoạn này.\n*   **Nhiệm vụ quản lý:** Trong bối cảnh đó, Đảng và Nhà nước xác định năm 1972 là năm \"bản lề\", đồng thời đẩy mạnh cải tiến công tác quản lý kinh tế nhằm khắc phục cách làm thủ công, phân tán, hướng tới xây dựng nền công nghiệp lớn xã hội chủ nghĩa.\n\n*Lưu ý: Mặc dù tài liệu cung cấp thông tin chi tiết về việc vượt kế hoạch 14%, nhưng không có số liệu cụ thể về con số tuyệt đối (giá trị sản lượng dự kiến) trong kế hoạch ban đầu năm 1971 để so sánh trực tiếp với con số 3.242 triệu đồng thực hiện được.*",
+    "latency": 8.856623900002887,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI đã trình bày chính xác và đầy đủ các thông tin có trong đáp án chuẩn (tăng 14% so với kế hoạch, công nghiệp trung ương tăng 17,5%, địa phương tăng 11,2% và vượt 2,7% so với trước chiến tranh). Ngoài ra, AI còn cung cấp thêm bối cảnh lịch sử và các thông tin bổ trợ giúp câu trả lời trở nên chuyên sâu và có giá trị tham khảo cao hơn."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Sự chuyển dịch trong chính sách đầu tư xây dựng cơ bản của Nhà nước giai đoạn 1968-1970 được thể hiện như thế nào?",
+    "agent_response": "Dựa trên các tài liệu đã thu thập, sự chuyển dịch trong chính sách đầu tư xây dựng cơ bản của Nhà nước Việt Nam Dân chủ Cộng hòa giai đoạn 1968-1970 được thể hiện qua các khía cạnh chính sau đây:\n\n### 1. Chuyển dịch phân cấp quản lý: Tăng cường đầu tư cho địa phương\nTrong giai đoạn này, Nhà nước đã thực hiện sự điều chỉnh chiến lược nhằm cân đối lại nguồn vốn giữa trung ương và địa phương. Mục tiêu là phát huy tính chủ động của địa phương trong việc giải quyết khó khăn chung và phát triển sản xuất tại chỗ.\n*   **Vốn đầu tư trung ương:** Có xu hướng giảm dần qua các năm để dồn lực cho các cấp dưới. Cụ thể: từ 757,7 triệu đồng (năm 1968) xuống 718,4 triệu đồng (năm 1969) và 665,9 triệu đồng (năm 1970).\n*   **Vốn đầu tư địa phương:** Tăng trưởng đáng kể nhằm phục vụ xây dựng kinh tế địa phương: từ 290,1 triệu đồng (năm 1968) tăng lên 399,6 triệu đồng (năm 1970).\n\n### 2. Ưu tiên trọng tâm vào sản xuất vật chất\nChính sách đầu tư tập trung cao độ vào khu vực sản xuất vật chất nhằm khôi phục hậu quả chiến tranh và ổn định kinh tế. Tổng vốn đầu tư vào khu vực này trong giai đoạn 1968-1970 duy trì ở mức cao và ổn định (dao động từ 929,9 đến 962,3 triệu đồng mỗi năm). Các ngành được ưu tiên bao gồm công nghiệp, nông nghiệp và giao thông vận tải.\n\n### 3. Sự quan tâm gia tăng đối với nông nghiệp\nNhằm củng cố quan hệ sản xuất trong nông nghiệp, Nhà nước đặc biệt chú trọng đầu tư vào lĩnh vực này, nhất là sau khi ban hành *Điều lệ tóm tắt hợp tác xã sản xuất nông nghiệp bậc cao* vào ngày 28/4/1969.\n*   Vốn xây dựng cơ bản trong nông nghiệp tăng dần theo thời gian: giai đoạn 1961-1964 đạt 398,5 triệu đồng; 1965-1968 đạt 635,3 triệu đồng; và tăng lên 762,6 triệu đồng trong giai đoạn 1969-1972.\n\n### 4. Thay đổi trong đầu tư cho khu vực phi sản xuất vật chất\nMặc dù vốn đầu tư cho các ngành không sản xuất vật chất thấp hơn so với sản xuất, nhưng có xu hướng tăng dần để đáp ứng nhu cầu dân sinh và quản lý:\n*   **Phục vụ công cộng và nhà ở:** Tăng mạnh từ 6,8 triệu đồng (năm 1968) lên 41,1 triệu đồng (năm 1970), trong đó đầu tư cho nhà ở riêng lẻ tăng từ 2,7 triệu lên 23,9 triệu đồng.\n*   **Quản lý Nhà nước, Đảng, Đoàn thể:** Có sự biến động, từ 10,5 triệu đồng (1968) giảm xuống 7,1 triệu đồng (1969) và tăng lên 14,6 triệu đồng (1970).\n*   **Các ngành khác (Y tế, giáo dục, văn hóa...):** Có xu hướng giảm nhẹ về mức đầu tư tổng thể từ 65,2 triệu đồng (1968) xuống 62,4 triệu đồng (1970).\n\n### 5. Bối cảnh và mục tiêu chiến lược\n*   **Hàn gắn vết thương chiến tranh:** Việc đầu tư được thực hiện trong bối cảnh tài chính eo hẹp, nhưng vẫn ưu tiên tối đa cho việc khôi phục các ngành trọng yếu (điện, than, máy móc, vật liệu xây dựng...) để vượt mức kế hoạch năm 1965.\n*   **Giải quyết việc làm:** Xây dựng kinh tế địa phương được coi là nhiệm vụ hàng đầu để thu hút nguồn lao động (mỗi năm khoảng 200 nghìn lao động mới được thu hút vào kinh tế địa phương).\n*   **Hạn chế:** Do phải tập trung ưu tiên cho công nghiệp và giao thông vận tải, nguồn lực dành cho việc xây dựng nhà ở đô thị vẫn còn rất hạn chế trong giai đoạn này.\n\n*(Lưu ý: Thông tin về sự chuyển dịch trong các chính sách đầu tư sau năm 1970 hoặc các chi tiết về chỉ tiêu đầu tư cụ thể hơn ngoài các con số nêu trên không được cung cấp trong dữ liệu đầu vào.)*",
+    "latency": 32.72052380000241,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "AI không chỉ cung cấp chính xác các số liệu cốt lõi trong đáp án chuẩn mà còn mở rộng phân tích chuyên sâu về bối cảnh, mục tiêu và cơ cấu đầu tư (sản xuất/phi sản xuất, nông nghiệp, nhà ở). Các số liệu được trích dẫn chi tiết, logic và phù hợp với diễn biến lịch sử giai đoạn 1968-1970."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Kể tên 3 sản phẩm nông nghiệp hoặc công nghiệp hỗ trợ nông nghiệp có sự tăng trưởng trong giai đoạn này.",
+    "agent_response": "Dựa trên các tài liệu đã thu thập được về tình hình kinh tế Việt Nam trong giai đoạn chiến tranh (tập trung vào miền Bắc và miền Nam), dưới đây là các sản phẩm nông nghiệp và lĩnh vực hỗ trợ nông nghiệp có sự chú trọng phát triển:\n\n### 1. Sản phẩm nông nghiệp (Miền Bắc)\nTrong giai đoạn này, chủ trương của Đảng tại miền Bắc là phát triển nông nghiệp toàn diện, mạnh mẽ và vững chắc. Các trọng tâm phát triển bao gồm:\n*   **Lương thực:** Đây là trọng tâm chính được đẩy mạnh sản xuất thông qua việc thâm canh, tăng vụ và khai hoang, phục hóa để đảm bảo nhu cầu quốc phòng và đời sống nhân dân.\n*   **Thực phẩm:** Việc phát triển chăn nuôi được xác định là ngành sản xuất chính bên cạnh việc trồng trọt, nhằm mục tiêu đa dạng hóa nguồn cung thực phẩm.\n*   **Cây công nghiệp:** Cùng với việc phát triển nông sản thủy sản, phát triển cây công nghiệp là một trong những nhiệm vụ trọng tâm nhằm đẩy mạnh sản xuất toàn diện trong nông nghiệp.\n\n### 2. Công nghiệp hỗ trợ nông nghiệp (Miền Bắc)\nĐể hỗ trợ sản xuất nông nghiệp trong điều kiện chiến tranh, Nhà nước đã tập trung xây dựng cơ sở vật chất - kỹ thuật, tiêu biểu gồm:\n*   **Hệ thống thủy lợi:** Tập trung củng cố và phát triển, mở rộng diện tích tưới, tiêu để phục vụ sản xuất.\n*   **Cơ khí nông nghiệp:** Phát triển các trạm máy kéo và tích cực cải tiến nông cụ nhằm áp dụng khoa học kỹ thuật vào sản xuất.\n\n### 3. Về tình hình tại miền Nam\nDựa trên nguồn tài liệu, các ngành công nghiệp tại miền Nam thời kỳ này chủ yếu tập trung vào sản xuất hàng tiêu dùng và thực phẩm. Mặc dù có sự gia tăng về các cơ sở sản xuất, tuy nhiên các ngành công nghiệp (trong đó có công nghiệp thực phẩm) còn phụ thuộc nhiều vào nguyên liệu nhập khẩu và chủ yếu là các cơ sở quy mô vừa và nhỏ. Hệ thống ngân hàng nông thôn cũng được đẩy mạnh để thực hiện các chương trình như \"Người cày có ruộng\" và \"Canh tân hóa nông nghiệp\".\n\n**Lưu ý:** Các tài liệu cung cấp tập trung vào chủ trương, chính sách phát triển và các lĩnh vực ưu tiên hơn là liệt kê các số liệu thống kê cụ thể về mức tăng trưởng sản lượng của từng loại mặt hàng nông nghiệp cụ thể (ngoại trừ số liệu về phân phối lương thực của Nhà nước). Vì vậy, câu trả lời tập trung vào các nhóm sản phẩm và lĩnh vực hỗ trợ chính theo định hướng kinh tế thời kỳ đó.",
+    "latency": 29.343585200000234,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 2,
+      "agreement_rate": 0.3,
+      "reasoning": "Câu trả lời của AI lạc đề so với yêu cầu cụ thể của câu hỏi. Câu hỏi yêu cầu liệt kê 3 sản phẩm cụ thể có số liệu tăng trưởng dựa trên văn bản, nhưng AI lại trả lời bằng cách nêu các nhóm lĩnh vực chung chung (lương thực, thực phẩm, thủy lợi) và viện dẫn việc thiếu số liệu để biện minh. AI đã thất bại trong việc trích xuất đúng thông tin dữ liệu có sẵn trong đáp án chuẩn."
+    },
+    "status": "fail"
+  },
+  {
+    "test_case": "Tại sao Nhà nước vẫn duy trì vốn đầu tư xây dựng cơ bản mặc dù tình hình tài chính rất eo hẹp?",
+    "agent_response": "Trong giai đoạn chiến tranh ác liệt, mặc dù nguồn lực tài chính vô cùng eo hẹp, Nhà nước Việt Nam Dân chủ Cộng hòa vẫn ưu tiên duy trì và đẩy mạnh vốn đầu tư xây dựng cơ bản vì những mục tiêu chiến lược cốt lõi sau đây:\n\n### 1. Phục vụ đắc lực cho quốc phòng và chi viện tiền tuyến\nĐầu tư xây dựng cơ bản được xem là yếu tố sống còn để đảm bảo sức mạnh cho cuộc kháng chiến:\n*   **Hệ thống giao thông chiến lược:** Việc đầu tư cho giao thông vận tải (vốn Nhà nước đầu tư thời kỳ 1966-1971 tăng gấp 11,2 lần so với 1955-1957) nhằm duy trì các tuyến đường chi viện chiến trường, đảm bảo sự thông suốt của hậu phương đối với tiền tuyến.\n*   **Hậu cần tại chỗ:** Đầu tư vào các ngành công nghiệp, nông nghiệp và kho tàng giúp củng cố tiềm lực quốc phòng, đáp ứng nhu cầu vật chất tại chỗ cho quân đội và nhân dân.\n\n### 2. Khôi phục và phát triển kinh tế quốc dân\nXây dựng cơ bản là đòn bẩy để chuyển dịch cơ cấu kinh tế từ sản xuất nhỏ, phân tán lên sản xuất lớn xã hội chủ nghĩa:\n*   **Phát triển công nghiệp:** Trong giai đoạn 1965-1968, đầu tư trung bình hằng năm bằng khoảng 150% so với năm 1960, trong đó vốn đầu tư vào công nghiệp (cơ khí, than, điện, vật liệu xây dựng...) luôn chiếm tỷ trọng cao nhất. Điều này giúp giữ vững và phát triển sản xuất ngay trong chiến tranh.\n*   **Hiện đại hóa nông nghiệp:** Thông qua tín dụng ngân hàng, vốn đầu tư dài hạn vào các hợp tác xã nông nghiệp tăng gấp 2 lần (giai đoạn 1965-1968 so với 1961-1964). Điều này giúp thâm canh, tăng năng suất, biến các hợp tác xã thành cơ sở kinh tế - chính trị vững chắc.\n\n### 3. Đảm bảo an sinh xã hội và đời sống nhân dân\nDù ưu tiên cho chiến tranh và công nghiệp nặng, việc đầu tư xây dựng cơ bản vẫn hướng tới các mục tiêu xã hội:\n*   **Ổn định sản xuất và đời sống:** Việc phát triển giao thông nông thôn và các hạ tầng sản xuất giúp ổn định nguồn cung lương thực, thực phẩm, từ đó đảm bảo mức sống tối thiểu cho cư dân cả thành thị lẫn nông thôn thông qua hệ thống phân phối tem phiếu.\n*   **Tạo tiền đề cho hậu chiến:** Nhà nước xác định rõ việc khôi phục và xây dựng kinh tế trong chiến tranh chính là để chuẩn bị điều kiện cần thiết cho sự nghiệp xây dựng đất nước khi chiến tranh kết thúc trên cả nước.\n\n### 4. Kết luận\nNhà nước coi xây dựng cơ bản là một trong hai vấn đề lớn nhất của kinh tế (cùng với nông nghiệp). Dù nguồn lực hạn hẹp và phải cắt giảm những nhu cầu dân dụng khác (như xây dựng nhà ở đô thị rất hạn chế) để ưu tiên vốn cho công nghiệp và giao thông, việc duy trì đầu tư xây dựng cơ bản là **chìa khóa để cân bằng giữa nhiệm vụ chiến đấu, sản xuất và duy trì ổn định xã hội**.\n\n*Lưu ý: Các thông tin về \"chức năng quản lý nhà nước\" dưới góc độ lý thuyết kinh tế học hiện đại không được tìm thấy trong dữ liệu cung cấp; các nội dung trên tập trung vào bối cảnh lịch sử thực tế của Việt Nam giai đoạn chống Mỹ.*",
+    "latency": 10.476270399998612,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 0.95,
+      "reasoning": "Câu trả lời của AI đã bao hàm hoàn toàn ý nghĩa cốt lõi của đáp án chuẩn (khôi phục sau chiến tranh) nhưng mở rộng chi tiết, sâu sắc và thuyết phục hơn nhiều thông qua các dữ liệu lịch sử cụ thể. AI không chỉ trả lời 'tại sao' mà còn phân tích rõ 'như thế nào' và 'mục tiêu chiến lược' đằng sau quyết định đó, đảm bảo tính chính xác về mặt bối cảnh lịch sử Việt Nam giai đoạn chống Mỹ."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Dương Văn Minh đã đưa ra tuyên bố gì trên Đài Phát thanh vào lúc 9 giờ 30 phút ngày 30-4-1975?",
+    "agent_response": "Dựa trên các tài liệu lịch sử đã thu thập, thông tin về tuyên bố của Dương Văn Minh vào lúc 9 giờ 30 phút ngày 30 tháng 4 năm 1975 như sau:\n\n*   **Nội dung tuyên bố:** Vào lúc 9 giờ 30 phút ngày 30 tháng 4 năm 1975, Dương Văn Minh đã cho Đài Phát thanh phát đi lời kêu gọi đơn phương ngừng bắn và bàn giao chính quyền cho cách mạng.\n*   **Bối cảnh:** Đây là hành động diễn ra trong cơn hấp hối của chế độ Sài Gòn trước sức ép từ cuộc Tổng tiến công và nổi dậy mùa Xuân 1975 của quân và dân ta.\n\n**Lưu ý bổ sung:**\nCần phân biệt rõ lời tuyên bố lúc 9 giờ 30 phút này với nội dung đầu hàng không điều kiện diễn ra sau đó tại Dinh Độc lập:\n*   Sau khi các đơn vị của Quân Giải phóng (đứng đầu là Chính ủy Lữ đoàn xe tăng 203 Bùi Văn Tùng và Trung đoàn phó Trung đoàn bộ binh 66 Phạm Xuân Thệ) tiến vào Dinh Độc lập, Dương Văn Minh và nội các đã buộc phải **đầu hàng không điều kiện**.\n*   Tại Đài Phát thanh Sài Gòn sau đó, Dương Văn Minh đã đọc lời tuyên bố đầu hàng không điều kiện với nội dung: *\"Tôi, Đại tướng Dương Văn Minh, Tổng thống chính quyền Sài Gòn, kêu gọi quân lực cộng hòa hạ vũ khí đầu hàng không điều kiện Quân Giải phóng miền Nam Việt Nam. Tôi tuyên bố chính quyền Sài Gòn từ trung ương đến địa phương phải giải tán hoàn toàn, giao toàn bộ chính quyền cho Chính phủ Cách mạng Lâm thời Cộng hòa miền Nam Việt Nam\".*",
+    "latency": 61.86707060000117,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI chính xác hoàn toàn với đáp án chuẩn. Ngoài ra, AI còn cung cấp thêm thông tin bổ sung rất giá trị để phân biệt giữa lời kêu gọi bàn giao chính quyền (lúc 9h30) và lời tuyên bố đầu hàng không điều kiện (sau đó), giúp người đọc tránh nhầm lẫn lịch sử."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Các hoạt động quân sự tại đồng bằng sông Cửu Long có ý nghĩa như thế nào đối với cục diện chiến trường?",
+    "agent_response": "Các hoạt động quân sự tại đồng bằng sông Cửu Long (ĐBSCL) đóng vai trò chiến lược quan trọng trong cục diện chiến trường, đặc biệt là giai đoạn cuối cuộc kháng chiến chống Mỹ. Dưới đây là tổng hợp ý nghĩa của các hoạt động này:\n\n### 1. Tạo thế, tạo lực và hỗ trợ chiến trường trọng điểm\n*   **Kìm chân địch:** Các hoạt động quân sự tại ĐBSCL có tác dụng to lớn trong việc kìm chân Quân đoàn 4 của quân đội Sài Gòn, ngăn cản sự phản ứng và chi viện của địch cho các khu vực khác.\n*   **Tạo thế bao vây:** Việc lực lượng vũ trang Quân khu VIII và Quân khu IX diệt đồn bốt, mở rộng vùng giải phóng, đưa lực lượng áp sát Đường 4 và vùng ven các quận lỵ, thị xã đã hình thành thế bao vây, tạo thuận lợi cho các cánh quân tiến công Sài Gòn - Gia Định.\n*   **Phối hợp chiến lược:** Các hoạt động này diễn ra đồng bộ, phối hợp chặt chẽ với chiến trường Tây Nguyên, Trị - Thiên - Huế, Quảng Đà và Đông Nam Bộ, góp phần tiêu diệt và làm tan rã nhiều sinh lực địch trên quy mô lớn trong thời gian ngắn.\n\n### 2. Sự kết hợp nhuần nhuyễn giữa tiến công và nổi dậy\nCuộc tổng tiến công và nổi dậy tại ĐBSCL được thực hiện dưới nhiều hình thức phong phú, tạo nên sức mạnh tổng hợp áp đảo chính quyền Sài Gòn:\n*   **Kết hợp quân sự và quần chúng:** Lực lượng vũ trang tiến công áp sát mục tiêu ngoại vi kết hợp với quần chúng nổi dậy giành chính quyền tại các tỉnh như Cần Thơ, Mỹ Tho, Rạch Giá, Vĩnh Long, Bến Tre, Sa Đéc, Gò Công.\n*   **Công tác binh vận:** Đi trước một bước, vận động binh lính địch đầu hàng trước khi lực lượng vũ trang tiến công (điển hình tại Bạc Liêu, Châu Đốc).\n*   **Đấu tranh chính trị:** Các cuộc đấu tranh trực diện, tố cáo tội ác của địch và trừng trị bọn ác ôn góp phần làm tê liệt hệ thống kiểm soát của chính quyền Sài Gòn tại địa phương.\n\n### 3. Hậu cần và phục vụ chiến đấu\nHoạt động quân sự tại ĐBSCL gắn liền với công tác hậu cần. Quân và dân nơi đây đã tích cực:\n*   Mở đường, làm ngầm, bắc cầu, lập kho bãi để tập kết lực lượng.\n*   Huy động hàng nghìn dân công tham gia tải đạn, tải gạo, trực tiếp phục vụ bộ đội chủ lực cơ động chiến đấu.\n\n### 4. Kết quả giải phóng\nNhờ sự phối hợp của các hình thức tác chiến nêu trên, quân và dân ĐBSCL đã giải phóng hoàn toàn vùng đồng bằng và các hải đảo (bao gồm Trường Sa), góp phần kết thúc thắng lợi trọn vẹn sự nghiệp giải phóng miền Nam.\n\n***Lưu ý:** Trước năm 1975, trong giai đoạn thực hiện chiến lược \"Việt Nam hóa chiến tranh\" của Mỹ, ĐBSCL từng là địa bàn địch đẩy mạnh các cuộc hành quân càn quét và chương trình \"bình định\" (như chương trình Phượng Hoàng) nhằm thu hẹp vùng giải phóng của ta. Tuy nhiên, bằng sự chuyển hướng chỉ đạo đúng đắn, quân và dân ta đã xoay chuyển tình thế, giành lại thế chủ động hoàn toàn vào giai đoạn cuối.*",
+    "latency": 8.994319500001438,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 0.95,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ ý chính trong đáp án chuẩn (kìm chân Quân đoàn 4, tạo thế và lực cho chiến trường trọng điểm) mà còn mở rộng, làm rõ bối cảnh chiến lược và phương thức thực hiện một cách chính xác, sâu sắc về mặt lịch sử."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Nội dung mệnh lệnh đầu tiên của Ủy ban Quân quản sau khi được thành lập bao gồm những điểm chính nào?",
+    "agent_response": "Lỗi tổng hợp. Kết quả thô:\n\n--- Bước 1: Tìm kiếm chung ---\nTool sử dụng: search_docs\nTruy vấn: Nội dung mệnh lệnh đầu tiên của Ủy ban Quân quản sau khi được thành lập bao gồm những điểm chính nào?\nKết quả:\n[Nguồn 1] (Vị trí: III. Đấu tranh ngoại giao và việc ký Hiệp định Paris về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam > II. Tạo thế, tạo lực, tạo thời cơ, chuẩn bị giải phóng hoàn toàn miền Nam > 5. Chiến dịch Hồ Chí Minh lịch sử, kết thúc thắng lợi cuộc kháng chiến chống Mỹ, cứu nước)\nChỉ huy và Đảng ủy mặt trận tiếp tục tiến công chiếm lĩnh toàn bộ thành phố và đặt thành phố Sài Gòn - Gia Định dưới quyền của Ủy ban Quân quản.\n\nĐiện của Đại tướng Tổng Tư lệnh Võ Nguyên Giáp ghi rõ:\n\n> Ủy ban Quân quản công bố ngay trên Đài Phát thanh mệnh lệnh đầu tiên. Nội dung:\n> a) Quân giải phóng tiến vào để giải phóng thành phố Sài Gòn - Gia Định, hoàn thành công cuộc giải phóng miền Nam.\n> b) Quân đội ngụy quyền Sài Gòn phải lập tức hạ vũ khí đầu hàng.\n> c) Tuyên bố giải tán chính quyền các cấp!\n> d) Kêu gọi đồng bào đứng dậy, cùng Quân giải phóng đập tan mọi sự chống cự của địch, giữ gìn trật tự an ninh, bảo vệ tính mạng, tài sản của nhân dân, hoàn thành công cuộc giải phóng hoàn toàn miền Nam Việt Nam thân yêu.\n\nĐược bộ đội chủ lực hỗ trợ, nhân dân và lực lượng vũ trang các huyện Củ Chi, Hóc Môn, Thủ Đức đã kết hợp nổi dậy giải phóng quận lỵ và các xã ấp. Ở nội thành, lực lượng biệt động dẫn đường và cùng bộ đội chủ lực đánh chiếm các mục tiêu quân sự. Các tầng lớp nhân dân tràn ra đường hoan hô bộ đội về giải phóng thành phố. Công nhân tổ chức canh gác bảo vệ nhà máy. Nhân viên các công sở giữ gìn tài sản, tài liệu, bàn giao cho cán bộ cách mạng. Thanh niên tự vệ dùng loa kêu gọi binh sĩ Sài Gòn bỏ súng đầu hàng, chỉ nơi quân địch lẩn trốn cho bộ đội lùng bắt, cùng bộ đội tước vũ khí địch, trừng trị những tên ác ôn ngoan cố chống đối, giữ gìn trật tự, trị an ở các khu vực vừa được giải phóng. Toàn bộ lực lượng cảnh sát và phòng vệ dân sự tại chỗ tan rã.\n\n---\n\n[Nguồn 2] (Vị trí: III. Đấu tranh ngoại giao và việc ký Hiệp định Paris về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam > II. Tạo thế, tạo lực, tạo thời cơ, chuẩn bị giải phóng hoàn toàn miền Nam > 4. Tiến công giải phóng Đà Nẵng và các tỉnh Nam Trung Bộ)\nông của ta ở chiến trường trọng điểm sẽ gặp khó khăn. Vì vậy, nhiệm vụ trước mắt là phải nhanh chóng đánh chiếm Đà Nẵng, tiêu diệt sinh lực địch, tạo bước phát triển thuận lợi cho thắng lợi cuối cùng.\n\nNgày 25-3-1975, Bộ Chính trị và Quân ủy Trung ương quyết định mở chiến dịch Đà Nẵng (Mặt trận Quảng Đà) với mật danh Mặt trận 475, lập Bộ Tư lệnh Mặt trận do Lê Trọng Tấn làm Tư lệnh, Chu Huy Mân là Chính ủy.\n\nBộ Chính trị cũng quyết định thành lập Quân đoàn 3 gồm các đơn vị vừa tác chiến ở Tây Nguyên do Vũ Lăng làm Tư lệnh, Đặng Vũ Hiệp làm Chính ủy.\n\nLúc này, vấn đề cấp thiết là phải nhanh chóng đánh chiếm Đà Nẵng, không cho địch rút chạy, thực hiện đúng phương châm \"táo bạo, bất ngờ, kịp thời, chắc thắng\".\n\nTheo mệnh lệnh của Bộ Tổng Tư lệnh, các binh đoàn có nhiệm vụ đánh Đà Nẵng khẩn trương tập trung lực lượng. Từ sau Hội nghị Bộ Chính trị và Quân ủy Trung ương ngày 18-3-1975, Bộ Tổng Tư lệnh đã chỉ thị cho Quân đoàn II, lúc này đang đứng chân ở Ninh Bình, khẩn trương hành quân theo Đường số 1 vào chiến trường, để lại Sư đoàn 308 sẵn sàng ứng phó với tình huống địch phản ứng quân sự đối với miền Nam.Quân đoàn 1 là quả đấm chủ lực mạnh, gồm những đơn vị có bề dày truyền thống, sẽ góp phần cùng các đơn vị chủ lực khác quyết định chiến trường trong giai đoạn cuối cùng của chiến tranh.\n\n---\n\n[Nguồn 3] (Vị trí: III. Đấu tranh ngoại giao và việc ký Hiệp định Paris về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam > II. Tạo thế, tạo lực, tạo thời cơ, chuẩn bị giải phóng hoàn toàn miền Nam > 5. Chiến dịch Hồ Chí Minh lịch sử, kết thúc thắng lợi cuộc kháng chiến chống Mỹ, cứu nước)\năn chặn địch, và phản công quyết liệt. Hơn lúc nào hết: - tinh thần chiến thắng phải được phát huy. - Kỷ luật chiến trường phải triệt để tôn trọng. - Mệnh lệnh chiến đấu phải được triệt để tuân hành.\"\n\nCũng trong ngày 02-4, Thượng viện chính quyền Sài Gòn đã họp và \"ra nghị quyết kêu gọi Hoa Kỳ thực hiện những cam kết đối với Việt Nam Cộng hòa\".\n\nCùng với việc chờ đợi kết quả trong kế hoạch phòng thủ miền Nam của Nguyễn Văn Thiệu, Mỹ tiếp tục viện trợ một cách dè dặt phương tiện chiến tranh cho chính quyền Sài Gòn bằng con đường không vận với chuyến viện trợ thứ hai gồm 87 khẩu đại bác. Chuyến thứ ba sẽ bao gồm thiết xa vận, súng máy và một số trang bị quân sự khác.\n\nNgày 06-4-1975, sau một thời gian gấp rút chuẩn bị, tuyến phòng thủ Phan Rang – Xuân Lộc – Tây Ninh được thành lập. Với tuyến phòng thủ này, Mỹ và chính quyền Sài Gòn hy vọng ngăn chặn và đẩy lùi cuộc tiến công của ta, giữ thế cầm cự cho tới mùa mưa, sau đó sẽ củng cố những lực lượng còn lại, phản công tái chiếm các vùng đã mất. Ngày 08-4, với vị trí là cụm phòng thủ trung tâm trong số 3 cụm Tây Ninh - Xuân Lộc - Phan Rang, chính quyền Sài Gòn bố trí tại Xuân Lộc binh lực mạnh nhất còn lại gồm: Sư đoàn bộ binh 18, Lữ đoàn 5 tăng thiết giáp, 4 tiểu đoàn bảo an, 2 tiểu đoàn pháo binh, 2 liên đoàn dân vệ.\n\n---\n\n[Nguồn 4] (Vị trí: LỜI NÓI ĐẦU > I. NỘI DUNG CHIẾN LƯỢC \"CHIẾN TRANH CỤ BỘ\" CỦA MỸ > Phong trào thi đua và kiện toàn tổ chức)\nhai là vào ngày 22-12-1969, theo Quyết định của Ủy ban Thường vụ Quốc hội, ngày 19-12-1969 Chủ tịch Tôn Đức Thắng đã ký lệnh tặng thưởng 23 Đơn vị anh hùng và 17 Anh hùng lực lượng vũ trang nhân dân.\n\nCác cuộc vận động chính trị lớn trên đây đã tạo nên một khí thế thi đua sôi nổi ở các địa phương, lôi cuốn các tầng lớp nhân dân vào các hoạt động khôi phục và phát triển kinh tế, phát triển văn hóa. Riêng ngành giáo dục năm học 1968-1969 đã có 544 tập thể được Hội đồng Chính phủ công nhận là Tổ Lao động xã hội chủ nghĩa.\n\nNhằm tăng cường năng lực quản lý kinh tế, cuối năm 1969, Ủy ban Thường vụ Quốc hội đã phê chuẩn việc thành lập Bộ Lương thực và Thực phẩm, Bộ Vật tư, Ủy ban Thanh tra của Chính phủ và chia Bộ Công nghiệp nặng thành Bộ Điện và Than, Bộ Cơ khí và Luyện kim, Tổng cục Hóa chất. Ngày 9-10 thành lập Tổng cục Đào tạo công nhân kỹ thuật.\n\n---\n\n[Nguồn 5] (Vị trí: III. Đấu tranh ngoại giao và việc ký Hiệp định Paris về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam > II. Tạo thế, tạo lực, tạo thời cơ, chuẩn bị giải phóng hoàn toàn miền Nam > 4. Tiến công giải phóng Đà Nẵng và các tỉnh Nam Trung Bộ)\nâm huấn luyện Hòa Cầm, cách trung tâm Đà Nẵng khoảng 10km, nổi loạn và bỏ về với gia đình. Toàn thành phố Đà Nẵng lâm vào tình thế hỗn độn, bắn giết lẫn nhau, cướp bóc, phá phách tài sản của nhân dân.\n\nTheo dõi những diễn biến mới nhất của tình hình Đà Nẵng, ngày 27-3-1975, Quân ủy Trung ương và Bộ Tổng Tham mưu điện cho Bộ Tư lệnh Mặt trận Đà Nẵng và Khu ủy Khu 5: \"Tình hình Đà Nẵng rất khẩn trương, cần có những biện pháp đặc biệt, nhanh chóng tiến công địch, bỏ qua những mục tiêu dọc đường, đánh thẳng vào Đà Nẵng nhanh nhất, kịp thời nhất, táo bạo nhất với những lực lượng có thể chuyển tới sớm nhất\". Tiếp đó, Bộ Chính trị chỉ thị cho Quân khu V và Quân đoàn 2: \"Trong lúc này, thời gian là lực lượng. Phải hành động hết sức táo bạo, bất ngờ, làm cho địch không kịp trở tay...\"\n\nChấp hành mệnh lệnh của Bộ Chính trị và Bộ Tổng Tư lệnh, ngay sau khi nhậm chức Tư lệnh mặt trận Quảng Đà, Lê Trọng Tấn đã kịp thời có mặt ở Sở Chỉ huy mặt trận, đóng ở phía Tây Đà Nẵng. Chính ủy mặt trận Chu Huy Mân, lúc này đang ở Quảng Ngãi, nhanh chóng tập trung bộ đội chủ lực Quân khu V, theo Đường số 1, áp sát Đà Nẵng. Mọi sự thảo luận, liên lạc giữa Tư lệnh và Chính ủy mặt trận đều thông qua điện đài.",
+    "latency": 5.969113899998774,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "AI đã trích dẫn chính xác nội dung mệnh lệnh đầu tiên của Ủy ban Quân quản Sài Gòn - Gia Định từ nguồn tài liệu lịch sử tin cậy. Các điểm trong câu trả lời hoàn toàn khớp với đáp án chuẩn, thể hiện sự chính xác tuyệt đối trong việc truy xuất và tổng hợp thông tin lịch sử."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Tại sao chính quyền và quân đội Sài Gòn lại sụp đổ nhanh chóng vào thời điểm cuối tháng 4 năm 1975?",
+    "agent_response": "Sự sụp đổ nhanh chóng của chính quyền và quân đội Sài Gòn vào cuối tháng 4 năm 1975 là kết quả tất yếu của quá trình suy yếu kéo dài, kết hợp với sức mạnh tổng hợp của quân và dân ta trong giai đoạn quyết định. Dưới đây là các nguyên nhân chính dựa trên các tài liệu lịch sử:\n\n### 1. Sự suy yếu của hệ thống chính quyền và quân đội Sài Gòn\n*   **Mất khả năng tự vệ:** Sau khi rút bỏ Tây Nguyên và các vùng chiến lược, hệ thống bố trí chiến lược của quân đội Sài Gòn bị chia cắt và tan rã nhanh chóng. Tuyến phòng ngự dọc miền Trung bị uy hiếp trực tiếp, đẩy toàn bộ hệ thống vào thế bị động và suy sụp.\n*   **Đình trệ viện trợ từ Mỹ:** Mỹ đã hoàn toàn mất niềm tin vào khả năng tồn tại của chính quyền Nguyễn Văn Thiệu. Các phái đoàn Quốc hội Mỹ đã khẳng định việc tiếp tục viện trợ là \"đổ tiền vào cái giếng không đáy\" và \"điên rồ\", dẫn đến khả năng Mỹ tiếp tục viện trợ là không thể. Điều này khiến quân đội Sài Gòn rơi vào trạng thái thiếu hụt trầm trọng về nguồn lực.\n*   **Khủng hoảng chính trị:** Sự hoang mang, rệu rã trong hàng ngũ lãnh đạo và binh lính Sài Gòn đạt đến đỉnh điểm khi các đợt tiến công của quân giải phóng liên tiếp nổ ra trên khắp các chiến trường.\n\n### 2. Sự phát triển vượt bậc về thế và lực của quân và dân ta\n*   **Thế trận áp đảo:** Quân và dân ta đã tạo được thế chiến lược hơn hẳn địch cả về quân sự lẫn chính trị. Nhịp độ phát triển của cách mạng được đẩy mạnh với tốc độ \"một ngày bằng hai mươi năm\".\n*   **Chiến thuật thần tốc:** Dưới sự chỉ đạo của Bộ Chính trị, quân đội ta thực hiện phương châm \"thần tốc, táo bạo, bất ngờ\", tiến công ngay lúc địch đang hoang mang và suy sụp. Bộ đội ta có khả năng cơ động nhanh hơn cả khả năng \"trực thăng vận\" và \"cầu hàng không\" của phía Mỹ-Thiệu.\n*   **Sức mạnh tổng hợp:** Chiến dịch Hồ Chí Minh là đỉnh cao của sự phối hợp chặt chẽ giữa tiến công quân sự của chủ lực và sự nổi dậy của quần chúng nhân dân. Tại Sài Gòn, hàng chục phường đã tự nổi dậy giành chính quyền, hỗ trợ bộ đội dẫn đường, bao vây và làm tê liệt các cơ quan đầu não của địch.\n\n### 3. Thời điểm kết thúc\n*   Sự sụp đổ được định đoạt sau Hội nghị Bộ Chính trị ngày 31/3/1975, với quyết tâm giải phóng miền Nam trong thời gian ngắn nhất (tốt nhất là trong tháng 4).\n*   Trong \"cơn hấp hối\" cuối cùng, sau khi các mục tiêu quan trọng như Dinh Độc Lập, Bộ Quốc phòng, Đài Phát thanh... lần lượt bị chiếm lĩnh, Tổng thống Dương Văn Minh đã phải tuyên bố đơn phương ngừng bắn và bàn giao chính quyền cho cách mạng vào lúc 9 giờ 30 phút ngày 30/4/1975.\n\n**Kết luận:** Sự sụp đổ của chính quyền Sài Gòn là kết quả của việc mất đi chỗ dựa từ Mỹ, sự tan rã từ bên trong và sự áp đảo hoàn toàn bởi sức mạnh tổng hợp của chiến tranh nhân dân, cùng tinh thần tiến công \"thần tốc, táo bạo\" của quân và dân ta trong giai đoạn cuối cùng của cuộc kháng chiến.",
+    "latency": 7.569160700000793,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ nội dung của đáp án chuẩn (sức mạnh tổng hợp của cách mạng và chiến tranh nhân dân) mà còn mở rộng phân tích một cách khoa học, logic và chính xác về các yếu tố hỗ trợ (sự suy yếu nội tại của địch, việc cắt giảm viện trợ Mỹ, nghệ thuật quân sự thần tốc). Thông tin lịch sử chính xác, lập luận chặt chẽ và bám sát các sự kiện lịch sử đã được ghi nhận."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Vào ngày 30-4-1975, bộ đội địa phương tỉnh Trà Vinh đã thực hiện những hành động quân sự nào?",
+    "agent_response": "Dựa trên các nguồn thông tin đã thu thập được, dưới đây là tổng hợp về vai trò và hoạt động của lực lượng tại Trà Vinh trong giai đoạn giải phóng miền Nam:\n\n### 1. Vai trò của lực lượng vũ trang tại Trà Vinh\nTrong giai đoạn cuối của cuộc chiến, lợi dụng thời cơ địch bị kìm chân tại các chiến trường trọng điểm (như căn cứ U Minh), lực lượng vũ trang và nhân dân tỉnh Trà Vinh đã phối hợp cùng các tỉnh ở đồng bằng sông Cửu Long liên tục tấn công địch. Những hoạt động này đóng vai trò quan trọng trong việc hỗ trợ nhân dân nổi dậy giành quyền làm chủ.\n\n### 2. Về các hành động quân sự cụ thể ngày 30/4/1975\nDựa trên dữ liệu hiện có, **chưa có thông tin chi tiết cụ thể về các hành động quân sự hay thời điểm giải phóng cụ thể của bộ đội địa phương tỉnh Trà Vinh trong ngày 30/4/1975.**\n\n*   Thông tin thu thập được chỉ ghi nhận hoạt động của các tỉnh khác như Mỹ Tho (lực lượng vũ trang phối hợp quần chúng chiếm công sở lúc 15 giờ ngày 30/4/1975) hay huyện đảo Phú Quốc (giải phóng thị trấn Dương Đông cùng ngày).\n*   Các dữ liệu lịch sử liên quan đến Trà Vinh trong tệp tin được cung cấp chủ yếu tập trung vào giai đoạn trước đó, tiêu biểu là sự kiện từ ngày 17 đến ngày 20 tháng 6 năm 1972, khi 800 nhà sư và hơn 13.000 lượt đồng bào tại tỉnh Trà Vinh đã biểu tình phản đối chính quyền Sài Gòn dồn quân, bắt lính.\n\n**Kết luận:** Hiện tại, các tài liệu được cung cấp không chứa đựng thông tin về diễn biến, thời gian hoặc hành động quân sự cụ thể của bộ đội địa phương tỉnh Trà Vinh trong ngày 30/4/1975.",
+    "latency": 9.425797500000044,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 1,
+      "agreement_rate": 0.2,
+      "reasoning": "Câu trả lời của AI hoàn toàn không chính xác về mặt dữ kiện lịch sử. Thay vì cung cấp thông tin về diễn biến tại Trà Vinh ngày 30/4/1975, AI lại kết luận rằng 'chưa có thông tin' và đưa ra các ví dụ không liên quan, trong khi sự kiện giải phóng thị xã Trà Vinh là một dấu mốc lịch sử đã được ghi chép rõ ràng trong các tài liệu lịch sử Đảng bộ tỉnh Trà Vinh."
+    },
+    "status": "fail"
+  },
+  {
+    "test_case": "Nhiệm vụ quốc phòng trước mắt của miền Bắc trong giai đoạn này là gì?",
+    "agent_response": "Dựa trên các tài liệu đã thu thập, nhiệm vụ quốc phòng trước mắt của miền Bắc trong giai đoạn kháng chiến chống Mỹ (đặc biệt từ đầu năm 1965) được xác định như sau:\n\n### 1. Chủ trương chung của Hội đồng Quốc phòng (Tháng 1/1965)\nTrong cuộc họp diễn ra vào tháng 1/1965 dưới sự chủ tọa của Chủ tịch Hồ Chí Minh, Hội đồng Quốc phòng đã đề ra ba nhiệm vụ trọng tâm:\n*   **Tăng cường công tác phòng thủ, trị an:** Nâng cao tinh thần sẵn sàng chiến đấu cao độ trong toàn Đảng, toàn quân và toàn dân.\n*   **Xây dựng lực lượng vũ trang:** Ra sức xây dựng lực lượng vũ trang nhân dân (lực lượng vũ trang ba thứ quân) hùng mạnh.\n*   **Củng cố toàn diện miền Bắc:** Tích cực xây dựng và củng cố miền Bắc về mọi mặt để đảm bảo vai trò hậu phương lớn đối với tiền tuyến miền Nam và cách mạng Lào, Campuchia.\n\n### 2. Nghị quyết Hội nghị Trung ương Đảng lần thứ 11 (Tháng 3/1965)\nTại Hội nghị lần thứ 11 (đặc biệt) của Ban Chấp hành Trung ương Đảng khóa III (25-27/3/1965), các nhiệm vụ cụ thể được nhấn mạnh nhằm đối phó với chiến lược \"Chiến tranh cục bộ\" và chiến tranh phá hoại của Mỹ:\n*   **Đánh thắng chiến tranh phá hoại:** Kiên quyết đánh trả không quân và hải quân Mỹ, bảo vệ tính mạng, tài sản của nhân dân.\n*   **Bảo vệ các mục tiêu trọng điểm:** Bảo vệ an toàn các tuyến giao thông chiến lược, các mục tiêu chính trị và kinh tế quan trọng.\n*   **Thực hiện quốc phòng toàn dân:** Phát động chiến tranh nhân dân, xây dựng nền quốc phòng vững mạnh cả về kinh tế và quân sự.\n*   **Chi viện tiền tuyến:** Động viên tối đa sức người, sức của để tăng cường lực lượng cho cách mạng miền Nam.\n\n### 3. Phương châm và hỗ trợ kinh tế\nĐể phục vụ cho các nhiệm vụ quốc phòng nêu trên, miền Bắc thực hiện phương châm **\"vừa sản xuất vừa chiến đấu\"**. Về kinh tế, các nhiệm vụ trọng tâm bao gồm:\n*   **Tranh thủ viện trợ quốc tế:** Tận dụng tối đa sự giúp đỡ từ bên ngoài để tăng cường tiềm lực quốc phòng và kinh tế.\n*   **Đảm bảo hậu cần:** Duy trì và phát triển sản xuất trong nước, đảm bảo các nhu cầu cơ bản của nhân dân và kịp thời chi viện cho chiến trường.\n*   **Đối phó với bao vây:** Xây dựng phương hướng kinh tế phù hợp để đối phó với tình trạng Mỹ bao vây, phong tỏa các cảng (đặc biệt là cảng Hải Phòng) và đánh phá các cơ sở sản xuất, tuyến đường giao thông.\n\n**Lưu ý:** Các tài liệu cung cấp thông tin chi tiết về giai đoạn năm 1965, đây là thời điểm chuyển hướng quan trọng về chiến lược quốc phòng của miền Bắc trước sự leo thang trực tiếp của Mỹ.",
+    "latency": 21.955871999998635,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ các ý chính trong đáp án chuẩn mà còn mở rộng bối cảnh lịch sử một cách chính xác, logic và có chiều sâu. Việc phân tích dựa trên các nghị quyết cụ thể giúp làm rõ các nhiệm vụ quốc phòng trong giai đoạn chuyển hướng chiến lược (1965), mang lại giá trị kiến thức cao hơn đáp án cơ bản."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Những sự kiện pháp lý nào đã dẫn đến Lệnh động viên cục bộ năm 1965?",
+    "agent_response": "Lỗi tổng hợp. Kết quả thô:\n\n--- Bước 1: Tìm kiếm chung ---\nTool sử dụng: search_docs\nTruy vấn: Những sự kiện pháp lý nào đã dẫn đến Lệnh động viên cục bộ năm 1965?\nKết quả:\n[Nguồn 1] (Vị trí: III. Đấu tranh ngoại giao và việc ký Hiệp định Paris về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam > I. HỌC THUYẾT NIXON VÀ CHIẾN LƯỢC \"VIỆT NAM HÓA CHIẾN TRANH\" CỦA MỸ > 1. Tình thế cách mạng miền Nam và sự chuyển hướng chỉ đạo của Đảng)\nn dập, ác liệt của kẻ thù, Đảng bộ miền Nam bị tổn thất khá nặng nề. Riêng 6 tháng đầu năm 1969, trong tổng số đảng viên từ Khu V trở vào, đã có 1.823 đảng viên bị chết, 846 bị bắt, 267 đầu hàng địch.\n\nTrước tình hình khó khăn đó, Trung ương Cục và Bộ Tư lệnh Miền vẫn kiên quyết giữ vững khối chủ lực mặc dù có ý kiến cho rằng nên phân tán để bảo tồn lực lượng. Để khắc phục khó khăn, Trung ương Cục và Quân ủy Miền phát động phong trào tăng gia sản xuất, khai thác nguồn bảo đảm tại chỗ trong các lực lượng vũ trang. Nhằm từng bước khôi phục thế trận chiến tranh nhân dân ở nông thôn, nhân dân và lực lượng vũ trang kiên trì thực hiện phương châm \"ba bám”: \"Đảng bám dân, dân bám đất, bộ đội bám địch\". Bộ Tư lệnh các quân khu kiên quyết trụ lại ở các địa bàn xung yếu.\n\nTháng 7-1969, Trung ương Cục miền Nam họp Hội nghị lần thứ Chín đánh giá tình hình chiến trường và đề ra những chủ trương mới. Sau khi phân tích nguyên nhân dẫn tới những khó khăn trên, Trung ương Cục chủ trương:\n\n---\n\n[Nguồn 2] (Vị trí: LỜI NÓI ĐẦU > I. MỸ TRỰC TIẾP ĐƯA QUÂN VÀO MIỀN NAM, TIẾN HÀNH CHIẾN TRANH PHÁ HOẠI MIỀN BẮC > Chuyển hướng về công tác tổ chức trong tình hình nhiệm vụ mới)\nCùng với chuyển hướng chỉ đạo chiến lược, Đảng và Chính phủ cũng đã thực hiện chuyển hướng chỉ đạo công tác tổ chức. Cụ thể, ngày 7-7-1965, Bộ Chính trị Trung ương Đảng ra Nghị quyết về việc chuyển hướng công tác tổ chức trong tình hình và nhiệm vụ mới với nhiều biện pháp thiết thực:\n\n- Xác định rõ vị trí, nhiệm vụ mới của từng cấp, từng ngành đối với nhiệm vụ lãnh đạo, quản lý kinh tế và quốc phòng trong hoàn cảnh mới;\n- Cải tiến và kiện toàn sự lãnh đạo của các tổ chức Đảng, nhất là cấp ủy Đảng địa phương đối với các nhiệm vụ kinh tế và quốc phòng;\n- Chỉnh đốn công tác của Nhà nước, bảo đảm chỉ đạo và quản lý tốt nhiệm vụ kinh tế và các mặt công tác khác trong điều kiện mới;\n- Động viên và sử dụng tốt lực lượng thanh niên, phụ nữ, củng cố tốt Đoàn Thanh niên, Công đoàn, Hội Phụ nữ và các đoàn thể quần chúng;\n- Bảo đảm tốt về mặt tổ chức cho việc chỉ đạo sơ tán;\n- Chuyển hướng mạnh mẽ lề lối làm việc, quân sự hóa tác phong công tác;\n- Chuyển hướng tốt công tác cán bộ là một yêu cầu bức thiết của việc chuyển hướng tổ chức.\n\nTừ đầu năm 1964, Đảng và Nhà nước đã sớm có kế hoạch và biện pháp chuẩn bị. Hội nghị phòng không nhân dân toàn miền Bắc được triệu tập đầu năm 1964 đã bàn biện pháp triển khai và tăng cường hệ thống phòng không nhân dân ba thứ quân, biện pháp thực hiện kế hoạch sơ tán, phân tán nhân dân và nhà máy, công xưởng sản xuất khỏi những vùng trọng điểm địch đánh phá.\n\n---\n\n[Nguồn 3] (Vị trí: LỜI NÓI ĐẦU > I. MỸ TRỰC TIẾP ĐƯA QUÂN VÀO MIỀN NAM, TIẾN HÀNH CHIẾN TRANH PHÁ HOẠI MIỀN BẮC > Phát triển giao thông vận tải)\nháng 8-1965, Bộ Giao thông Vận tải đã mở Hội nghị đại biểu các tỉnh thành toàn miền Bắc để xác định nhiệm vụ của toàn ngành và nêu cao khẩu hiệu:\nĐịch phá, ta sửa ta đi\nĐịch lại phá, ta lại sửa ta đi.\n\nVới tầm quan trọng của công tác giao thông vận tải, để phù hợp với các hoạt động thời chiến, Chính phủ đã ra Quyết định số 201/CP ngày 4-10-1965 nhằm tách Cục Vận tải đường thủy thành hai cục là Cục Đường biển và Cục Đường sông; tách Cục Vận tải thành hai cục: Cục Quản lý đường bộ và Cục Vận tải đường bộ. Ngày 21-6-1965, quyết định thành lập lực lượng thanh niên xung phong chống Mỹ cứu nước, điều động, tăng cường cán bộ cho công tác giao thông vận tải; huy động một hệ thống lớn dân công hỏa tuyến phục vụ công tác đảm bảo giao thông; tăng cường lực lượng vận tải công binh, làm đường, rà phá bom, mìn. Trung ương và Hội đồng Chính phủ đã thành lập Ban Điều hành vận tải Trung ương do một Ủy viên Bộ Chính trị và là Phó Thủ tướng làm Trưởng ban. Trong Chỉ thị số 110/CP ngày 10-6-1965, Hội đồng Chính phủ nêu rõ: Công tác giao thông vận tải thời chiến là công tác trọng tâm đột xuất của toàn Đảng, toàn quân, toàn dân, trong đó lực lượng giao thông vận tải là nòng cốt.\n\nNhiệm vụ chính trị và chiến lược cao nhất của nó là hướng lên phía trước, bảo đảm hoàn thành kế hoạch chi viện cho tiền tuyến lớn trong bất kỳ tình huống nào.\n\n---\n\n[Nguồn 4] (Vị trí: LỜI NÓI ĐẦU > I. MỸ TRỰC TIẾP ĐƯA QUÂN VÀO MIỀN NAM, TIẾN HÀNH CHIẾN TRANH PHÁ HOẠI MIỀN BẮC > Chuyển hướng về nhiệm vụ quốc phòng)\nh thần đoàn kết quốc tế trong sáng, giáo dục cho mọi người thấu suốt nhận thức sâu sắc vai trò, nhiệm vụ của hậu phương miền Bắc đối với tiền tuyến miền Nam, với cách mạng hai nước Lào và Campuchia...\n\nCụ thể, để tăng cường lực lượng theo phương châm xây dựng quốc phòng toàn dân, ngày 20-4-1965, Quốc hội khóa II (kỳ họp thứ II) đã thông qua Luật sửa đổi và bổ sung Luật Nghĩa vụ quân sự, kéo dài thời hạn phục vụ tại ngũ của quân nhân. Ngày 21-4-1965, Ủy ban Thường vụ Quốc hội quyết định Lệnh động viên cục bộ và ngày 5-5-1965, Chủ tịch Hồ Chí Minh đã ký công bố lệnh này. Theo đó, một bộ phận sĩ quan, hạ sĩ quan, binh sĩ dự bị và một bộ phận công dân thuộc ngành dự bị quân đội nhưng chưa phục vụ tại ngũ sẽ được động viên vào lực lượng vũ trang.\n\nSau ngày ban hành Lệnh động viên cục bộ và kể từ ngày đó trở đi, miền Bắc dấy lên phong trào \"Cử người đi đánh Mỹ\", \"Thanh niên ba sẵn sàng\", \"Phụ nữ ba đảm đang\", \"Thóc không thiếu một cân, quân không thiếu một người\"... Chỉ sau một thời gian ngắn, hàng chục nghìn thanh niên nam, nữ được gọi vào quân đội, vào lực lượng thanh niên xung phong, dân công hỏa tuyến, chiến đấu và công tác khắp các nẻo đường của đất nước có chiến tranh. So với đầu năm 1965, đến cuối 1965, khối chủ lực miền Bắc tăng từ 195.000 quân lên 400.000 quân, các binh chủng tăng gấp ba lần. Riêng quân chủng Phòng không - Không quân tăng vượt bậc.\n\n---\n\n[Nguồn 5] (Vị trí: LỜI NÓI ĐẦU > I. NỘI DUNG CHIẾN LƯỢC \"CHIẾN TRANH CỤ BỘ\" CỦA MỸ > Những hạn chế trong quản lý kinh tế (Hội nghị Trung ương 19))\nđộ trách nhiệm không rõ ràng. Tuyên truyền \"một người làm việc bằng hai\", nhưng thực tế tình trạng \"hai người làm việc bằng một\" diễn ra ở nhiều nơi, trên nhiều lĩnh vực hoạt động của đời sống xã hội.\n\nPháp chế xã hội chủ nghĩa không được tăng cường, không vào được cuộc sống, nhất là vào kinh tế. Những hành động phạm pháp đã không được đấu tranh và nghiêm trị kịp thời. Ở tất cả các khu vực kinh tế, pháp chế không có hiệu lực. Quyền làm chủ của nhân dân, đặc biệt trong hợp tác xã nông nghiệp, rất bị hạn chế, thậm chí gần như không có. Trình độ chung của xã hội chưa tiến kịp với yêu cầu mới của phát triển, nhất là yêu cầu về quản lý kinh tế. Các cơ sở Đảng yếu kém, một bộ phận khá lớn đảng viên là phần tử đầu cơ, thoái hóa, do đó, vai trò lãnh đạo của Đảng đã không được quần chúng phát huy, lòng tin của quần chúng phần nào bị suy giảm.",
+    "latency": 7.16542059999847,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "AI đã thực hiện truy vấn và trích xuất thông tin chính xác từ [Nguồn 4]. Câu trả lời của AI phản ánh đầy đủ và chính xác các mốc sự kiện pháp lý dẫn đến Lệnh động viên cục bộ năm 1965 theo đúng đáp án chuẩn (Luật sửa đổi ngày 20/4, quyết định của UBTVQH ngày 21/4 và Lệnh của Chủ tịch nước ngày 5/5)."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Các phong trào thi đua tiêu biểu nào đã xuất hiện sau khi Lệnh động viên cục bộ được ban hành?",
+    "agent_response": "Sau khi Lệnh động viên cục bộ được Chủ tịch Hồ Chí Minh ký sắc lệnh vào ngày 5/5/1965 (dựa trên quyết định ngày 21/4/1965 của Ủy ban Thường vụ Quốc hội), miền Bắc đã dấy lên các phong trào thi đua sôi nổi nhằm phục vụ sự nghiệp kháng chiến chống Mỹ, cứu nước. Dưới đây là các phong trào tiêu biểu:\n\n### 1. Các phong trào thi đua theo đối tượng và lĩnh vực\nCác phong trào này được phát động nhằm huy động nguồn lực con người trong mọi tầng lớp xã hội:\n*   **Thanh niên:** Phong trào \"Ba sẵn sàng\".\n*   **Phụ nữ:** Phong trào \"Ba đảm đang\".\n*   **Giáo viên và học sinh:** Phong trào thi đua \"Hai tốt\".\n*   **Thiếu niên - Nhi đồng:** Phong trào \"Làm nghìn việc tốt\".\n*   **Trí thức:** Thi đua thực hiện \"Ba quyết tâm\" (phục vụ sản xuất và chiến đấu; đẩy mạnh cách mạng kỹ thuật, tư tưởng và văn hóa; xây dựng đội ngũ trí thức xã hội chủ nghĩa).\n*   **Cán bộ, nhân viên:** Thi đua thực hiện \"Ba cải tiến\" (cải tiến công tác, tổ chức và lề lối làm việc).\n\n### 2. Các phong trào trong sản xuất và chiến đấu\nNhằm mục tiêu đảm bảo tiềm lực kinh tế và quốc phòng, các phong trào sản xuất phát triển mạnh mẽ:\n*   **Sản xuất nông nghiệp:** Phấn đấu đạt \"Ba mục tiêu\" (5 tấn thóc/hecta hai vụ; bình quân 2 con lợn/hecta gieo trồng; mỗi lao động đảm nhận 1 hecta gieo trồng).\n*   **Sản xuất và chiến đấu:** Phong trào \"Hai giỏi\" (chiến đấu giỏi, sản xuất giỏi) xuất hiện ở nhiều địa phương.\n\n### 3. Các cuộc vận động chính trị và xây dựng lực lượng\nSong song với các phong trào thi đua sản xuất, Nhà nước và Đảng cũng đẩy mạnh các cuộc vận động lớn để kiện toàn tổ chức và con người:\n*   **Giáo dục và noi gương:** Đẩy mạnh cuộc vận động \"Người tốt, việc tốt\" nhằm xây dựng con người mới.\n*   **Xây dựng Đảng:** Cuộc vận động nâng cao chất lượng và kết nạp đảng viên \"Lớp Hồ Chí Minh\" (giai đoạn 1970-1971 đã kết nạp hơn 10.000 đảng viên).\n*   **Quản lý nông thôn:** Nghị quyết ngày 17/8/1970 về cuộc vận động \"Phát huy dân chủ, tăng cường chế độ làm chủ tập thể của xã viên ở nông thôn\".\n*   **Khen thưởng:** Nhà nước thường xuyên tổ chức tuyên dương danh hiệu Anh hùng Lực lượng vũ trang nhân dân và Đơn vị anh hùng để khích lệ tinh thần quân và dân (ví dụ: các đợt tuyên dương năm 1965, 1966, 1969).\n\n**Lưu ý:** Các phong trào này không chỉ diễn ra ngay sau khi Lệnh động viên cục bộ được ban hành năm 1965 mà còn tiếp tục phát triển, đổi mới (như việc đổi tên các tổ chức Đoàn, Đội theo tên Chủ tịch Hồ Chí Minh sau năm 1970) để phù hợp với tình hình thực tế khi miền Bắc chuyển từ trạng thái thời chiến sang trạng thái bình thường sau khi cuộc chiến tranh phá hoại lần thứ nhất kết thúc.",
+    "latency": 30.145354000000225,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "AI không chỉ trả lời đầy đủ, chính xác các phong trào tiêu biểu trong đáp án chuẩn mà còn mở rộng kiến thức một cách hệ thống, chi tiết và có độ chính xác lịch sử cao. Việc cung cấp bối cảnh thời gian và phân loại các phong trào giúp người đọc hiểu rõ hơn về không khí thi đua sôi nổi giai đoạn đó mà không làm sai lệch nội dung trọng tâm."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Sự phát triển của khối chủ lực miền Bắc thay đổi như thế nào từ đầu năm đến cuối năm 1965?",
+    "agent_response": "Dựa trên các nguồn tài liệu đã thu thập, sự phát triển của khối chủ lực miền Bắc từ đầu năm đến cuối năm 1965 có những thay đổi mang tính đột phá nhằm đáp ứng yêu cầu của tình hình chiến tranh, cụ thể như sau:\n\n### 1. Sự gia tăng về quân số\nKhối chủ lực miền Bắc đã có sự phát triển vượt bậc về số lượng quân nhân:\n*   Đầu năm 1965: Lực lượng chủ lực là 195.000 quân.\n*   Cuối năm 1965: Con số này tăng lên 400.000 quân (gấp hơn 2 lần so với đầu năm).\n\n### 2. Sự phát triển của các binh chủng\nCùng với sự gia tăng quân số, cơ cấu các binh chủng cũng được chú trọng đầu tư và mở rộng:\n*   Các binh chủng kỹ thuật tăng gấp 3 lần so với năm 1964 và tăng gấp 2 lần so với đầu năm 1965.\n*   Riêng Quân chủng Phòng không - Không quân ghi nhận mức tăng trưởng vượt bậc, phản ánh yêu cầu cấp thiết của nhiệm vụ quốc phòng trước tình hình Mỹ tiến hành chiến tranh phá hoại miền Bắc.\n\n### 3. Sự chuyển biến của lực lượng vũ trang địa phương và toàn dân\nSự phát triển của bộ đội chủ lực diễn ra đồng bộ cùng với việc tăng nhanh số lượng của các lực lượng khác:\n*   **Dân quân tự vệ:** Tỷ lệ dân quân tự vệ trên tổng dân số miền Bắc tăng từ 8% (năm 1964) lên 10% (năm 1965).\n*   **Phong trào tình nguyện:** Sự ủng hộ của nhân dân đóng vai trò quan trọng trong việc bổ sung nguồn lực cho quân đội:\n    *   Hơn 2.500.000 thanh niên ghi tên tình nguyện phong trào \"Ba sẵn sàng\".\n    *   Đến cuối tháng 5/1965, có 1.700.000 phụ nữ đăng ký phong trào \"Phụ nữ ba đảm đang\".\n\n**Tóm lại:** Trong năm 1965, dưới áp lực từ chiến lược chiến tranh của Mỹ, miền Bắc đã thực hiện chuyển hướng mạnh mẽ về nhiệm vụ quốc phòng, dẫn đến sự tăng trưởng nhanh chóng về số lượng quân chủ lực, binh chủng kỹ thuật và huy động được sức mạnh tổng lực của các tầng lớp nhân dân.",
+    "latency": 8.699580000000424,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 0.95,
+      "reasoning": "Câu trả lời của AI đã trình bày đầy đủ và chính xác các dữ liệu định lượng cốt lõi theo đáp án chuẩn (tăng quân số từ 195.000 lên 400.000, sự phát triển của các binh chủng). Ngoài ra, AI còn mở rộng thêm các thông tin bổ trợ về bối cảnh lịch sử và phong trào nhân dân, giúp tăng tính thuyết phục và giá trị thông tin cho câu trả lời."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Công tác giáo dục chính trị tại miền Bắc giai đoạn này hướng tới những nội dung trọng tâm nào?",
+    "agent_response": "Dựa trên các tài liệu đã thu thập, công tác giáo dục tại miền Bắc trong giai đoạn 1954-1975, đặc biệt là giai đoạn chuyển hướng từ năm 1965, tập trung vào những nội dung và mục tiêu trọng tâm sau:\n\n### 1. Chủ trương chuyển hướng giáo dục (Gắn giáo dục với nhiệm vụ chính trị)\nĐể đáp ứng tình hình cả nước có chiến tranh, ngày 5-8-1965, Thủ tướng Chính phủ đã ban hành Chỉ thị số 88/TTg về việc chuyển hướng công tác giáo dục:\n*   **Mục tiêu:** Đặt công tác giáo dục phục vụ trực tiếp cho nhiệm vụ chính trị thiêng liêng là \"chống Mỹ, cứu nước\".\n*   **Quyết tâm:** Đảng và Nhà nước chủ trương tiếp tục phát triển giáo dục \"theo một quy mô lớn\" bất chấp sự đánh phá ác liệt của kẻ thù, nhằm quyết tâm thắng Mỹ trên \"mặt trận văn hóa - giáo dục\".\n*   **Phương châm:** Ngành giáo dục đã có những biện pháp kịp thời, sáng tạo để chuyển hướng công tác, đảm bảo sự nghiệp giáo dục vẫn tiến lên trong mọi tình huống.\n\n### 2. Nội dung tư tưởng và tinh thần giáo dục\nHoạt động giáo dục tại vùng giải phóng và miền Bắc thời kỳ này không chỉ dừng lại ở truyền thụ tri thức mà còn chú trọng bồi dưỡng tư tưởng, đạo đức cách mạng:\n*   **Bồi dưỡng tinh thần:** Giáo dục lòng yêu nước, yêu Tổ quốc, yêu đồng bào, yêu lao động.\n*   **Hình thành thái độ:** Xây dựng tinh thần căm thù đế quốc và tay sai; giáo dục tinh thần anh dũng trong chiến đấu, học tập, công tác; đề cao tinh thần đoàn kết và tập thể.\n*   **Chống văn hóa ngoại lai:** Hoạt động giáo dục và văn hóa còn nhằm tích cực chống lại các âm mưu tâm lý chiến và văn hóa ngoại lai từ phía Mỹ.\n\n### 3. Đối tượng và hình thức giáo dục\nĐể đảm bảo yêu cầu đào tạo đội ngũ cán bộ đông đảo và nâng cao dân trí, công tác giáo dục được triển khai toàn diện:\n*   **Đối tượng:** Bao gồm cán bộ, chiến sĩ, thanh niên, công nông và trẻ em.\n*   **Hình thức:**\n    *   Phát triển song song hệ thống giáo dục phổ thông và bình dân học vụ (xóa mù chữ, bổ túc văn hóa cho nhân dân và cán bộ, chiến sĩ).\n    *   Tổ chức các lớp học ngay tại địa phương, cơ quan, đơn vị nơi có dân cư.\n    *   Sử dụng tài liệu giáo dục từ miền Bắc, sau đó biên soạn lại để phù hợp với thực tế chiến trường.\n\n### 4. Về sự thống nhất trong giáo dục cách mạng\nCác tài liệu ghi nhận sự phối hợp chặt chẽ giữa các cấp (từ Trung ương đến các khu, tỉnh, huyện và xã) trong việc:\n*   Thống nhất mục tiêu giáo dục, chương trình và sách giáo khoa.\n*   Tổ chức đào tạo cán bộ và bồi dưỡng giáo viên.\n*   Đặc biệt, Đại hội Giáo dục toàn miền Nam (tháng 4-1964) là mốc quan trọng để quán triệt đường lối giáo dục của Đảng, tạo cơ sở cho sự thống nhất trong công tác xây dựng chương trình và phương pháp giảng dạy.\n\n***Lưu ý:** Các tài liệu thu thập được tập trung chủ yếu vào công tác giáo dục cách mạng (vùng giải phóng và miền Bắc) và sự đối lập với chính sách giáo dục kiểu Mỹ tại miền Nam. Thông tin về các nội dung giáo dục chính trị chi tiết khác (nếu có ngoài phạm vi giáo dục phổ thông và bình dân học vụ) không được đề cập cụ thể trong các nguồn trên.*",
+    "latency": 13.536134999998467,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 3,
+      "agreement_rate": 0.6,
+      "reasoning": "Câu trả lời của AI cung cấp thông tin rộng nhưng bị chệch hướng sang 'giáo dục phổ thông/học đường' thay vì tập trung vào 'giáo dục chính trị' (tư tưởng) như câu hỏi yêu cầu. AI bỏ lỡ nội dung cốt lõi về tinh thần đoàn kết quốc tế và nhiệm vụ hậu phương đối với tiền tuyến cũng như Lào, Campuchia – những điểm mấu chốt trong đáp án chuẩn."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Sự kiện nào đánh dấu việc Quân Giải phóng làm chủ hoàn toàn chi khu Lộc Ninh vào tháng 4 năm 1972?",
+    "agent_response": "Dựa trên các tài liệu lịch sử đã thu thập, sự kiện Quân Giải phóng làm chủ hoàn toàn chi khu Lộc Ninh vào tháng 4 năm 1972 được tóm tắt như sau:\n\n*   **Thời điểm tấn công:** Ngày 5-4-1972, Sư đoàn 5 (được tăng cường thêm bộ binh, pháo binh và xe tăng) đã nổ súng tấn công vào chi khu Lộc Ninh.\n*   **Diễn biến chính:** \n    *   Trước sự tấn công bất ngờ của Quân Giải phóng, Quân đoàn 3 quân đội Sài Gòn đã điều động hai tiểu đoàn và một thiết đoàn đến cứu viện, nhưng các đơn vị này đã bị quân ta phục kích và tiêu diệt tại khu vực Bắc Lộc Ninh.\n    *   Sau quá trình chiến đấu quyết liệt, đến **sáng ngày 7-4-1972**, Quân Giải phóng đã làm chủ hoàn toàn chi khu Lộc Ninh.\n*   **Kết quả và ý nghĩa:**\n    *   Chiến thắng này nằm trong chuỗi tiến công dồn dập vào tuyến phòng thủ biên giới trên Đường 13 và Đường 22.\n    *   Quân Giải phóng đã diệt và đánh thiệt hại nặng ba chiến đoàn bộ binh và hai trung đoàn thiết giáp của địch; giải phóng ba huyện là Lộc Ninh, Bù Đốp và Thiện Ngôn.\n    *   Sự kiện này giúp quân ta chiếm được bàn đạp quan trọng tại biên giới miền Đông Nam Bộ, bắt sống Đại tá Nguyễn Công Vĩnh (Chỉ huy trưởng Chiến đoàn 9, Sư đoàn 5 quân đội Sài Gòn) và tạo thế uy hiếp thị xã An Lộc (tỉnh Bình Long).",
+    "latency": 7.8802544999998645,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI đã cung cấp thông tin chính xác về thời điểm Quân Giải phóng làm chủ hoàn toàn chi khu Lộc Ninh (sáng ngày 7-4-1972) khớp hoàn toàn với đáp án chuẩn. Ngoài ra, AI còn bổ sung thêm các thông tin bối cảnh lịch sử chi tiết và chính xác, giúp làm rõ hơn sự kiện mà không làm sai lệch ý nghĩa lịch sử."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Những kết quả chính mà Quân Giải phóng đạt được sau một tuần tiến công trên Đường 13 và Đường 22 là gì?",
+    "agent_response": "Dựa trên thông tin đã tổng hợp, dưới đây là những kết quả chính mà Quân Giải phóng đạt được sau một tuần tiến công dồn dập vào tuyến phòng thủ biên giới trên Đường 13 và Đường 22 (trong khuôn khổ cuộc tiến công chiến lược năm 1972):\n\n### 1. Kết quả về tiêu diệt và làm hao tổn lực lượng địch\nTrong tuần lễ đầu tiên, Quân Giải phóng đã giáng những đòn mạnh mẽ vào lực lượng của quân đội Sài Gòn:\n*   **Tiêu diệt và gây thiệt hại nặng:** Đánh bại 3 chiến đoàn bộ binh và 2 trung đoàn thiết giáp.\n*   **Bắt giữ:** Bắt sống Đại tá Nguyễn Công Vĩnh, Chỉ huy trưởng Chiến đoàn 9 thuộc Sư đoàn 5 quân đội Sài Gòn.\n*   **Trạng thái địch:** Việc bị tấn công bất ngờ và hoảng loạn khiến lực lượng Quân đoàn 3 của địch bị tê liệt, các nỗ lực điều quân cứu viện (điều hai tiểu đoàn và một thiết đoàn về cứu nguy cho chi khu Lộc Ninh) đều bị phục kích và tiêu diệt.\n\n### 2. Kết quả về giải phóng lãnh thổ và bàn đạp chiến lược\n*   **Giải phóng địa bàn:** Quân Giải phóng đã làm chủ và giải phóng 3 huyện là Lộc Ninh, Bù Đốp và Thiện Ngôn.\n*   **Chiếm lĩnh bàn đạp:** Thiết lập được bàn đạp quan trọng tại khu vực biên giới miền Đông Nam Bộ.\n*   **Uy hiếp quân địch:** Tạo thế uy hiếp mạnh mẽ thị xã An Lộc (thuộc tỉnh Bình Long), gây tâm lý hoảng loạn cho quân địch trong thị xã.\n\n### 3. Ý nghĩa chung\nSau một tuần tiến công dồn dập, Quân Giải phóng đã làm lung lay tuyến phòng thủ biên giới của địch. Dù tại thời điểm ngày 7-4-1972, quân ta chưa thực hiện được ý đồ giải phóng hoàn toàn An Lộc do công tác chuẩn bị chưa kịp thời, nhưng các thắng lợi trên Đường 13 và Đường 22 đã phá vỡ thế phòng ngự vững chắc ban đầu của địch, tạo tiền đề cho các bước phát triển tiếp theo của chiến dịch.\n\n***Lưu ý:** Các số liệu trên tập trung vào đợt tiến công trong cuộc tiến công chiến lược năm 1972. Các hoạt động quân sự trên Đường 13 và Đường 22 vào năm 1971 (như trận ngày 13-5-1971 hay trận Snun) là các sự kiện độc lập nằm trong chiến dịch \"Toàn thắng 1-71\" và không nằm trong phạm vi \"một tuần tiến công\" nêu trên.*",
+    "latency": 29.521052500000224,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI đã bao quát đầy đủ, chính xác mọi ý chính có trong đáp án chuẩn (số lượng đơn vị bị tiêu diệt, tên các huyện giải phóng, tên sĩ quan bị bắt, bàn đạp chiến lược và mục tiêu uy hiếp). Ngoài ra, AI còn cung cấp thêm bối cảnh lịch sử và phân tích bổ sung, giúp câu trả lời trở nên toàn diện và có giá trị tham khảo cao."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Chiến dịch tiến công tại Khu V từ ngày 8-4 đến 1-5-1972 đã đạt được những thắng lợi nào?",
+    "agent_response": "Dựa trên các tài liệu đã thu thập, chiến dịch tiến công tổng hợp tại Khu V (trọng điểm là tỉnh Bình Định) từ ngày 8-4 đến 1-5-1972 đã đạt được những kết quả cụ thể như sau:\n\n### 1. Diễn biến và kết quả quân sự chính\n*   **Thời gian:** Chiến dịch diễn ra trong 24 ngày đêm liên tục và quyết liệt.\n*   **Mục tiêu tấn công:** Tập trung vào các chi khu, quận lỵ của địch tại khu vực Bắc Bình Định, bao gồm các huyện Tam Quan, Hoài Nhơn, Hoài Ân và Phú Mỹ.\n*   **Thành tích chiến đấu:**\n    *   Tiêu diệt được các mục tiêu quan trọng như: cứ điểm Gò Lôi, Liên đoàn Bảo an 48, và Chiến đoàn 40 đặc nhiệm.\n    *   Giải phóng hoàn toàn quận lỵ Hoài Ân (ngày 18-4) và quận lỵ Hoài Nhơn.\n    *   Sau 20 ngày đầu của chiến dịch, quân và dân Bình Định đã tiêu diệt hơn 10.000 tên địch, bao gồm cả hai trung đoàn chủ lực của quân đội Sài Gòn.\n    *   Bức hàng, bức rút hàng loạt cứ điểm nhỏ lẻ tại các vùng nông thôn.\n\n### 2. Kết quả về giải phóng dân cư\n*   Hơn 30.000 dân tại vùng Bắc Bình Định đã giành được quyền làm chủ.\n*   Giải phóng phần lớn diện tích huyện Phú Mỹ và các vùng nông thôn trong khu vực.\n\n### 3. Ý nghĩa và ảnh hưởng\n*   **Cổ vũ phong trào:** Thắng lợi tại Bình Định đã tạo đà và cổ vũ mạnh mẽ cho nhân dân các tỉnh đồng bằng Khu V đẩy mạnh phong trào tấn công và nổi dậy.\n*   **Lan tỏa địa bàn:** Kết quả này đã hỗ trợ cho các đợt nổi dậy tại các địa phương lân cận, điển hình là việc lực lượng vũ trang giải phóng tấn công và giải phóng quận lỵ Hiệp Đức (tỉnh Quảng Nam), đồng thời giành quyền làm chủ ở 20 xã phía đông huyện Bình Sơn, Sơn Tịnh và vùng phía nam sông Vệ (tỉnh Quảng Ngãi).\n\n**Lưu ý:** Các thông tin trên tập trung vào diễn biến tại chiến trường tỉnh Bình Định thuộc Khu V. Các hoạt động quân sự tại các chiến trường khác (Tây Nguyên, Đông Nam Bộ, Đồng bằng sông Cửu Long) là các mặt trận riêng biệt nằm trong cuộc tiến công chiến lược năm 1972, không thuộc phạm vi câu hỏi về chiến dịch tại Khu V trong khoảng thời gian từ 8-4 đến 1-5-1972.",
+    "latency": 14.533143599997857,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 0.95,
+      "reasoning": "Câu trả lời của AI bao hàm đầy đủ và chính xác các chi tiết cốt lõi trong đáp án chuẩn (diệt Gò Lôi, Liên đoàn Bảo an 48, Chiến đoàn 40, giải phóng Hoài Ân, giúp 3 vạn dân làm chủ). Ngoài ra, AI còn cung cấp thêm bối cảnh mở rộng về diễn biến chiến dịch, giúp người đọc có cái nhìn bao quát và sâu sắc hơn về chiến thắng này mà không làm sai lệch nội dung trọng tâm."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Cuộc tấn công tại Đồng bằng sông Cửu Long vào đêm 6 rạng ngày 7-4-1972 đã gây thiệt hại như thế nào cho quân đội Sài Gòn?",
+    "agent_response": "Dựa trên các tài liệu lịch sử, cuộc tấn công vào đêm 6 rạng sáng ngày 7 tháng 4 năm 1972 tại Đồng bằng sông Cửu Long do lực lượng vũ trang Quân khu IX thực hiện đã gây ra những thiệt hại đáng kể cho quân đội Sài Gòn. Cụ thể như sau:\n\n### 1. Các mục tiêu bị tấn công và thiệt hại\nTrong đợt tấn công này, lực lượng vũ trang Quân khu IX đã đánh vào nhiều vị trí trọng yếu của địch:\n*   **Chi khu quận lỵ Ngang Dừa:** Bị tấn công, gây thiệt hại nặng cho **Trung đoàn 9** quân đội Sài Gòn.\n*   **Các căn cứ:** Diệt căn cứ Ba Thầy và Nỗng Cạn (xã Khánh Lâm), đồng thời đánh vào sở chỉ huy Trung đoàn 33 (đóng tại U Minh).\n*   **Yếu khu Thầy Phó (Vĩnh Long):** Bị lực lượng của ta tiêu diệt gọn.\n\n### 2. Ý nghĩa và bối cảnh\n*   Cuộc tấn công diễn ra trong khuôn khổ cuộc tiến công chiến lược năm 1972, nhằm mục đích phá vỡ các tuyến phòng ngự của địch tại miền Nam.\n*   Mặc dù cùng thời điểm này, tại mặt trận An Lộc (Bình Long), quân đội Sài Gòn đang rơi vào tình trạng hoảng loạn, nhưng do công tác chuẩn bị chưa kịp thời nên ta đã không thực hiện được ý đồ giải phóng thị xã An Lộc ngay trong ngày 7-4-1972.\n*   Sự kiện này là một phần trong chiến dịch tiến công tổng hợp nhằm làm suy yếu hệ thống phòng thủ của quân đội Sài Gòn tại Đồng bằng sông Cửu Long, tạo điều kiện cho các hoạt động quân sự và nổi dậy của nhân dân sau đó.\n\n**Lưu ý:** Các tài liệu cung cấp thông tin chi tiết về thiệt hại của từng đơn vị cụ thể như Trung đoàn 9, Trung đoàn 33, và các căn cứ nêu trên vào ngày 7-4-1972. Tuy nhiên, tài liệu không ghi nhận con số thương vong cụ thể (số người chết hoặc bị bắt) riêng biệt cho trận đánh đêm 6 rạng ngày 7-4-1972 này, mà chỉ đề cập đến các con số thiệt hại tổng quát hơn của quân đội Sài Gòn sau các đợt chiến dịch lớn trong năm 1972.",
+    "latency": 33.18910609999875,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 4.5,
+      "agreement_rate": 0.95,
+      "reasoning": "Câu trả lời của AI bám sát và liệt kê đầy đủ các thiệt hại theo đáp án chuẩn. Việc AI bổ sung thêm bối cảnh chiến lược là một điểm cộng về kiến thức, tuy nhiên thông tin về 'Chi khu quận lỵ Ngang Dừa' là chi tiết ngoại lai không có trong đáp án chuẩn (dù đúng về mặt lịch sử thực tế nhưng không cần thiết cho câu hỏi này). Đánh giá chung là chính xác, đầy đủ và có độ tin cậy cao."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Vì sao các đòn tấn công của ta trong cuộc tiến công chiến lược năm 1972 khiến đế quốc Mỹ lo ngại về chiến lược 'Việt Nam hóa chiến tranh'?",
+    "agent_response": "Cuộc tiến công chiến lược năm 1972 của quân và dân Việt Nam đã giáng những đòn mạnh mẽ, trực tiếp đẩy chiến lược \"Việt Nam hóa chiến tranh\" của đế quốc Mỹ đến bờ vực phá sản. Dưới đây là các lý do chính khiến chiến lược này bị lung lay và thất bại:\n\n### 1. Sự thất bại về quân sự trên các chiến trường trọng điểm\n*   **Quy mô tấn công:** Ngày 30/3/1972, quân ta đồng loạt tấn công vào các tuyến phòng thủ chiến lược tại Đường 9 - Quảng Trị, Bắc Tây Nguyên (Kon Tum), miền Đông Nam Bộ, Khu V và Đồng bằng sông Cửu Long.\n*   **Kết quả chiến trường:** Việc giải phóng cơ bản tỉnh Quảng Trị và những thắng lợi trên các hướng trọng điểm đã chứng minh quân đội Sài Gòn không thể tự đứng vững dù có sự hỗ trợ của vũ khí và tiền bạc từ Mỹ. Sự yếu kém của quân đội Sài Gòn đã buộc Mỹ phải quay lại \"phiêu lưu\" bằng cách \"Mỹ hóa\" một phần cuộc chiến, đi ngược lại mục tiêu ban đầu của chiến lược \"Việt Nam hóa\".\n\n### 2. Sự khủng hoảng toàn diện của chính quyền Sài Gòn\n*   **Tinh thần binh sĩ sụp đổ:** Trong năm 1972, có tới 54.000 binh sĩ quân đội Sài Gòn bỏ ngũ và 3.750 vụ phản chiến. Điều này cho thấy sự rệu rã từ bên trong bộ máy quân sự mà Mỹ dày công xây dựng.\n*   **Làn sóng đấu tranh của nhân dân miền Nam:** Sự phản kháng diễn ra mạnh mẽ tại các đô thị (đặc biệt là Sài Gòn). Các phong trào sinh viên bãi khóa, công nhân bãi công (như công nhân bến tàu Sài Gòn), và các cuộc biểu tình đòi quyền sống, đòi Nguyễn Văn Thiệu từ chức đã tạo ra áp lực chính trị to lớn, làm tê liệt khả năng kiểm soát của chính quyền tay sai.\n\n### 3. Tác động trực tiếp đến bàn đàm phán Paris\n*   **Buộc Mỹ phải xuống thang:** Những thất bại trên chiến trường đã làm thay đổi tương quan lực lượng, buộc phái đoàn Mỹ tại Paris phải chấp thuận dự thảo Hiệp định ngày 20/10/1972 về việc chấm dứt chiến tranh và lập lại hòa bình.\n*   **Phá sản âm mưu lật ngược thế trận:** Dù Mỹ cố gắng dùng các thủ đoạn quân sự (như ném bom phá hoại lần thứ hai) để gây sức ép, nhưng sự kiên cường của miền Bắc và những thắng lợi của quân giải phóng ở miền Nam đã khiến Mỹ không còn con đường nào khác ngoài việc ký kết Hiệp định Paris vào tháng 1/1973, rút hết quân Mỹ ra khỏi miền Nam.\n\n### 4. Bối cảnh hậu phương miền Bắc vững chắc\n*   Mặc dù Mỹ tiến hành chiến tranh phá hoại lần thứ hai bằng không quân và hải quân, phong tỏa cảng Hải Phòng, nhưng miền Bắc vẫn giữ vững giao thông vận tải, sản xuất và ổn định đời sống.\n*   Việc miền Bắc duy trì được sự chi viện cao nhất cho tiền tuyến đã làm phá sản hoàn toàn âm mưu chặn đứng đường tiếp tế của Mỹ (theo thừa nhận của Đô đốc Hải quân Mỹ McCain). Điều này đảm bảo cho quân giải phóng duy trì được thế tấn công liên tục trên chiến trường.\n\n**Tổng kết:** Các đòn tấn công năm 1972 đã làm suy sụp thế và lực của Mỹ cùng chính quyền Sài Gòn, chứng minh rằng chiến lược \"Việt Nam hóa chiến tranh\" (dùng người Việt đánh người Việt bằng vũ khí Mỹ) là không khả thi. Thắng lợi này đã tạo ra bước ngoặt chiến lược, góp phần quyết định buộc Mỹ phải rút quân và tạo đà cho cuộc kháng chiến đi đến thắng lợi cuối cùng.",
+    "latency": 31.555347800000163,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ các ý chính trong đáp án chuẩn (sự lúng túng của quân đội Sài Gòn và việc Mỹ phải quay lại can thiệp trực tiếp) mà còn mở rộng phân tích một cách chính xác, sâu sắc về bối cảnh quân sự, chính trị và hậu cần. Nội dung trình bày logic, khoa học và làm sáng tỏ được bản chất của vấn đề."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Trong giai đoạn 1965-1968, mức độ tàn phá của Mỹ đối với hệ thống giao thông miền Bắc khốc liệt như thế nào?",
+    "agent_response": "Trong giai đoạn 1965-1968, hệ thống giao thông vận tải miền Bắc Việt Nam trở thành trọng điểm đánh phá ác liệt nhất của không quân và hải quân Mỹ. Dưới đây là tổng hợp các số liệu và mức độ tàn phá cụ thể:\n\n### 1. Quy mô đánh phá của không quân Mỹ\n*   **Tỷ trọng đánh phá:** Khoảng 60-70% các đợt ném bom, bắn phá của Mỹ tại miền Bắc tập trung vào hệ thống giao thông vận tải. Trong đó, khu vực Khu 4 cũ là mục tiêu trọng điểm với 60-80% số trận đánh phá tập trung tại đây.\n*   **Cường độ bom đạn:**\n    *   Mỗi năm, Mỹ ném khoảng 66 vạn tấn bom xuống miền Bắc, trong đó có tới **40-45 vạn tấn** dành riêng cho các công trình và phương tiện giao thông.\n    *   Số trận đánh phá vào hệ thống giao thông tăng mạnh qua các năm: năm 1965 (5.500 trận), năm 1966 (13.000 trận), và năm 1967 (27.000 trận).\n*   **Mật độ tàn phá:** Tính trung bình toàn cuộc chiến tranh phá hoại lần thứ nhất, mỗi km đường sắt và đường bộ ở miền Bắc phải hứng chịu **19,3 quả bom** và bị đánh phá **4,1 lần**. Riêng tuyến đường sắt Hà Nội - Vinh, con số này lên tới 19,5 lần/km.\n\n### 2. Thiệt hại đối với cơ sở hạ tầng\n*   **Cầu cống:** Mỹ đã đánh phá hơn 400 trong tổng số 500 cây cầu từ Hà Nội vào Vĩnh Linh. Trong giai đoạn 1965-1967, bình quân mỗi ngày miền Bắc mất **3 chiếc cầu** (hỏng nặng hoặc nhẹ).\n*   **Hệ thống đường sá:** Đến tháng 11/1965, hầu hết các tuyến đường cách trung tâm Hà Nội từ 40 đến 60 km đều bị đánh phá (tổng cộng 19 tuyến đường chính). Hầu hết hệ thống đường sắt, nhà ga, bến phà, bến vượt và kho bãi tập kết hàng hóa đều trở thành mục tiêu ném bom.\n*   **Địa bàn cụ thể:** Khu vực Vĩnh Linh là một ví dụ điển hình về sự tàn phá, khi chỉ từ giữa tháng 6/1966 đến cuối năm 1967, Mỹ đã dội hơn 25 vạn quả bom và 30 vạn quả đạn pháo xuống khu vực này.\n\n### 3. Sự ứng phó và kết quả\nDù chịu sự tàn phá khốc liệt như trên, ngành giao thông vận tải miền Bắc vẫn duy trì được vai trò chi viện cho tiền tuyến nhờ các chiến lược sau:\n*   **Phát triển mạng lưới:** Bất chấp bom đạn, tổng chiều dài đường ô tô đã tăng từ 10.495 km (năm 1964) lên 38.661 km (năm 1968).\n*   **Vận tải đa phương thức:** Kết hợp linh hoạt giữa phương tiện cơ giới và thô sơ, sử dụng hệ thống đường thủy và đường bộ làm tuyến vận tải chiến lược.\n*   **Kết quả:** Nhờ sự kiên cường của lực lượng bảo đảm giao thông, trong 4 năm (1965-1968), miền Bắc đã đưa được hơn 30 vạn cán bộ, bộ đội vào Nam, góp phần làm thất bại ý đồ chặn đứng chi viện của Mỹ, dẫn đến việc Mỹ phải tuyên bố ngừng ném bom hoàn toàn miền Bắc từ ngày 1/11/1968.\n\n*Lưu ý: Các số liệu trên tập trung vào giai đoạn 1965-1968. Thông tin về thiệt hại nhân mạng trực tiếp đối với lực lượng làm công tác giao thông trong giai đoạn này chưa được đề cập chi tiết trong dữ liệu cung cấp.*",
+    "latency": 31.30914699999994,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ các số liệu then chốt trong đáp án chuẩn mà còn cung cấp thêm thông tin bối cảnh lịch sử chuyên sâu, số liệu thống kê bổ trợ về cơ sở hạ tầng (cầu cống, hệ thống đường sá) và kết quả vận tải. Cách trình bày mạch lạc, chính xác và có chiều sâu, thể hiện sự am hiểu kiến thức lịch sử chuyên ngành."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Tại sao công tác giao thông vận tải lại được xác định là công tác có ý nghĩa chiến lược lớn lao trong giai đoạn 1965-1968?",
+    "agent_response": "Trong giai đoạn 1965-1968, công tác giao thông vận tải (GTVT) được Đảng và Chính phủ xác định là nhiệm vụ trọng tâm đột xuất, có ý nghĩa chiến lược lớn lao đối với sự nghiệp xây dựng, bảo vệ miền Bắc và giải phóng miền Nam. Dưới đây là các lý do chính:\n\n### 1. Vai trò là \"mạch máu\" chi viện cho tiền tuyến\n*   **Yêu cầu lịch sử:** Trong bối cảnh Mỹ thực hiện chiến lược \"Chiến tranh cục bộ\" ở miền Nam và tiến hành chiến tranh phá hoại bằng không quân ở miền Bắc, nhiệm vụ chính trị và chiến lược cao nhất của GTVT là phải \"hướng lên phía trước\", đảm bảo vận chuyển khối lượng lớn bộ đội, vũ khí, chất đốt và lương thực vào chiến trường miền Nam và sang Lào trong bất kỳ tình huống nào.\n*   **Tuyến đường 559:** Đây là tuyến vận tải chiến lược trọng điểm, được xây dựng thành mạng lưới đường vận tải cơ giới để đưa lực lượng vào các chiến trường một cách vững chắc.\n\n### 2. Cuộc đọ sức trực diện với sự đánh phá của Mỹ\n*   **Mức độ ác liệt:** Ngành GTVT trở thành \"mặt trận nóng bỏng\", nơi diễn ra cuộc đọ sức trực diện giữa quân dân Việt Nam với sức mạnh quân sự của Mỹ. Mỹ đã trút xuống miền Bắc trung bình 66 vạn tấn bom mỗi năm, trong đó khoảng 40-45 vạn tấn nhắm vào các công trình và phương tiện GTVT.\n*   **Thiệt hại nặng nề:** Khoảng 60-70% hệ thống GTVT miền Bắc trở thành mục tiêu đánh phá. Chỉ trong giai đoạn 1965-1967, trung bình mỗi ngày miền Bắc mất 3 cây cầu; nhiều tuyến đường sắt và đường bộ bị đánh phá hàng chục lần trên mỗi km.\n*   **Khẩu hiệu hành động:** Quân dân Việt Nam đã nêu cao khẩu hiệu: *\"Địch phá, ta sửa ta đi; Địch lại phá, ta lại sửa ta đi\"*, thể hiện ý chí giữ vững mạch máu giao thông bất chấp sự tàn phá của bom đạn.\n\n### 3. Sự huy động toàn diện của cả nước\nĐể đảm bảo thông suốt giao thông, Nhà nước đã thực hiện các biện pháp mang tính chiến lược:\n*   **Tổ chức bộ máy:** Thành lập Ban Điều hành vận tải Trung ương (do một Ủy viên Bộ Chính trị làm Trưởng ban), tách các cục quản lý để chuyên môn hóa (đường bộ, đường thủy), thành lập lực lượng Thanh niên xung phong (21-6-1965).\n*   **Tăng cường nguồn lực:** \n    *   Số lượng công nhân viên chức ngành GTVT tăng gấp đôi từ năm 1965 đến năm 1968.\n    *   Sử dụng sức mạnh toàn dân: Có khoảng 182 triệu lượt người tham gia đào đắp, san lấp 35 triệu m³ đất đá tại các hố bom.\n    *   Phát triển phương tiện: Các đơn vị tự chế tạo toa xe, ca nô, xà lan để bù đắp thiệt hại, giúp chỉ số khối lượng hàng hóa vận chuyển tăng liên tục qua các năm (lấy năm 1964 là 100, thì năm 1968 đạt 182).\n\n### Tổng kết\nCông tác GTVT giai đoạn 1965-1968 không chỉ đơn thuần là việc vận chuyển mà đã trở thành một **mặt trận quân sự - kinh tế**. Sự phát triển vượt bậc của ngành này trong điều kiện chiến tranh ác liệt chính là yếu tố góp phần quyết định vào việc củng cố tuyến đường chiến lược, giúp miền Bắc đánh bại cuộc chiến tranh phá hoại lần thứ nhất, đồng thời đảm bảo hậu cần vững chắc để quân dân miền Nam giành những thắng lợi to lớn trong cuộc kháng chiến chống Mỹ.",
+    "latency": 11.271004200003517,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ nội dung cốt lõi của đáp án chuẩn mà còn mở rộng phân tích sâu sắc, khoa học và giàu dẫn chứng lịch sử. AI đã làm rõ được tính 'chiến lược' thông qua việc phân tích bối cảnh chiến tranh, vai trò hậu cần (mạch máu chi viện) và tinh thần vượt khó của quân dân ta, vượt xa yêu cầu cơ bản của đáp án."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Khẩu hiệu nào đã được Bộ Giao thông Vận tải đề ra vào tháng 8 năm 1965 để thể hiện quyết tâm chống lại sự phá hoại của địch?",
+    "agent_response": "Chào bạn, dựa trên các tài liệu lịch sử, dưới đây là thông tin chi tiết về khẩu hiệu của ngành Giao thông Vận tải vào tháng 8 năm 1965:\n\n### 1. Khẩu hiệu hành động\nTại Hội nghị đại biểu các tỉnh thành toàn miền Bắc tổ chức vào tháng 8 năm 1965, Bộ Giao thông Vận tải đã nêu cao khẩu hiệu thể hiện ý chí quyết tâm chống lại sự phá hoại của không quân Mỹ:\n\n> **\"Địch phá, ta sửa ta đi**\n> **Địch lại phá, ta lại sửa ta đi.\"**\n\n### 2. Ngữ cảnh và ý nghĩa\n*   **Mục đích:** Khẩu hiệu này được đưa ra trong bối cảnh đế quốc Mỹ đẩy mạnh chiến tranh phá hoại miền Bắc bằng không quân, tập trung đánh phá ác liệt vào hệ thống giao thông vận tải (cầu đường, bến bãi).\n*   **Quyết tâm chiến lược:** Khẩu hiệu khẳng định tư tưởng kiên định của toàn ngành trong việc bảo đảm mạch máu giao thông thông suốt, không để bị gián đoạn. Đây là nhiệm vụ trọng tâm đột xuất của toàn Đảng, toàn quân và toàn dân lúc bấy giờ nhằm phục vụ yêu cầu chi viện cho chiến trường miền Nam.\n*   **Các biện pháp đồng hành:** Để hiện thực hóa quyết tâm trên, Đảng và Chính phủ đã triển khai hàng loạt biện pháp mạnh mẽ, bao gồm:\n    *   Thành lập lực lượng Thanh niên xung phong chống Mỹ cứu nước (tháng 6/1965).\n    *   Ban hành Chỉ thị số 110/CP (ngày 10/6/1965) xác định giao thông vận tải là công tác trọng tâm.\n    *   Tổ chức lại các cơ quan quản lý (tách Cục Vận tải đường thủy và Cục Vận tải đường bộ theo Quyết định số 201/CP ngày 4/10/1965).\n    *   Thành lập Ban Điều hành/Điều hòa vận tải Trung ương và các ban bảo đảm giao thông tại các địa phương để chỉ đạo trực tiếp tại các trọng điểm bị đánh phá.\n\nNhờ tinh thần của khẩu hiệu này cùng các biện pháp đồng bộ, hệ thống giao thông của miền Bắc dù bị đánh phá dữ dội (chỉ riêng năm 1965, nhiều tuyến đường đã bị hư hại nặng) nhưng vẫn duy trì được sự thông suốt, đảm bảo khối lượng hàng hóa, khí tài chi viện cho tiền tuyến miền Nam luôn được duy trì và tăng trưởng qua các năm.",
+    "latency": 34.12892700000157,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI cung cấp chính xác tuyệt đối khẩu hiệu được hỏi. Ngoài ra, AI còn mở rộng kiến thức bằng cách cung cấp bối cảnh lịch sử, ý nghĩa và các biện pháp bổ trợ liên quan, giúp người dùng có cái nhìn sâu sắc và đầy đủ hơn về giai đoạn lịch sử này."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Chính phủ Việt Nam đã có những điều chỉnh gì về tổ chức quản lý ngành giao thông vận tải vào tháng 10 năm 1965?",
+    "agent_response": "Dựa trên các dữ liệu lịch sử đã thu thập, vào tháng 10 năm 1965, Chính phủ Việt Nam đã thực hiện những điều chỉnh quan trọng về tổ chức quản lý ngành giao thông vận tải để đáp ứng yêu cầu của cuộc kháng chiến chống Mỹ, cụ thể như sau:\n\n### 1. Điều chỉnh cơ cấu tổ chức (Quyết định số 201/CP)\nNgày 4 tháng 10 năm 1965, Chính phủ đã ban hành **Quyết định số 201/CP** nhằm kiện toàn bộ máy quản lý nhà nước về giao thông vận tải, cụ thể hóa việc tách các đơn vị chức năng để tăng cường sự chỉ đạo trực tiếp và hiệu quả:\n*   **Về vận tải đường thủy:** Tách Cục Vận tải đường thủy thành hai đơn vị riêng biệt là **Cục Đường biển** và **Cục Đường sông**.\n*   **Về vận tải đường bộ:** Tách Cục Vận tải thành hai đơn vị là **Cục Quản lý đường bộ** và **Cục Vận tải đường bộ**.\n\nViệc chia tách này nhằm mục đích chuyên môn hóa công tác quản lý, giúp các đơn vị tập trung nguồn lực tốt hơn trong việc sửa chữa đường sá, rà phá bom mìn và đảm bảo lưu thông dưới sự đánh phá ác liệt của không quân Mỹ.\n\n### 2. Nghị quyết của Bộ Chính trị về giao thông vận tải\nCũng trong tháng 10 năm 1965, Bộ Chính trị Trung ương Đảng đã ra Nghị quyết quan trọng về công tác giao thông vận tải, với các nội dung chính:\n*   **Phát động toàn dân:** Đẩy mạnh phong trào toàn dân cùng làm công tác giao thông vận tải.\n*   **Xác định lực lượng nòng cốt:** Trong đó, các lực lượng như bộ đội công binh, hậu cần, vận tải và phòng không được xác định là lực lượng xung kích chính để giữ vững mạch máu giao thông.\n\n### 3. Bối cảnh và ý nghĩa\nCác quyết định điều chỉnh trên được đưa ra trong bối cảnh cuộc chiến tranh phá hoại của Mỹ đang diễn ra ác liệt (năm 1965 có khoảng 5.500 trận máy bay Mỹ đánh phá hệ thống giao thông miền Bắc). Việc sắp xếp lại tổ chức là bước đi tất yếu nhằm thực hiện nhiệm vụ trọng tâm mà Chính phủ đã đề ra từ các tháng trước đó: bảo đảm giao thông vận tải thông suốt để chi viện cho tiền tuyến miền Nam, đồng thời thực hiện khẩu hiệu *\"Địch phá, ta sửa ta đi\"*.\n\n*Lưu ý: Các thông tin trên đã bao quát đầy đủ những thay đổi hành chính và chính trị quan trọng nhất của ngành giao thông vận tải trong tháng 10/1965 theo tài liệu được cung cấp.*",
+    "latency": 8.156306799999584,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI đã cung cấp chính xác nội dung cốt lõi của đáp án chuẩn (Quyết định số 201/CP ngày 4/10/1965). Bên cạnh đó, AI còn bổ sung các ngữ cảnh lịch sử liên quan giúp người đọc hiểu rõ hơn về lý do và ý nghĩa của việc điều chỉnh, tạo nên một câu trả lời chuyên sâu, chính xác và có giá trị tham khảo cao."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Đường lối phát triển giao thông vận tải của Đảng được cụ thể hóa như thế nào về mặt phương châm và các loại hình vận tải?",
+    "agent_response": "Lỗi tổng hợp. Kết quả thô:\n\n--- Bước 1: Tìm kiếm chung ---\nTool sử dụng: search_docs\nTruy vấn: Đường lối phát triển giao thông vận tải của Đảng được cụ thể hóa như thế nào về mặt phương châm và các loại hình vận tải?\nKết quả:\n[Nguồn 1] (Vị trí: LỜI NÓI ĐẦU > I. MỸ TRỰC TIẾP ĐƯA QUÂN VÀO MIỀN NAM, TIẾN HÀNH CHIẾN TRANH PHÁ HOẠI MIỀN BẮC > Phát triển giao thông vận tải)\nng và Chính phủ đã nêu cao quyết tâm bảo vệ và tăng cường các hệ thống, phương tiện giao thông vận tải, phục vụ đắc lực hoạt động của các ngành, phục vụ các lực lượng vũ trang ở chiến trường miền Nam.\n\nĐường lối xây dựng và phát triển giao thông vận tải đã được Đại hội lần thứ 3 của Đảng vạch ra và được các Hội nghị Trung ương lần thứ 7, 8 (khóa II) phát triển cụ thể. Tinh thần chung là: \"Chú trọng phát triển các ngành giao thông vận tải đường sắt, đường thủy (sông, biển), đường ô tô, bước đầu xây dựng vận tải hàng không\". Về phương châm vận tải, Đảng và Nhà nước nhấn mạnh: \"Dù trong tình thế nào cũng không thể để các đường giao thông vận tải bị bế tắc trong một thời gian lớn. Trên mặt trận giao thông vận tải, ngay từ đầu và trong suốt những năm chiến tranh phá hoại, Đảng, Nhà nước và cả quân đội đã đề ra một loạt biện pháp lớn nhằm tăng cường khả năng đảm bảo giao thông thông suốt trước sự đánh phá quyết liệt của máy bay Mỹ.\"\n\nTháng 8-1965, Bộ Giao thông Vận tải đã mở Hội nghị đại biểu các tỉnh thành toàn miền Bắc để xác định nhiệm vụ của toàn ngành và nêu cao khẩu hiệu:\nĐịch phá, ta sửa ta đi\nĐịch lại phá, ta lại sửa ta đi.\n\n---\n\n[Nguồn 2] (Vị trí: LỜI NÓI ĐẦU > I. MỸ TRỰC TIẾP ĐƯA QUÂN VÀO MIỀN NAM, TIẾN HÀNH CHIẾN TRANH PHÁ HOẠI MIỀN BẮC > Phát triển công nghiệp)\nhất, than, vật liệu xây dựng, giao thông vận tải, ngành nào cũng kết hợp công nghiệp nặng với công nghiệp nhẹ, công nghiệp trung ương với công nghiệp địa phương, vào từng hoàn cảnh của yêu cầu cụ thể.\n\nBước vào giai đoạn mới với tình huống chiến tranh phá hoại miền Bắc rất khốc liệt bằng không quân của Mỹ qua hai đợt (1964-1968 và 1972), Đảng và Nhà nước đã có những chủ trương kịp thời chuyển hướng kinh tế nói chung và công nghiệp nói riêng. Nghị quyết Hội nghị Trung ương lần thứ 11, NQTW 105 (1965) và Chỉ thị 143 TW (1969) về chuyển hướng công nghiệp địa phương, tiểu thủ công nghiệp trong tình hình có chiến tranh. Tinh thần nội dung của sự chuyển hướng này không chỉ phù hợp với tình hình thời chiến, mà còn nhằm đổi mới cơ chế quản lý, xác định đường lối công nghiệp hóa cho phù hợp với thời kỳ quá độ từ sản xuất nhỏ lên sản xuất lớn. Phương châm chuyển hướng kinh tế trong điều kiện thời chiến là bảo vệ an toàn, tiếp tục sản xuất và phục vụ chiến đấu.\n\n---\n\n[Nguồn 3] (Vị trí: III. Đấu tranh ngoại giao và việc ký Hiệp định Paris về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam > I. KHÔI PHỤC VÀ PHÁT TRIỂN KINH TẾ > 3. Xây dựng cơ sở hạ tầng và giao thông vận tải)\nng được một hệ thống giao thông như vậy, miền Bắc đã phải chi viện một số lượng đông đảo về nhân lực và một khối lượng khổng lồ về vật tư thiết bị, xe pháo, đạn dược, lương thực, thực phẩm, thuốc men.\n\nTrong hơn hai năm (từ đầu năm 1973 đến đầu năm 1975), miền Bắc đã đạt được những thành tựu đáng kể trong công cuộc khôi phục nền kinh tế bị tàn phá do chiến tranh, làm tròn nghĩa vụ cao cả của hậu phương đối với tiền tuyến lớn miền Nam. Đồng thời, qua khôi phục và xây dựng, nền kinh tế miền Bắc cũng đã bộc lộ nhiều khuyết tật, để lại nhiều bài học kinh nghiệm cho các giai đoạn phát triển tiếp theo. Sau đây là khái quát một số nét về tình hình khôi phục và phát triển của những lĩnh vực chủ yếu.\n\nChiến tranh phá hoại của đế quốc Mỹ đã làm cho kết cấu hạ tầng bị hư hại nghiêm trọng. Mọi tầng lớp nhân dân đã cùng lực lượng công binh, thanh niên xung phong, cán bộ công nhân ngành giao thông vận tải sửa chữa, bảo đảm giao thông thông suốt. Với phương châm mở nhiều tuyến để đi tới đích, tổ chức vận chuyển bằng mọi phương tiện, đường sắt, đường bộ được nối dài thêm. Đường thủy được mở thêm nhiều luồng mới. Chỉ số khối lượng hàng hóa luân chuyển trong ba năm khôi phục kinh tế cho ta thấy rõ tính chất đa dạng và hiệu quả của các hình thức vận tải.\n\n*** Chỉ số hàng hóa theo các hình thức vận tải (Lấy năm 1964 = 100) ***\n\nĐường vận tải chiến lược Trường Sơn - đường mòn Hồ Chí Minh được củng cố và mở rộng với tốc độ \"thần kỳ\" trong giai đoạn này.\n\n---\n\n[Nguồn 4] (Vị trí: LỜI NÓI ĐẦU > I. MỸ TRỰC TIẾP ĐƯA QUÂN VÀO MIỀN NAM, TIẾN HÀNH CHIẾN TRANH PHÁ HOẠI MIỀN BẮC > Phát triển giao thông vận tải)\nực lượng giao thông vận tải là nòng cốt.\n\nNhiệm vụ chính trị và chiến lược cao nhất của nó là hướng lên phía trước, bảo đảm hoàn thành kế hoạch chi viện cho tiền tuyến lớn trong bất kỳ tình huống nào.\n\nThực hiện sự chỉ đạo của Chính phủ về chuyển hướng hoạt động cho phù hợp với thời chiến, Bộ Giao thông Vận tải còn thành lập Tổng đội đảm bảo giao thông đường sắt và thành lập cơ quan chỉ huy tiền phương (gọi là B4) đại diện bộ ở Khu 4 cũ nhằm tăng cường lực lượng chỉ đạo cho miền Trung.\n\nDù chiến tranh phá hoại ngày càng ác liệt, với sự quan tâm của Nhà nước, việc đầu tư cho giao thông vận tải ngày càng tăng. Tài sản cố định trong vận tải quốc doanh lấy chỉ số năm 1965 là 100, thì năm 1966 là 106, năm 1967 là 123, năm 1968 là 139. Do đó, ngành giao thông vận tải phát triển rất nhanh, ngay trong những ngày chiến tranh phá hoại ác liệt xảy ra. Các phương tiện vận chuyển và mạng lưới đường sá tăng nhanh. Riêng hệ thống đường liên xã, liên huyện, liên tỉnh phát triển nhanh nhất. Năm 1964, tổng số độ dài đường ô tô là 10.495 km, năm 1968 lên 38.661 km. Các trục giao thông chính được mở rộng, các đường liên huyện, liên tỉnh được sửa sang hay xây dựng mới. Các đường sông, đường biển, các luồng lạch được khai thông để đảm bảo giao thông thông suốt trong bất kỳ tình thế nào. Các phương tiện vận tải mà một phần khá lớn là các toa xe, ca nô, xà lan do công nhân tự trang bị, tự chế... đều tăng lên.\n\n---\n\n[Nguồn 5] (Vị trí: LỜI NÓI ĐẦU > III. ĐÁNH THẮNG CUỘC CHIẾN TRANH PHÁ HOẠI LẦN THỨ NHẤT CỦA MỸ, TĂNG CƯỜNG CHI VIỆN CHO TIỀN TUYẾN)\nác cấp phải coi củng cố giao thông vận tải là một nhiệm vụ trung tâm đột xuất của Đảng và Chính phủ, và ngày 15-7-1965, Ban Bí thư lại ra Chỉ thị \"Về việc điều cán bộ cho công tác giao thông vận tải\".\n\nTiếp đó, tháng 6-1965, Hội đồng Chính phủ quyết định thành lập Đội Thanh niên xung phong chống Mỹ cứu nước. Hàng chục vạn nam nữ thanh niên miền Bắc đã xung phong lên đường nhận nhiệm vụ ở những nơi khó khăn, ác liệt, chủ yếu là trên mặt trận cầu đường.\n\nTháng 10-1965, Bộ Chính trị Trung ương Đảng ra Nghị quyết về giao thông vận tải, phát động toàn dân làm công tác giao thông vận tải, trong đó, bộ đội công binh, hậu cần, vận tải, phòng không là lực lượng xung kích.\n\nHội đồng Chính phủ quyết định thành lập Ban Điều hòa giao thông Trung ương. Ở các tỉnh, thành phố và các trọng điểm giao thông phải thành lập các ban bảo đảm giao thông. Ngoài ra, còn nhiều thông tư, quyết định của Bộ Giao thông vận tải được ban hành nhằm đánh thông mọi mạch máu giao thông, không được để nơi nào bị ách tắc. Quyết tâm của toàn Đảng, toàn dân là bảo đảm được giao thông thông suốt.\n\nVì vậy, mặc dù mục tiêu của đế quốc Mỹ là nhằm vào các đầu mối giao thông, nhưng con đường chi viện cho miền Nam vẫn không bị gián đoạn. Khối lượng hàng hóa, khí tài được vận chuyển vào miền Nam năm 1965 tương đương với khối lượng vận chuyển trong cả 4 năm từ 1959 đến 1964.",
+    "latency": 7.1140444000011485,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI đã trích xuất thông tin chính xác, đầy đủ và bám sát nội dung của đáp án chuẩn. AI đã chỉ ra rõ phương châm (đảm bảo giao thông thông suốt, không để bế tắc trong mọi tình thế) và các loại hình vận tải (đường sắt, đường thủy, đường bộ, hàng không) dựa trên nguồn dữ liệu lịch sử đáng tin cậy."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Các hợp tác xã nông nghiệp tại miền Bắc đã thực hiện những biện pháp gì để duy trì sản xuất trong giai đoạn chiến tranh phá hoại?",
+    "agent_response": "Trong giai đoạn 1965–1972, dù phải đối mặt với chiến tranh phá hoại ác liệt, bom đạn đánh phá làng mạc và việc phần lớn thanh niên lên đường ra mặt trận, các hợp tác xã (HTX) nông nghiệp ở miền Bắc vẫn duy trì và phát triển sản xuất thông qua các biện pháp chiến lược sau:\n\n### 1. Tổ chức lao động theo phương châm \"Vừa sản xuất, vừa chiến đấu\"\n*   **Thành lập các tổ xung kích:** Các địa phương tổ chức các tổ xung kích bám ruộng đồng, bám biển để duy trì sản xuất liên tục ngay cả trong điều kiện bị đánh phá.\n*   **Tinh thần tự lực:** Nông dân được động viên đề cao tinh thần tự lực cánh sinh, chống tư tưởng ỷ lại vào Nhà nước, coi xã viên là \"chiến sĩ sản xuất\" và HTX là \"đội quân hậu cần\" cho tiền tuyến.\n\n### 2. Đẩy mạnh kỹ thuật và phong trào thâm canh\n*   **Cải tiến kỹ thuật:** Các HTX tích cực hưởng ứng phong trào cải tạo ruộng đồng, làm thủy lợi, đắp bờ vùng, bờ thửa và làm bèo hoa dâu.\n*   **Ứng dụng khoa học:** Đưa giống mới và các biện pháp kỹ thuật mới vào sản xuất. Kết quả là đến cuối năm 1970, nhiều HTX đã đạt năng suất từ 6–7 tấn/ha, thậm chí 8–9 tấn/ha.\n*   **Thành tựu tiêu biểu:** Thái Bình trở thành tỉnh đầu tiên đạt năng suất 5 tấn thóc/ha vào năm 1966. Số lượng huyện và HTX đạt mức 5 tấn/ha tăng nhanh chóng (từ 5 huyện/một số HTX năm 1964 lên 30 huyện và 2.551 HTX vào năm 1967).\n\n### 3. Củng cố mô hình tổ chức HTX\n*   **Tập trung hóa:** Mục tiêu không còn là phát triển số lượng mà tập trung vào xây dựng, củng cố HTX bậc cao. Năm 1967, cả miền Bắc có 23.530 HTX, trong đó 76% là HTX bậc cao (chiếm 88% hộ xã viên và 86% diện tích ruộng đất).\n*   **Tăng tỷ lệ xã viên:** Tỷ lệ hộ nông dân vào HTX tăng mạnh từ 84% (năm 1964) lên 94,9% (năm 1968), đảm bảo HTX đóng góp khoảng 95% tổng sản lượng nông nghiệp toàn miền Bắc.\n\n### 4. Sự hỗ trợ từ Nhà nước\n*   **Chi viện vật chất:** Nhà nước hỗ trợ lượng lớn lương thực cho nông dân trong những năm chiến tranh, cụ thể: 51.595 tấn (1965), 112.691 tấn (1969), 74.320 tấn (1971) và 149.640 tấn (1972).\n*   **Hỗ trợ kỹ thuật:** Đầu tư xây dựng các trạm thủy điện nhỏ và các xí nghiệp cơ khí tại địa phương để chế tạo công cụ sản xuất, giảm bớt sự phụ thuộc vào các nguồn cung từ xa.\n\n### 5. Kết quả\nDù trong hoàn cảnh khó khăn của chiến tranh, sự chỉ đạo kịp thời của Đảng và Nhà nước cùng nỗ lực của nông dân tập thể đã giúp nền nông nghiệp miền Bắc không những giữ vững được sản xuất mà còn đóng góp quan trọng trong việc chi viện cho chiến trường miền Nam, đảm bảo đời sống nhân dân và ổn định hậu phương.\n\n*Lưu ý: Các thông tin về diễn biến sản xuất cụ thể trong giai đoạn 1970-1972 (ngoài số liệu lương thực hỗ trợ) và các phương pháp ứng phó chi tiết tại vùng núi/Khu IV trong giai đoạn cuối chiến tranh phá hoại lần 2 chưa được trình bày chi tiết trong các dữ liệu hiện có.*",
+    "latency": 10.753881500000716,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 0.95,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ và chính xác các ý chính trong đáp án chuẩn (tổ xung kích, bám sát sản xuất) mà còn mở rộng kiến thức chuyên sâu, bối cảnh hóa tốt và đưa ra các số liệu minh chứng cụ thể, có giá trị lịch sử cao. Mặc dù câu trả lời vượt quá phạm vi ngắn gọn của đáp án chuẩn, nhưng nó làm nổi bật được tính chất 'chuyên gia' và độ tin cậy thông tin rất tốt."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Chủ tịch Hồ Chí Minh đã ví các hợp tác xã nông nghiệp và xã viên như thế nào khi đến thăm Thái Bình năm 1967?",
+    "agent_response": "Dựa trên các tài liệu lịch sử đã thu thập, thông tin về chuyến thăm của Chủ tịch Hồ Chí Minh tới Thái Bình năm 1967 được tổng hợp như sau:\n\nTrong chuyến thăm diễn ra vào đầu tháng 1 năm 1967 – thời điểm Thái Bình là tỉnh đầu tiên đạt năng suất 5 tấn thóc trên 1 hécta đất gieo trồng – Chủ tịch Hồ Chí Minh đã có những lời căn dặn sâu sắc nhằm động viên tinh thần sản xuất của bà con nông dân trong bối cảnh cuộc chiến tranh phá hoại của Mỹ đang diễn ra ác liệt.\n\nChủ tịch Hồ Chí Minh đã ví von như sau:\n\n*   **Đối với các hợp tác xã nông nghiệp:** Người khẳng định đây là **\"đội quân hậu cần của quân đội chiến đấu ngoài mặt trận\"**.\n*   **Đối với các xã viên:** Người ví họ là **\"chiến sĩ sản xuất\"** và căn dặn họ cần phải có tinh thần cố gắng, nỗ lực như các chiến sĩ đang trực tiếp chiến đấu ở ngoài mặt trận.\n\nLời căn dặn này không chỉ ghi nhận thành tích của Thái Bình mà còn là nguồn cổ vũ to lớn đối với giai cấp nông dân tập thể miền Bắc trong việc duy trì sản xuất, củng cố hợp tác xã và tăng cường chi viện cho tiền tuyến trong những năm tháng chống Mỹ cứu nước.",
+    "latency": 30.36611189999894,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI chính xác hoàn toàn về mặt nội dung so với đáp án chuẩn. AI không những truyền tải đầy đủ ý nghĩa của các hình ảnh ví von mà còn cung cấp thêm bối cảnh lịch sử xác đáng (Thái Bình đạt năng suất 5 tấn/ha), giúp làm rõ lý do tại sao Chủ tịch Hồ Chí Minh có lời khen ngợi đó."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Những khó khăn chính mà miền Bắc phải đối mặt trong việc duy trì sản xuất nông nghiệp trong thời kỳ chống chiến tranh phá hoại là gì?",
+    "agent_response": "Trong thời kỳ chống chiến tranh phá hoại của đế quốc Mỹ, miền Bắc Việt Nam phải đối mặt với những thử thách chưa từng có trong lịch sử để duy trì sản xuất nông nghiệp. Các khó khăn chính bao gồm:\n\n### 1. Thiếu hụt nhân lực trực tiếp\n*   **Chi viện cho tiền tuyến:** Một bộ phận lớn lực lượng lao động trẻ, khỏe ở nông thôn đã tham gia quân đội và thanh niên xung phong để phục vụ chiến trường, làm giảm đáng kể nhân lực sản xuất tại địa phương.\n*   **Chuyển dịch lao động:** Những người ở lại (chủ yếu là phụ nữ, người già) phải đồng thời đảm nhận hai vai trò: vừa là \"chiến sĩ sản xuất\" trên ruộng đồng, vừa là lực lượng sẵn sàng chiến đấu, bảo vệ cơ sở.\n\n### 2. Sự phá hoại của bom đạn Mỹ\n*   **Cơ sở hạ tầng bị tàn phá:** Đế quốc Mỹ thực hiện âm mưu \"đưa miền Bắc trở lại thời kỳ đồ đá\", tập trung đánh phá ác liệt vào các trạm, trại, nhà kho và hệ thống cơ sở vật chất - kỹ thuật nông nghiệp.\n*   **Xáo trộn đời sống:** Cuộc sống và quá trình sản xuất tại các hợp tác xã bị xáo trộn nghiêm trọng do bom đạn, gây khó khăn cho việc duy trì sản xuất nông nghiệp theo kế hoạch.\n\n### 3. Thiên tai khắc nghiệt\n*   Trong giai đoạn này, thiên tai xảy ra liên tiếp, tiêu biểu là trận lụt lịch sử năm 1971. Điều này gây thiệt hại nặng nề cho mùa màng và làm trầm trọng thêm tình trạng thiếu hụt lương thực.\n\n### 4. Nền tảng kinh tế còn hạn chế\n*   Nông nghiệp miền Bắc lúc bấy giờ vốn là nền sản xuất nhỏ, lạc hậu. Khi chiến tranh xảy ra, yêu cầu đặt ra không chỉ là duy trì sản xuất mà còn phải nâng cao năng suất (phấn đấu đạt 5 tấn thóc/ha) để phục vụ cho cả tiền tuyến và quốc phòng, tạo áp lực rất lớn lên hệ thống hợp tác xã.\n\n### Biện pháp ứng phó và kết quả:\nDù đối mặt với muôn vàn khó khăn, miền Bắc đã nỗ lực vượt qua bằng các chính sách kịp thời:\n*   **Sự hỗ trợ từ Nhà nước:** Nhà nước đã trợ giúp một lượng lớn lương thực cho nông dân thông qua các năm (ví dụ: 51.595 tấn năm 1965 lên tới 149.640 tấn năm 1972).\n*   **Củng cố hợp tác xã:** Phát huy vai trò của hợp tác xã trong việc điều hòa lương thực, thực hiện chính sách phân phối bình quân để ổn định đời sống xã viên.\n*   **Tinh thần sản xuất:** Thành lập các tổ xung kích bám ruộng đồng, bám cơ sở. Nhờ đó, nền nông nghiệp hợp tác hóa về cơ bản vẫn giữ vững và hoàn thành vai trò \"đội quân hậu cần\" cho tiền tuyến.",
+    "latency": 11.486520599999494,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "AI không chỉ trả lời đầy đủ và chính xác 3 ý chính trong đáp án chuẩn mà còn mở rộng phân tích chuyên sâu, đưa thêm bối cảnh lịch sử và các dẫn chứng cụ thể (như trận lụt năm 1971, áp lực năng suất 5 tấn/ha). Câu trả lời có tính hệ thống, lập luận sắc bén và bao quát đúng trọng tâm yêu cầu."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Sự quan tâm của Đảng và Nhà nước đối với hợp tác xã nông nghiệp đã mang lại ý nghĩa gì cho nông dân miền Bắc?",
+    "agent_response": "Lỗi tổng hợp. Kết quả thô:\n\n--- Bước 1: Tra cứu khái niệm và bối cảnh thành lập các hợp tác xã nông nghiệp tại miền Bắc. ---\nTool sử dụng: lookup_entity\nTruy vấn: Hợp tác xã nông nghiệp miền Bắc\nKết quả:\nTHÔNG TIN VỀ: HỢP TÁC XÃ NÔNG NGHIỆP MIỀN BẮC\n==================================================\n\n[Phần: I. KHÔI PHỤC VÀ PHÁT TRIỂN KINH TẾ]\n  • sau: Đồng bằng Bắc Bộ: 98,2% tổng số hộ là hộ xã viên, trong đó 99,7% tổng số hộ xã viên là thuộc các hợp tác xã bậc cao. Trung du: 98,1% và 100%. Khu IV cũ: 98,4% và 97,5%. Miền núi: 81,7% và 86,8%.\n\nGần như tuyệt đại đa số hộ xã viên nằm trong các hợp tác xã nông nghiệp bậc cao. Bình quân một hợp tác xã ở đồng bằng Bắc Bộ có 418 hộ, 710 lao động. Các con số tương ứng ở Trung du là 240 hộ và 372 \n\n[Phần: I. MỸ TRỰC TIẾP ĐƯA QUÂN VÀO MIỀN NAM, TIẾN HÀNH CHIẾN TRANH PHÁ HOẠI MIỀN BẮC]\n  • ậc thấp, thu hút 2.810.800 hộ gia đình vào hợp tác xã; thì đến năm 1968 là 22.162 hợp tác xã, trong đó 17.839 hợp tác xã bậc cao, 4.223 hợp tác xã bậc thấp, thu hút tới 3.049.800 hộ gia đình nông dân.\n\nĐiều đó chứng tỏ rằng, trong khói lửa chiến tranh, quan hệ sản xuất mới xã hội chủ nghĩa ở nông thôn miền Bắc vẫn được củng cố và tăng cường, các hợp tác xã sản xuất nông nghiệp có bước phát triển m\n  • Các hợp tác xã nông nghiệp miền Bắc đã thực hiện tốt chính sách phân phối, chính sách xã hội, bảo vệ sức khỏe, học hành...\n\n[Phần: I. KHÔI PHỤC VÀ PHÁT TRIỂN KINH TẾ]\n  • ghiệp trong các ngành tiểu thủ công nghiệp, thương nghiệp, dịch vụ chiếm một số lượng lớn, đóng vai trò tích cực trong việc phục vụ đời sống nhân dân, bù đắp những khiếm khuyết của kinh tế quốc doanh.\n\nCơ cấu nông dân miền Bắc với hai bộ phận xã viên hợp tác xã sản xuất nông nghiệp và nông dân cá thể phát triển theo chiều hướng nghiêng hẳn về bộ phận xã viên hợp tác xã, đặc biệt là xã viên hợp tác\n\n[Phần: I. MỸ TRỰC TIẾP ĐƯA QUÂN VÀO MIỀN NAM, TIẾN HÀNH CHIẾN TRANH PHÁ HOẠI MIỀN BẮC]\n  • óc/hécta. Trong thời kỳ này, các phong trào cải tạo ruộng đồng, làm thủy lợi, đắp bờ vùng, bờ thửa, làm bèo hoa dâu, đưa giống mới và các biện pháp kỹ thuật mới được người nông dân tích cực hưởng ứng.\n\nBắt đầu từ năm 1965, chiến tranh đã lan ra miền Bắc. Trong điều kiện cơ sở vật chất bị phá hoại, sản xuất nông nghiệp lại phải giải quyết cùng một lúc vấn đề ăn mặc và một loạt nhu cầu khác. Với khẩ\n\n--- Bước 2: Tìm kiếm các dữ liệu về tác động, lợi ích và ý nghĩa của chính sách hợp tác xã đối với sản xuất và đời sống người nông dân. ---\nTool sử dụng: search_docs\nTruy vấn: Ý nghĩa chính sách của Đảng và Nhà nước đối với hợp tác xã nông nghiệp và đời sống nông dân miền Bắc\nKết quả:\n[Nguồn 1] (Vị trí: LỜI NÓI ĐẦU > I. NỘI DUNG CHIẾN LƯỢC \"CHIẾN TRANH CỤ BỘ\" CỦA MỸ > Tình hình kinh tế miền Bắc giai đoạn 1968-1970)\n##### Tổng quan và các chuyển biến chính sách\n\nTrong những năm chống chiến tranh phá hoại miền Bắc, nhiều khi chính nông nghiệp lại được Nhà nước trợ giúp khá nhiều. Các số liệu thống kê sau đây thể hiện rõ về việc Nhà nước đã hỗ trợ cho nông dân một lượng lương thực rất lớn: \"năm 1965 là 51.595 tấn lương thực, năm 1969 là 112.691 tấn, năm 1971 là 74.320 tấn, năm 1972 là 149.640 tấn\". Vì vậy, trong điều kiện hết sức khó khăn, nhưng đời sống của nhiều gia đình thuộc diện chính sách và người neo đơn vẫn được đảm bảo. Chính sách phân phối bình quân, điều hòa lương thực trong các hợp tác xã sản xuất nông nghiệp đã ổn định được đời sống của người nông dân. Các nghĩa vụ lương thực đối với Nhà nước và nghĩa vụ cung cấp nhân lực cho quốc phòng vẫn được bà con nông dân thực hiện đầy đủ và nghiêm túc. Có thể khẳng định rằng các hợp tác xã trong thời kỳ này đã phát huy được vai trò tích cực của mình.\n\n---\n\n[Nguồn 2] (Vị trí: LỜI NÓI ĐẦU > I. NỘI DUNG CHIẾN LƯỢC \"CHIẾN TRANH CỤ BỘ\" CỦA MỸ > Tầm quan trọng của phát triển kinh tế)\nđiều kiện miền Bắc vừa xây dựng vừa phải đánh thắng chiến tranh phá hoại của đế quốc Mỹ, vừa phải chi viện đến mức cao nhất cho tiền tuyến lớn miền Nam.## Chính sách lương thực và Phân phối lương thực\n\nChính sách này đã bảo đảm lương thực cho những gia đình thiếu sức lao động vì có người đi chiến đấu, có tác dụng động viên những người hăng hái làm nhiệm vụ chiến đấu và phục vụ chiến đấu. Nhưng chính sách này có nhược điểm lớn mà sau chiến tranh lại càng bộc lộ rõ rệt hơn, đó là không khuyến khích đúng mức mọi nỗ lực sản xuất lương thực và tiết kiệm tiêu dùng lương thực, chưa thể hiện đầy đủ nguyên tắc phân phối theo lao động trong phân phối lương thực, không ổn định nghĩa vụ lương thực cho các hợp tác xã nông nghiệp. Mức nghĩa vụ lương thực quy định cho nhiều hợp tác xã chưa được công bằng. Điều đó đã hạn chế quyền chủ động của các hợp tác xã nông nghiệp trong việc xác định phương hướng và kế hoạch sản xuất, vì nông dân cho rằng càng đẩy mạnh sản xuất, càng có nhiều lương thực, càng phải đóng góp nhiều cho Nhà nước. Để động viên các hợp tác xã và nông dân tích cực sản xuất, thâm canh tăng năng suất, tăng vụ, sử dụng hết và phát triển thêm diện tích trồng trọt, ngày 3-3-1970, Chính phủ ra Nghị quyết về chính sách ổn định nghĩa vụ lương thực và phân phối lương thực cho các hợp tác xã nông nghiệp và nông dân cá thể dưới hình thức thuế và thu mua trong thời gian 5 năm (từ 1970 đến 1974). Mức nghĩa vụ này được xác định căn cứ vào mức bình quân 3 năm (năm cao nhất, năm bình thường và năm sút kém) tính trong thời gian từ năm 1963 đến năm 1969, đồng thời có xét đến tình hình sản xuất và đời sống hiện tại của hợp tác xã và tham khảo mức ổn định nghĩa vụ mà Nhà nước đã giao năm 1963. Hợp tác xã nào hoàn thành tốt mức nghĩa vụ ổn định sẽ được khen thưởng. Sau khi đã hoàn thành nghĩa vụ lương thực đối với Nhà nước, các hộ nông dân được quyền sử dụng số lương thực thừa của mình, hoặc để dự trữ, hoặc bán thêm ngoài nghĩa vụ cho Nhà nước (hoặc theo nguyên tắc thuận mua vừa bán và theo phương thức trao đổi hàng công nghiệp trực tiếp với hộ nông dân), hoặc bán trực tiếp cho người thiếu ăn trong xã hoặc xã lân cận, tuyệt đối không được bán qua tay thương nhân, vì Nhà nước chủ trương xóa bỏ thị trường tự do về lương thực (theo quan điểm cho rằng, một khi lương thực có thể trở thành hàng hóa được mọi người mua đi bán lại thì nó sẽ có khả năng trở thành phương tiện đầu cơ, bóc lột của những kẻ làm ăn bất chính!).\n\n---\n\n[Nguồn 3] (Vị trí: LỜI NÓI ĐẦU > I. MỸ TRỰC TIẾP ĐƯA QUÂN VÀO MIỀN NAM, TIẾN HÀNH CHIẾN TRANH PHÁ HOẠI MIỀN BẮC > Tài chính, ngân hàng)\nn xuất trong nông nghiệp, làm cho các hợp tác xã nông nghiệp rõ ràng là cơ sở kinh tế, chính trị và xã hội, góp phần tích cực đảm bảo cho cuộc kháng chiến chống Mỹ, cứu nước của nhân dân ta thắng lợi.\n\nCông tác tín dụng trong thời kỳ này có tính chất \"bao cấp\" và phân tán, nhưng tác dụng của nó thật là to lớn, nó đã hỗ trợ mạnh mẽ cho việc duy trì sản xuất trong nông nghiệp, bảo đảm được đời sống nhân dân, góp phần chống chiến tranh phá hoại ác liệt và kéo dài của đế quốc Mỹ. Đó cũng là sự viện trợ hết sức quan trọng của Nhà nước vô sản đối với giai cấp nông dân và khu vực kinh tế tập thể.\n\nTóm lại, trong điều kiện một nền sản xuất nhỏ kém phát triển, lại bị chiến tranh tàn phá nặng nề, hệ thống tiền tệ - tín dụng xã hội chủ nghĩa từng bước được xây dựng và củng cố, đã góp phần vào công cuộc xây dựng chủ nghĩa xã hội và đấu tranh thống nhất nước nhà. Đảng và Nhà nước Việt Nam đã xây dựng và thể nghiệm những chế độ tiền tệ, tín dụng ngân hàng xã hội chủ nghĩa, đã thực hiện những nhiệm vụ cơ bản của Đảng và Nhà nước đề ra, đã xây dựng được một nền tiền tệ độc lập tự chủ và cơ bản ổn định.\n\nViệc đẩy mạnh các hoạt động tín dụng, ngân hàng đã góp phần động viên mọi khả năng của các thành phần kinh tế tập thể, giữ vững và phát triển sản xuất nông nghiệp, tăng tiềm lực kinh tế và quốc phòng.\n\n---\n\n[Nguồn 4] (Vị trí: III. Đấu tranh ngoại giao và việc ký Hiệp định Paris về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam > I. KHÔI PHỤC VÀ PHÁT TRIỂN KINH TẾ > 4. Thương nghiệp, tài chính, ngân hàng)\nthương nghiệp cũng là chỗ dựa để một bộ phận lớn cán bộ thương nghiệp trở thành những kẻ cửa quyền, áp đặt, móc ngoặc, ăn chặn trong việc định giá gia công, nghiệm thu sản phẩm, cung ứng nguyên liệu.\n\nCác hợp tác xã sản xuất nông nghiệp ngoài nghĩa vụ nộp theo hợp đồng hai chiều: đưa một số tư liệu sản xuất, vật tư nông nghiệp, hàng tiêu dùng đổi lấy lương thực, nông sản, thực phẩm. Phương thức này đã có tác dụng huy động được một khối lượng cần thiết lương thực, thực phẩm để bán cho cán bộ, công nhân, bộ đội và phục vụ các nhu cầu của cuộc kháng chiến chống Mỹ cứu nước. Chế độ thu mua này chỉ có thể tồn tại được trong điều kiện chiến tranh. Tinh thần yêu nước của người nông dân là cơ sở của việc thực hiện một số chế độ thu mua như vậy. Do không quan tâm thỏa đáng lợi ích của người nông dân, của các hợp tác xã sản xuất nông nghiệp trong việc định tỷ lệ huy động và giá thu mua, nên nông dân thường bị thiệt thòi: trong nhiều trường hợp tiền bán sản phẩm không bù đắp đủ chi phí sản xuất mà họ đã bỏ ra. Nghĩa vụ đối với Nhà nước nặng nề, cộng với tình trạng quản lý kém, phân phối không công bằng trong các hợp tác xã đã làm giảm thu nhập chính đáng của người nông dân xã viên, làm cho đời sống của họ gặp nhiều khó khăn.\n\n---\n\n[Nguồn 5] (Vị trí: LỜI NÓI ĐẦU > I. MỸ TRỰC TIẾP ĐƯA QUÂN VÀO MIỀN NAM, TIẾN HÀNH CHIẾN TRANH PHÁ HOẠI MIỀN BẮC > Phát triển nông nghiệp)\ng nghiệp, thủ công nghiệp, ngư nghiệp ở mọi địa phương và ở nhiều nhà máy, xí nghiệp đều phải thành lập các tổ xung kích bám ruộng đồng, bám biển, bám cơ sở để tiếp tục sản xuất và sẵn sàng chiến đấu.\n\nĐể duy trì và phát triển sản xuất, ổn định đời sống và bảo đảm an toàn cho nhân dân trong sinh hoạt, lao động, chiến đấu của các tầng lớp nhân dân trong những năm chống chiến tranh phá hoại thực sự là một kỳ tích của hậu phương miền Bắc. Mặc dù ruộng đồng, làng mạc liên tục bị bom đạn Mỹ đánh phá, thiên tai xảy ra liên tiếp, đại bộ phận lực lượng lao động trẻ phải ra mặt trận... nhưng nền nông nghiệp hợp tác hóa miền Bắc về cơ bản vẫn giữ vững và phát huy hiệu quả. Nhận thức về vai trò, vị trí của quan hệ sản xuất mới trong nông nghiệp, nông thôn, Đảng và Nhà nước thường xuyên quan tâm tới sự nghiệp củng cố hợp tác xã nông nghiệp. Đầu tháng 1-1967, về thăm Thái Bình, tỉnh đầu tiên đạt năng suất 5 tấn thóc trên 1 hécta đất gieo trồng, Chủ tịch Hồ Chí Minh đã căn dặn bà con nông dân: \"Các hợp tác xã nông nghiệp là đội quân hậu cần của quân đội chiến đấu ngoài mặt trận. Các xã viên hợp tác xã là chiến sĩ sản xuất, cần phải cố gắng như chiến sĩ ngoài mặt trận.\"\n\nSự quan tâm của Đảng và Nhà nước đã động viên, cổ vũ giai cấp nông dân tập thể miền Bắc vượt qua khó khăn, thử thách, tăng cường đoàn kết, ra sức củng cố hợp tác xã, duy trì sản xuất và tăng chi viện cho chiến trường.",
+    "latency": 9.229737800000294,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI đã trích dẫn trực tiếp và chính xác thông tin từ nguồn tài liệu tham khảo (Nguồn 5), phản ánh đúng nội dung trong đáp án chuẩn. AI không chỉ đưa ra câu trả lời chính xác mà còn cung cấp ngữ cảnh lịch sử đầy đủ, cho thấy sự hiểu biết sâu sắc về vai trò của hợp tác xã nông nghiệp trong giai đoạn kháng chiến chống Mỹ."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Dựa trên số liệu trong văn bản, phong trào đạt năng suất 5 tấn thóc/hécta đã phát triển như thế nào từ năm 1964 đến năm 1967?",
+    "agent_response": "Dựa trên các dữ liệu lịch sử đã thu thập, phong trào đạt năng suất 5 tấn thóc/hécta trên miền Bắc Việt Nam giai đoạn 1964–1967 đã có sự phát triển vượt bậc và mang tính lan tỏa rộng khắp. Dưới đây là tổng hợp chi tiết:\n\n### 1. Bối cảnh và mục tiêu\n*   Đây là một phong trào trọng điểm được Đảng và Nhà nước phát động nhằm cổ vũ nông dân tập thể miền Bắc vượt qua khó khăn trong chiến tranh, củng cố hợp tác xã và tăng cường chi viện cho chiến trường.\n*   Mục tiêu cụ thể là phấn đấu đạt 5 tấn thóc/hécta trên những vùng rộng lớn, áp dụng cho diện tích gieo trồng hai vụ lúa.\n\n### 2. Sự phát triển về quy mô (1964 – 1967)\nPhong trào đã chuyển mình từ những mô hình điểm trở thành một phong trào quần chúng sâu rộng với những con số cụ thể:\n*   **Năm 1964:** Phong trào bắt đầu với quy mô còn khiêm tốn, cả miền Bắc chỉ có **5 huyện** và một số ít hợp tác xã đạt tiêu chuẩn 5 tấn/hécta.\n*   **Sự bứt phá đến năm 1967:** Sau 3 năm đẩy mạnh thực hiện các biện pháp kỹ thuật (thủy lợi, cải tạo đất, đưa giống mới, làm bèo hoa dâu), quy mô phong trào đã tăng lên đáng kể với **30 huyện** và **2.551 hợp tác xã** đạt năng suất 5 tấn thóc/hécta.\n\n### 3. Những cột mốc quan trọng\n*   **Năm 1966:** Ghi dấu ấn đặc biệt khi tỉnh **Thái Bình** trở thành tỉnh đầu tiên của miền Bắc đạt năng suất lúa 5 tấn thóc/hécta trong điều kiện chiến tranh ác liệt. \n*   **Các biện pháp thúc đẩy:** Sự thành công của phong trào gắn liền với việc Nhà nước đầu tư mạnh mẽ vào cơ sở vật chất kỹ thuật. Tính đến cuối năm 1968, các hợp tác xã đã được trang bị hàng chục nghìn máy móc nông nghiệp (gồm máy phát điện, máy kéo và máy công tác).\n\n### 4. Đánh giá chung\n*   Mặc dù năng suất lúa thời kỳ này tăng chưa đều và chưa vững chắc ở mọi địa phương, nhưng phong trào 5 tấn thóc đã biến \"ước mơ\" của người nông dân trở thành hiện thực ở hàng nghìn hợp tác xã trên khắp miền Bắc.\n*   Phong trào không chỉ có ý nghĩa về mặt sản lượng lương thực mà còn tạo nên khí thế lao động sản xuất sôi sục, giúp nông dân vừa đảm bảo sản xuất nông nghiệp, vừa tích cực tham gia chiến đấu bảo vệ địa phương trước cuộc chiến tranh phá hoại của Mỹ.\n\n*Lưu ý: Các dữ liệu về \"nộp đảm phụ bằng thóc/tiền\" trong tài liệu thu thập được đề cập đến khu vực miền Nam, trong khi phong trào \"5 tấn thóc/hécta\" được ghi nhận là mục tiêu chính của nông nghiệp miền Bắc giai đoạn này.*",
+    "latency": 29.124577799997496,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI đã trích dẫn đầy đủ và chính xác các con số từ đáp án chuẩn (5 huyện, 30 huyện, 2.551 hợp tác xã). Ngoài ra, AI còn cung cấp thêm thông tin bối cảnh lịch sử có giá trị, giúp người đọc hiểu rõ hơn về phong trào mà không làm sai lệch hay mâu thuẫn với yêu cầu của câu hỏi."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Những tổn thất cụ thể về người và phương tiện của bộ đội Trường Sơn trong cuộc kháng chiến chống Mỹ là gì?",
+    "agent_response": "Trong cuộc kháng chiến chống Mỹ, tuyến đường chiến lược Trường Sơn (Đường Hồ Chí Minh) đóng vai trò huyết mạch trong việc chi viện cho tiền tuyến. Để đảm bảo sự thông suốt cho tuyến đường này trong suốt 16 năm (1959–1975), bộ đội Trường Sơn cùng các lực lượng phối hợp đã phải chịu những tổn thất và hy sinh vô cùng to lớn.\n\nDưới đây là tổng hợp những tổn thất cụ thể về người và phương tiện của bộ đội Trường Sơn:\n\n### 1. Tổn thất về người\nSự hy sinh của cán bộ, chiến sĩ và lực lượng phục vụ trên tuyến đường Trường Sơn là minh chứng cho sự đóng góp khổng lồ của miền Bắc đối với sự nghiệp giải phóng miền Nam:\n*   **Hy sinh:** Hơn **20.000 người** đã hy sinh trong quá trình thực hiện nhiệm vụ trên tuyến đường.\n*   **Bị thương:** Gần **30.000 người** bị thương.\n*   **Di chứng:** Ngoài những mất mát trực tiếp, nhiều người từng phục vụ trên tuyến đường và cả thế hệ con cháu họ còn phải chịu những di chứng nặng nề do chất độc hóa học gây ra.\n*   **Quy mô lực lượng:** Đến cuối cuộc chiến, riêng quân số của bộ đội Trường Sơn đã lên tới 100.495 người.\n\n### 2. Tổn thất về phương tiện và hàng hóa\nViệc duy trì hệ thống đường chiến lược dài 20.000 km (bao gồm các trục dọc, trục ngang, đường vượt khẩu, đường vòng tránh và hệ thống đường ống dẫn dầu) đã khiến cơ sở vật chất chịu sự đánh phá khốc liệt từ không quân và pháo binh địch:\n*   **Xe và máy:** Trên **6.500 chiếc** xe và máy bị hỏng hoặc bị cháy.\n*   **Pháo:** **400 khẩu pháo** các loại bị phá hủy.\n*   **Hàng hóa:** **90.000 tấn hàng hóa** (vũ khí, đạn dược, lương thực...) bị cháy trong quá trình vận chuyển và lưu kho trên tuyến đường.\n\n### 3. Ghi chú về bối cảnh tổn thất\nCác số liệu nêu trên phản ánh những mất mát chung của bộ đội Trường Sơn trong toàn bộ cuộc chiến tranh. Ngoài ra, trong các chiến dịch cụ thể như **Chiến dịch Đường 9 - Nam Lào (1971)**, mức độ tổn thất cũng rất cao với 2.163 chiến sĩ hy sinh và 6.176 người bị thương để giành thắng lợi chiến lược, đập tan kế hoạch \"Việt Nam hóa chiến tranh\" của Mỹ.\n\n**Lưu ý:** Các dữ liệu được tổng hợp dựa trên báo cáo lịch sử tổng kết về tuyến đường Trường Sơn. Phần thông tin về những hy sinh riêng biệt của từng đơn vị nhỏ hơn hoặc danh sách cụ thể từng cá nhân không nằm trong phạm vi tài liệu được cung cấp.",
+    "latency": 12.010419000002003,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI đã liệt kê đầy đủ, chính xác tất cả các số liệu có trong đáp án chuẩn (số người hy sinh, bị thương, số xe máy, pháo và hàng hóa bị tổn thất). Ngoài ra, AI còn trình bày mạch lạc, có phân tích bối cảnh và bổ sung thêm thông tin chuyên sâu giúp người đọc hiểu rõ hơn về tính chất khốc liệt của cuộc chiến."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Nội dung chính của Nghị quyết 81/QUTƯ ngày 5-5-1973 là gì?",
+    "agent_response": "Nghị quyết 81/QUTƯ ngày 5-5-1973 của Quân ủy Trung ương đóng vai trò quan trọng trong việc định hướng công tác vận chuyển, chi viện cho chiến trường trong giai đoạn sau khi Hiệp định Paris được ký kết. Dưới đây là những nội dung chính của nghị quyết này:\n\n*   **Giao nhiệm vụ cho bộ đội Trường Sơn:** Nghị quyết giao trọng trách cho bộ đội Trường Sơn thực hiện vận chuyển chi viện cho các chiến trường, bao gồm cả vận chuyển chiến lược và vận chuyển chiến dịch.\n*   **Phạm vi vận chuyển:**\n    *   Vận chuyển bộ đội, hàng quân sự và hàng dân sinh cho vùng giải phóng miền Nam.\n    *   Hỗ trợ chi viện cho các căn cứ tại Lào và Campuchia.\n*   **Mục tiêu chiến lược:**\n    *   Đảm bảo duy trì một lượng dự trữ cần thiết về vũ khí, đạn dược, nhiên liệu và lương thực để bộ đội có thể chủ động đối phó trong bất kỳ tình huống nào.\n    *   Việc chi viện không chỉ nhằm cung cấp cho cách mạng miền Nam mà còn hỗ trợ các nước bạn, qua đó tạo điều kiện thuận lợi để đảm bảo thắng lợi cho chiến trường.\n\n**Kết quả thực tế sau khi triển khai nghị quyết:**\nDưới sự chỉ đạo của Nghị quyết, tuyến vận tải Trường Sơn đã đạt được những kết quả đáng kể:\n*   Từ đầu năm 1973 đến đầu năm 1974, tuyến vận tải Trường Sơn đã tiếp nhận 780.000 tấn hàng từ miền Bắc chuyển vào (chưa kể khối lượng hàng do Bộ Giao thông vận tải trực tiếp giao cho Khu V và Nam Bộ).\n*   Công tác hỗ trợ quốc tế được đẩy mạnh: Từ tháng 3-1973, miền Bắc đã chuyển cho Lào 5.000 tấn hàng đột xuất (chủ yếu là vũ khí, đạn dược); đến tháng 12-1973, tiểu đoàn 990 (thuộc sư đoàn 571) đã vận chuyển xe và hàng cho quân giải phóng Campuchia.",
+    "latency": 37.92797889999929,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI đã trình bày đầy đủ, chính xác các nội dung cốt lõi của Nghị quyết 81/QUTƯ theo đáp án chuẩn. Đồng thời, AI còn cung cấp thêm thông tin về bối cảnh lịch sử và kết quả thực hiện, giúp người đọc có cái nhìn sâu sắc và toàn diện hơn về tầm quan trọng của nghị quyết này."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Vì sao việc chi viện hàng hóa cho Lào và Campuchia lại được xem là quan trọng trong giai đoạn 1973?",
+    "agent_response": "Trong giai đoạn 1973, việc chi viện hàng hóa cho Lào và Campuchia được xem là nhiệm vụ chiến lược quan trọng của cách mạng Việt Nam vì những lý do chính sau đây:\n\n### 1. Ý nghĩa về mặt quân sự và chiến lược hậu cần\n*   **Xây dựng thế trận liên hoàn:** Việc chi viện giúp kết nối chặt chẽ tuyến vận tải chiến lược Trường Sơn – Đường Hồ Chí Minh với hậu phương miền Bắc và các căn cứ của quân giải phóng tại Lào và Campuchia. Điều này tạo thành một thế trận hậu cần liên hoàn, vững chắc cho cả ba nước Đông Dương.\n*   **Đảm bảo thắng lợi trên chiến trường:** Sự chi viện về vật chất và sự phối hợp quân sự giúp quân và dân Lào giải phóng được vùng rộng lớn phía Tây (Attapeu, Saravan, Kengkok, Phalan...). Tại Campuchia, sau khi cảng Sihanoukville bị cắt đứt do đảo chính của Lon Nol (1970), tuyến Trường Sơn trở thành con đường huyết mạch duy nhất tiếp nhận vật chất cho quân giải phóng Campuchia.\n*   **Chủ động nguồn dự trữ:** Nghị quyết 81/QUTƯ (5-5-1973) nhấn mạnh việc vận chuyển hàng quân sự và dân sinh không chỉ để cung cấp cho bạn, mà còn là \"giúp chính mình\" nhằm đảm bảo lượng dự trữ vũ khí, đạn dược, nhiên liệu và lương thực, giúp quân đội ta chủ động trong mọi tình huống.\n\n### 2. Ý nghĩa về chính trị và ngoại giao\n*   **Nhiệm vụ chiến lược:** Đoàn kết ba nước Việt Nam - Lào - Campuchia được xác định là nhiệm vụ chiến lược trong cuộc kháng chiến chống Mỹ. Đối với Việt Nam, mối quan hệ này liên quan trực tiếp đến việc tổ chức hậu cứ cho lực lượng ở miền Nam.\n*   **Phản ứng với bối cảnh thực tế:** Sau Hiệp định Paris (1973), dù Mỹ rút quân nhưng tình hình tại Lào và Campuchia vẫn hết sức phức tạp. Việc Việt Nam đẩy mạnh chi viện là hành động cụ thể để ủng hộ các chính quyền yêu nước tại hai nước bạn, đồng thời củng cố uy tín và vị thế của Việt Nam trên trường quốc tế.\n\n### 3. Số liệu minh chứng về sự chi viện (Giai đoạn 1973 - 1974)\n*   **Khối lượng hàng hóa:** Trong hai năm 1973-1974, tuyến đường Trường Sơn đã vận chuyển khối lượng vật chất chi viện cho miền Nam, Lào và Campuchia **gấp 3,8 lần** so với giai đoạn 1969-1972.\n*   **Cụ thể từng mặt:** \n    *   Từ tháng 3-1973, miền Bắc chuyển cho Lào **5.000 tấn hàng đột xuất** (chủ yếu là vũ khí, đạn dược).\n    *   Đến tháng 12-1973, lực lượng vận tải đã đưa cả xe và hàng cho quân giải phóng Campuchia.\n    *   Từ đầu năm 1973 đến đầu năm 1974, tuyến vận tải Trường Sơn tiếp nhận **780 nghìn tấn hàng** từ miền Bắc chuyển vào để chi viện cho các chiến trường.\n\n**Tóm lại:** Việc chi viện hàng hóa năm 1973 không chỉ đơn thuần là hỗ trợ vật chất mà còn là yếu tố quyết định để duy trì căn cứ địa cách mạng của ba nước, tạo điều kiện thuận lợi cho sự phối hợp tác chiến và tiến tới thắng lợi cuối cùng của phong trào giải phóng dân tộc tại Đông Dương.",
+    "latency": 45.72123339999962,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ ý chính trong đáp án chuẩn (tính chất 'giúp bạn là giúp mình', đảm bảo hậu cần) mà còn mở rộng và làm sâu sắc hơn vấn đề bằng các luận điểm chiến lược, bối cảnh lịch sử và số liệu minh chứng cụ thể. Nội dung chính xác, lập luận logic và có tính thuyết phục cao."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Tổng lượng hàng hóa mà tuyến vận tải Trường Sơn tiếp nhận từ miền Bắc chuyển vào từ đầu năm 1973 đến đầu năm 1974 là bao nhiêu?",
+    "agent_response": "Dựa trên các tài liệu lịch sử đã thu thập, thông tin về tổng lượng hàng hóa mà tuyến vận tải Trường Sơn tiếp nhận từ miền Bắc trong giai đoạn từ đầu năm 1973 đến đầu năm 1974 được tổng hợp như sau:\n\n*   **Tổng lượng hàng hóa:** Từ đầu năm 1973 đến đầu năm 1974, tuyến vận tải chiến lược Trường Sơn đã tiếp nhận được **780 nghìn tấn hàng** từ miền Bắc chuyển vào.\n*   **Lưu ý về phạm vi:** Con số 780 nghìn tấn này không bao gồm khối lượng hàng hóa do Bộ Giao thông vận tải chuyển vượt tuyến để giao trực tiếp cho Khu V và Nam Bộ.\n\n**Bối cảnh thực hiện:**\nTrong giai đoạn này, việc vận chuyển chi viện được thực hiện theo Nghị quyết 81/QUTƯ ngày 5-5-1973 của Quân ủy Trung ương, nhằm đảm bảo dự trữ vũ khí, đạn dược, nhiên liệu và lương thực cho các chiến trường miền Nam, Lào và Campuchia. Tuyến vận tải Trường Sơn thời kỳ này đã trở thành hậu phương tại chỗ vững chắc, nối liền với hậu phương chiến lược miền Bắc, tạo điều kiện thuận lợi cho thắng lợi của cách mạng ba nước Đông Dương.",
+    "latency": 27.79511679999996,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI chính xác tuyệt đối so với đáp án chuẩn, nêu rõ con số 780 nghìn tấn và ghi chú đầy đủ về phạm vi loại trừ (hàng vượt tuyến của Bộ Giao thông vận tải). Ngoài ra, AI còn cung cấp thêm bối cảnh lịch sử có giá trị giúp làm rõ nội dung câu hỏi."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Ý nghĩa của việc thành lập Hội đồng chi viện miền Nam vào ngày 25-3-1975 là gì?",
+    "agent_response": "Dựa trên các tài liệu lịch sử đã thu thập, việc thành lập **Hội đồng chi viện miền Nam** có vai trò và ý nghĩa quan trọng trong giai đoạn cuối của cuộc kháng chiến chống Mỹ, cứu nước như sau:\n\n### 1. Bối cảnh và Quyết định thành lập\n*   **Thời gian:** Ngày 25-3-1975, Bộ Chính trị Ban Chấp hành Trung ương Đảng đã ra Nghị quyết số 241-NQTƯ về việc thành lập Hội đồng chi viện miền Nam ở Trung ương.\n*   **Cơ cấu lãnh đạo:** Thủ tướng Phạm Văn Đồng đảm nhiệm vai trò Chủ tịch Hội đồng; hai Phó Chủ tịch là Phó Thủ tướng Lê Thanh Nghị và Bộ trưởng Bộ Giao thông vận tải.\n*   **Bối cảnh:** Lúc này, quân và dân ta đang giành được nhiều thắng lợi dồn dập trên chiến trường miền Nam, đòi hỏi sự tập trung cao độ về sức người, sức của từ hậu phương miền Bắc để hiện thực hóa quyết tâm giải phóng Sài Gòn và toàn miền Nam trước mùa mưa năm 1975.\n\n### 2. Ý nghĩa và Vai trò của Hội đồng\nViệc thành lập Hội đồng chi viện miền Nam có ý nghĩa chiến lược trong việc:\n\n*   **Tập trung hóa quyền lực và nguồn lực:** Hội đồng đóng vai trò chỉ đạo, điều phối tập trung toàn bộ nguồn lực quốc gia (sức người, sức của) từ hậu phương lớn miền Bắc chi viện cho tiền tuyến lớn miền Nam một cách có tổ chức và hiệu quả nhất trong tình huống khẩn trương.\n*   **Phục vụ mục tiêu giải phóng hoàn toàn miền Nam:** Sự ra đời của Hội đồng là bước chuẩn bị quyết định nhằm đảm bảo mọi nhu cầu hậu cần, vật chất được cung ứng kịp thời cho các chiến dịch lớn, đặc biệt là chiến dịch giải phóng Sài Gòn.\n*   **Phát huy sức mạnh tổng hợp:** Đây là biểu hiện cụ thể của đường lối \"giương cao ngọn cờ độc lập dân tộc và chủ nghĩa xã hội\", kết hợp sức mạnh của hậu phương lớn miền Bắc với tiền tuyến miền Nam, tạo thế và lực để quân và dân ta hoàn thành mục tiêu thống nhất đất nước.\n*   **Đảm bảo sự thống nhất trong hành động:** Với sự lãnh đạo trực tiếp của Thủ tướng, Hội đồng giúp giải quyết nhanh chóng các vướng mắc, đảm bảo sự thông suốt trong quá trình điều động nhân lực và vật lực (như việc điều động Quân đoàn 1 tham gia chiến dịch) trong giai đoạn nước rút của chiến tranh.\n\nNhư vậy, Hội đồng chi viện miền Nam là cơ quan đầu não quan trọng, đảm bảo hậu phương miền Bắc thực hiện trọn vẹn nghĩa vụ chi viện, góp phần trực tiếp vào thắng lợi lịch sử của chiến dịch Hồ Chí Minh và công cuộc giải phóng hoàn toàn miền Nam, thống nhất nước nhà vào tháng 4 năm 1975.",
+    "latency": 9.970032199998968,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 0,
+        "mrr": 0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ ý nghĩa cốt lõi như đáp án chuẩn (tập trung nguồn lực giải phóng miền Nam trước mùa mưa) mà còn bổ sung các thông tin chi tiết về bối cảnh, cơ cấu tổ chức và vai trò điều phối chiến lược, giúp làm rõ lý do tại sao Hội đồng này lại đóng vai trò quyết định trong giai đoạn đó."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Hoạt động ngoại giao nổi bật của Việt Nam trong thời kỳ kháng chiến chống Mỹ (1965-1967) là gì?",
+    "agent_response": "Trong giai đoạn 1965–1967, hoạt động ngoại giao của Việt Nam Dân chủ Cộng hòa đóng vai trò quan trọng trong việc tạo ra sức mạnh tổng hợp, kết hợp với đấu tranh quân sự và chính trị để chống lại chiến lược \"Chiến tranh cục bộ\" của Mỹ. Dưới đây là các hoạt động ngoại giao nổi bật trong thời kỳ này:\n\n### 1. Chủ trương \"Vừa đánh vừa đàm\"\nMột trong những điểm nhấn chiến lược quan trọng nhất trong giai đoạn 1965–1967 là việc Đảng và Chính phủ chủ động tiến hành đấu tranh ngoại giao song song với đấu tranh quân sự. Mục tiêu là tạo ra cục diện \"vừa đánh vừa đàm\", không chỉ để đối phó với bản chất hiếu chiến của Mỹ mà còn nhằm chủ động tiến công địch trên mặt trận ngoại giao.\n\n### 2. Tăng cường đoàn kết quốc tế và tranh thủ sự ủng hộ\nViệt Nam đã triển khai nhiều hoạt động ngoại giao đa phương để tranh thủ sự ủng hộ của nhân dân thế giới, biến cuộc kháng chiến của Việt Nam thành tâm điểm của phong trào phản chiến toàn cầu:\n*   **Các diễn đàn quốc tế:** Việt Nam tích cực tham gia các hội nghị quan trọng như:\n    *   Tháng 3/1965: Tham gia Hội nghị nhân dân Đông Dương tại Phnôm Pênh.\n    *   Tháng 4 và tháng 5/1965: Tham gia Hội nghị kỷ niệm 10 năm Hội nghị Băng Đung (Indonesia) và Hội nghị trù bị Á - Phi lần thứ V.\n*   **Các chuyến thăm cấp cao:** Nhiều đoàn đại biểu của Đảng và Chính phủ đã thực hiện các chuyến thăm quốc tế. Điển hình là tháng 6/1965, Phó Thủ tướng kiêm Bộ trưởng Ngoại giao Nguyễn Duy Trinh đã dẫn đầu đoàn thăm các nước châu Phi nhằm thắt chặt quan hệ và mở rộng sự ủng hộ.\n*   **Phong trào nhân dân:** Chủ tịch Hồ Chí Minh đã khẳng định tầm quan trọng của mặt trận quốc tế khi gọi phong trào nhân dân thế giới là \"mặt trận số hai\" (ngay tại nước Mỹ) bên cạnh \"mặt trận số một\" là Việt Nam.\n\n### 3. Củng cố liên minh đoàn kết Đông Dương\nĐảng Cộng sản Việt Nam xác định Đông Dương là một chiến trường thống nhất. Do đó, hoạt động ngoại giao giai đoạn này tập trung không ngừng củng cố khối liên minh đoàn kết giữa ba dân tộc Việt Nam – Lào – Campuchia. Sự đoàn kết chiến đấu này là nhân tố quan trọng để đối phó với kẻ thù chung và hỗ trợ lẫn nhau trong bối cảnh chiến tranh lan rộng toàn khu vực.\n\n### 4. Tranh thủ viện trợ kinh tế, quân sự\nTrong giai đoạn 1965–1967, hoạt động ngoại giao còn góp phần quan trọng trong việc đảm bảo nguồn lực cho cuộc kháng chiến thông qua viện trợ và vay nợ từ các nước xã hội chủ nghĩa (đặc biệt là Liên Xô).\n*   **Số liệu viện trợ (triệu rúp):** Năm 1965 là 66,225; năm 1966 là 158,069; năm 1967 là 181,281.\n*   **Số liệu vay nợ (triệu rúp):** Năm 1965 là 37,5; năm 1966 là 40,061; năm 1967 là 117,963.\n*   Việc huy động nguồn lực từ các nước xã hội chủ nghĩa đóng vai trò thiết yếu, chiếm tỷ lệ lớn trong cơ cấu ngân sách và các nguồn thanh toán hàng hóa nhập khẩu của Việt Nam trong thời kỳ này.\n\n***\n\n**Lưu ý:** Các tài liệu cung cấp đã làm rõ các hoạt động ngoại giao song phương, đa phương và sự phối hợp giữa đấu tranh quân sự với ngoại giao. Thông tin về các cuộc đàm phán trực tiếp (nếu có trong giai đoạn này) hoặc các thỏa thuận mật chưa được chi tiết hóa trong phạm vi dữ liệu đã cung cấp.",
+    "latency": 38.01433240000188,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI không chỉ nêu bật đúng trọng tâm 'vừa đánh vừa đàm' theo đáp án chuẩn mà còn mở rộng và cụ thể hóa bằng các luận điểm lịch sử chính xác, có tính hệ thống cao (đoàn kết quốc tế, liên minh Đông Dương, huy động nguồn lực). Các thông tin bổ sung làm rõ bối cảnh và vai trò của ngoại giao trong thời kỳ này, nâng cao chất lượng câu trả lời so với yêu cầu cơ bản."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Tại sao Đảng và Chính phủ Việt Nam lại quyết định tiến công địch về mặt trận ngoại giao vào giai đoạn 1965-1967?",
+    "agent_response": "Dựa trên các tài liệu đã thu thập, việc Đảng và Chính phủ Việt Nam quyết định mở mặt trận ngoại giao trong giai đoạn 1965-1967 xuất phát từ các lý do chiến lược và bối cảnh cụ thể sau đây:\n\n### 1. Bối cảnh chiến trường và chủ trương của Đảng\n*   **Chuyển biến cục diện:** Đến cuối năm 1966, quân và dân hai miền Nam - Bắc đã giành được những thắng lợi quan trọng: đánh bại hai cuộc tổng phản công mùa khô (Đông Xuân 1965-1966 và 1966-1967), làm phá sản mục tiêu chiến lược \"tìm diệt\" và \"bình định\" của Mỹ, đồng thời bắn rơi hàng ngàn máy bay Mỹ trong cuộc chiến tranh phá hoại ở miền Bắc.\n*   **Chủ trương chiến lược:** Tại **Hội nghị Trung ương lần thứ 13 (tháng 1-1967)**, Đảng khẳng định việc mở rộng mặt trận ngoại giao là \"đúng lúc\". Đảng xác định ngoại giao không thay thế cho quân sự và chính trị, mà phải **phối hợp chặt chẽ** với hai mặt trận này để tạo nên sức mạnh tổng hợp to lớn, nhằm đẩy mạnh cuộc kháng chiến và giành thắng lợi quyết định hơn nữa.\n\n### 2. Mục tiêu của mặt trận ngoại giao\n*   **Tạo sức mạnh tổng hợp:** Ngoại giao đóng vai trò là một mũi tiến công chủ động, phối hợp cùng đấu tranh quân sự và chính trị để gây áp lực, đẩy Mỹ và chính quyền Sài Gòn vào thế bị động, lúng túng.\n*   **Cô lập kẻ thù và tranh thủ quốc tế:** Mục tiêu là nhằm tranh thủ tối đa sự ủng hộ, giúp đỡ của các nước trên thế giới và nhân dân yêu chuộng hòa bình. Điều này bao gồm cả việc hình thành \"mặt trận số hai\" ngay tại nước Mỹ để phản đối cuộc chiến tranh xâm lược.\n*   **Tạo cục diện \"vừa đánh vừa đàm\":** Đảng và Chính phủ chủ động tiến hành các hoạt động ngoại giao nhằm định hình cục diện \"vừa đánh vừa đàm\", dựa trên cơ sở thấu hiểu bản chất hiếu chiến của đối phương.\n\n### 3. Các hoạt động cụ thể\nĐể triển khai chủ trương này, từ năm 1965 đến 1967, Đảng và Chính phủ đã thực hiện nhiều hoạt động ngoại giao tích cực:\n*   Cử nhiều đoàn đại biểu cấp cao thăm các nước và tham gia các hội nghị quốc tế quan trọng (như Hội nghị nhân dân Đông Dương tại Phnôm Pênh, Hội nghị kỷ niệm 10 năm Hội nghị Băng Đung, Hội nghị trù bị Á - Phi...).\n*   Các chuyến thăm và làm việc của lãnh đạo cấp cao (như Phó Thủ tướng kiêm Bộ trưởng Ngoại giao Nguyễn Duy Trinh) nhằm củng cố mối quan hệ quốc tế và thông tin về cuộc chiến đấu chính nghĩa của nhân dân Việt Nam.\n\n**Tóm lại:** Việc tiến công ngoại giao giai đoạn 1965-1967 là một quyết định mang tính chiến lược của Đảng nhằm tận dụng thời cơ từ những thắng lợi quân sự, chuyển hóa thành lợi thế chính trị trên trường quốc tế, qua đó cô lập kẻ thù và tăng cường sức mạnh tổng hợp cho cuộc kháng chiến chống Mỹ, cứu nước.",
+    "latency": 10.47448440000153,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 0.5
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 0.95,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ ý chính trong đáp án chuẩn (sức mạnh tổng hợp, bản chất địch) mà còn phát triển sâu sắc, chính xác hơn về mặt bối cảnh lịch sử (Hội nghị Trung ương 13) và mục tiêu chiến lược. AI đã làm rõ được 'tại sao' thông qua sự kết hợp giữa lý luận và thực tiễn chiến đấu, vượt xa yêu cầu cơ bản của câu hỏi."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Nội dung chính của Hội nghị lần thứ 13 Ban Chấp hành Trung ương Đảng khóa III diễn ra vào tháng 1 năm 1967 là gì?",
+    "agent_response": "Hội nghị lần thứ 13 Ban Chấp hành Trung ương Đảng khóa III diễn ra từ ngày **23 đến 26 tháng 1 năm 1967**. Đây là hội nghị có ý nghĩa chiến lược, tập trung vào việc đẩy mạnh sự phối hợp giữa các mặt trận quân sự, chính trị và ngoại giao trong cuộc kháng chiến chống Mỹ, cứu nước.\n\nDưới đây là các nội dung chính được Hội nghị thông qua:\n\n### 1. Chủ trương mở rộng mặt trận ngoại giao\nHội nghị khẳng định đây là thời điểm \"đúng lúc\" để tiến công địch trên mặt trận ngoại giao. Mục tiêu cụ thể bao gồm:\n*   Phối hợp chặt chẽ với đấu tranh quân sự và chính trị ở miền Nam để tạo sức mạnh tổng hợp, giành thắng lợi to lớn hơn.\n*   Tố cáo tội ác của đế quốc Mỹ và vạch trần các thủ đoạn \"hòa bình giả hiệu\" của chúng.\n*   Đề cao lập trường 4 điểm của Chính phủ Việt Nam Dân chủ Cộng hòa và Tuyên bố 5 điểm của Mặt trận Dân tộc Giải phóng.\n*   Tranh thủ sự ủng hộ, giúp đỡ của các nước anh em và bạn bè quốc tế.\n*   **Phương châm:** Phát huy thế thắng, chủ động tấn công, giữ vững tính độc lập tự chủ và phối hợp chặt chẽ với các nước anh em.\n\n### 2. Đẩy mạnh đấu tranh quân sự và chính trị\nHội nghị nhận định năm 1967 là năm có tầm quan trọng đặc biệt đối với cả Mỹ và Việt Nam. Các nhiệm vụ trọng tâm bao gồm:\n*   Đánh bại cuộc phản công chiến lược mùa khô lần thứ hai của địch (từ tháng 10/1966 đến tháng 4/1967), làm thất bại các mục tiêu lớn của Mỹ.\n*   Giữ vững thế chủ động trên chiến trường, bảo tồn và phát triển lực lượng.\n*   Tạo thời cơ và điều kiện cho các hoạt động tiếp theo, hướng tới mục tiêu tiến lên tổng công kích, tổng khởi nghĩa.\n*   Xây dựng cơ sở vững chắc để chuẩn bị cho khả năng chiến tranh kéo dài hoặc bị mở rộng ra cả nước.\n\n### 3. Nhận định về vị thế các mặt trận\nHội nghị nhấn mạnh nguyên tắc chiến lược: Đấu tranh quân sự và chính trị ở miền Nam là nhân tố chủ yếu quyết định thắng lợi trên chiến trường, đồng thời là cơ sở vững chắc để giành thắng lợi trên mặt trận ngoại giao.\n\n**Bối cảnh hội nghị:** Hội nghị diễn ra trên đà thắng lợi của quân và dân hai miền, khi quân dân miền Nam đã đánh bại hai cuộc tổng phản công mùa khô (Đông Xuân 1965-1966 và 1966-1967), còn quân dân miền Bắc đã bắn rơi 1.620 máy bay Mỹ, làm thất bại một bước cuộc chiến tranh phá hoại của địch.",
+    "latency": 7.698604699999123,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI không chỉ bao hàm đầy đủ các ý chính trong đáp án chuẩn mà còn cung cấp thêm bối cảnh, chi tiết cụ thể về mặt trận ngoại giao và mối quan hệ biện chứng giữa các mặt trận quân sự, chính trị, ngoại giao. Thông tin chính xác về mặt lịch sử, trình bày rõ ràng và chuyên sâu hơn so với đáp án chuẩn."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Những thắng lợi quân sự nào làm cơ sở cho chủ trương đẩy mạnh đấu tranh ngoại giao của Việt Nam đến cuối năm 1966?",
+    "agent_response": "Dựa trên các tài liệu đã thu thập, những thắng lợi quân sự của quân và dân Việt Nam đến cuối năm 1966 đã tạo cơ sở quan trọng cho chủ trương đẩy mạnh đấu tranh ngoại giao. Cụ thể như sau:\n\n### 1. Các thắng lợi quân sự làm cơ sở\nĐến cuối năm 1966, quân và dân Việt Nam đã đạt được những chiến công mang tính chiến lược:\n*   **Tại miền Nam:** Quân và dân ta đã đánh thắng hai cuộc tổng phản công mùa khô của Mỹ (Đông Xuân 1965-1966 và Đông Xuân 1966-1967). Chiến lược \"chiến tranh cục bộ\" và các \"chiến dịch tìm và diệt\" của Mỹ bị thất bại một bước quan trọng.\n*   **Tại miền Bắc:** Quân và dân miền Bắc đã bắn rơi **1.620 máy bay Mỹ**, làm thất bại một bước cuộc chiến tranh phá hoại bằng không quân và hải quân của Mỹ.\n\n### 2. Chủ trương đẩy mạnh đấu tranh ngoại giao\nTrên cơ sở những thắng lợi quân sự nêu trên, Đảng và Chính phủ Việt Nam đã xác định thời điểm cuối năm 1966 - đầu năm 1967 là \"đúng lúc\" để mở rộng mặt trận ngoại giao:\n\n*   **Hội nghị Trung ương Đảng lần thứ 13 (tháng 1/1967):** Ban Chấp hành Trung ương Đảng khóa III đã ra Nghị quyết khẳng định cần thiết phải kết hợp đấu tranh quân sự, chính trị với đấu tranh ngoại giao để giành thắng lợi to lớn hơn nữa.\n*   **Mối quan hệ giữa các mặt trận:** Nghị quyết nhấn mạnh đấu tranh quân sự và chính trị ở miền Nam là nhân tố chủ yếu quyết định thắng lợi trên chiến trường, đồng thời là **cơ sở vững chắc** cho thắng lợi trên mặt trận ngoại giao.\n*   **Mục tiêu của mặt trận ngoại giao:** \n    *   Tố cáo tội ác của đế quốc Mỹ và vạch trần các thủ đoạn \"hòa bình giả hiệu\" của chúng.\n    *   Đề cao lập trường 4 điểm của Chính phủ Việt Nam Dân chủ Cộng hòa và Tuyên bố 5 điểm của Mặt trận Dân tộc Giải phóng.\n    *   Tranh thủ sự ủng hộ, giúp đỡ của các nước anh em và bạn bè quốc tế.\n\n**Phương châm:** Phát huy thế mạnh, thế thắng, chủ động tấn công, giữ vững tính độc lập tự chủ và phối hợp chặt chẽ với các nước anh em.",
+    "latency": 9.834200600002077,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "Câu trả lời của AI đã trình bày đầy đủ, chính xác các thông tin cốt lõi có trong đáp án chuẩn về thắng lợi quân sự (hai mùa khô và số lượng máy bay bị bắn rơi). Ngoài ra, AI còn cung cấp thêm bối cảnh chiến lược và ý nghĩa của việc mở mặt trận ngoại giao, giúp câu trả lời sâu sắc và đầy đủ hơn mà không sai lệch kiến thức lịch sử."
+    },
+    "status": "pass"
+  },
+  {
+    "test_case": "Theo Nghị quyết Hội nghị lần thứ 13, đâu là nhân tố quyết định thắng lợi trên chiến trường và là cơ sở cho mặt trận ngoại giao?",
+    "agent_response": "Dựa trên tài liệu lịch sử về Hội nghị lần thứ 13 Ban Chấp hành Trung ương Đảng khóa III (diễn ra từ ngày 23 đến 26 tháng 1 năm 1967), câu trả lời cho câu hỏi của bạn như sau:\n\nTheo Nghị quyết của Hội nghị, **đấu tranh quân sự và đấu tranh chính trị ở miền Nam** chính là nhân tố chủ yếu quyết định thắng lợi trên chiến trường và đồng thời là cơ sở cho thắng lợi trên mặt trận ngoại giao.\n\nCác thông tin bổ sung liên quan đến chủ trương này của Đảng:\n\n*   **Sự phối hợp các mặt trận:** Nghị quyết nhấn mạnh việc đi đôi với đấu tranh quân sự và chính trị tại miền Nam, ta cần chủ động tiến công địch trên mặt trận ngoại giao để phối hợp và tạo ra sức mạnh tổng hợp nhằm giành thắng lợi to lớn hơn nữa.\n*   **Mục đích đấu tranh ngoại giao:** Việc đẩy mạnh đấu tranh ngoại giao vào thời điểm này được Đảng khẳng định là \"đúng lúc\", nhằm mục tiêu:\n    *   Tố cáo tội ác của đế quốc Mỹ và vạch trần các thủ đoạn \"hòa bình giả hiệu\".\n    *   Đề cao lập trường bốn điểm của Chính phủ Việt Nam Dân chủ Cộng hòa và Tuyên bố 5 điểm của Mặt trận Dân tộc Giải phóng.\n    *   Tranh thủ sự ủng hộ, giúp đỡ của các nước anh em, bạn bè trên thế giới.\n*   **Phương châm thực hiện:** Phát huy thế mạnh và thế thắng trên chiến trường, chủ động tấn công, giữ vững tính độc lập tự chủ và phối hợp chặt chẽ với các nước anh em.\n*   **Ý nghĩa:** Với Nghị quyết Hội nghị Trung ương 13, ngoại giao chính thức được xác định là một mặt trận quan trọng trong cuộc kháng chiến chống Mỹ, cứu nước. Điều này tạo điều kiện thuận lợi để cách mạng Việt Nam tiếp tục tiến lên giành thắng lợi.",
+    "latency": 30.55375930000082,
+    "ragas": {
+      "faithfulness": 0.85,
+      "relevancy": 0.9,
+      "retrieval": {
+        "hit_rate": 1,
+        "mrr": 1.0
+      }
+    },
+    "judge": {
+      "final_score": 5,
+      "agreement_rate": 1.0,
+      "reasoning": "AI đã trả lời chính xác và đầy đủ nội dung trọng tâm theo đáp án chuẩn. Ngoài ra, AI còn cung cấp thêm các bối cảnh lịch sử và ý nghĩa của nghị quyết một cách chính xác, chuyên sâu và có hệ thống, giúp người dùng hiểu rõ hơn về tầm quan trọng của mặt trận ngoại giao trong giai đoạn này."
+    },
+    "status": "pass"
+  }
+]

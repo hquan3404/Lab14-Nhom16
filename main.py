@@ -5,23 +5,76 @@ import time
 from engine.runner import BenchmarkRunner
 from agent.main_agent import MainAgent
 
-# Giả lập các components Expert
+# Khởi tạo LLM cho việc chấm điểm (Judge)
+from src.core.gemini_provider import GeminiProvider
+from dotenv import load_dotenv
+
+load_dotenv()
+
 class ExpertEvaluator:
     async def score(self, case, resp): 
-        # Giả lập tính toán Hit Rate và MRR
+        """
+        Tính toán Hit Rate và MRR thực tế.
+        """
+        gt_context = case.get("context", "").strip()
+        retrieved_contexts = resp.get("contexts", [])
+        
+        hit = 0
+        mrr = 0
+        
+        for i, ctx in enumerate(retrieved_contexts):
+            # Kiểm tra xem đoạn văn bản chuẩn có nằm trong kết quả tìm kiếm không
+            if gt_context and (gt_context in ctx or ctx in gt_context):
+                hit = 1
+                mrr = 1 / (i + 1)
+                break
+        
         return {
-            "faithfulness": 0.9, 
-            "relevancy": 0.8,
-            "retrieval": {"hit_rate": 1.0, "mrr": 0.5}
+            "faithfulness": 0.85, # Có thể tích hợp RAGAS thật vào đây
+            "relevancy": 0.9,
+            "retrieval": {"hit_rate": hit, "mrr": mrr}
         }
 
 class MultiModelJudge:
+    def __init__(self):
+        # Dùng model Gemini 3.1 mới nhất để làm giám khảo
+        self.llm = GeminiProvider(
+            model_name="gemini-3.1-flash-lite-preview", 
+            api_key=os.getenv("API_KEY") or os.getenv("GEMINI_API_KEY"),
+            base_url=os.getenv("BASE_URL")
+        )
+
     async def evaluate_multi_judge(self, q, a, gt): 
-        return {
-            "final_score": 4.5, 
-            "agreement_rate": 0.8,
-            "reasoning": "Cả 2 model đồng ý đây là câu trả lời tốt."
-        }
+        """
+        Dùng LLM làm giám khảo để chấm điểm câu trả lời (a) dựa trên đáp án đúng (gt).
+        """
+        judge_prompt = f"""Bạn là một chuyên gia thẩm định câu trả lời lịch sử.
+Hãy so sánh câu trả lời của AI với đáp án chuẩn và chấm điểm trên thang điểm 5.
+
+Câu hỏi: {q}
+Đáp án chuẩn: {gt}
+Câu trả lời của AI: {a}
+
+Hãy trả về kết quả định dạng JSON:
+{{
+  "final_score": (số từ 1-5),
+  "agreement_rate": (hệ số tin tưởng từ 0.1-1.0),
+  "reasoning": "giải thích ngắn gọn tại sao cho điểm số đó"
+}}
+"""
+        try:
+            loop = asyncio.get_event_loop()
+            res = await loop.run_in_executor(None, self.llm.generate, judge_prompt)
+            
+            raw_content = res["content"]
+            if "```json" in raw_content:
+                raw_content = raw_content.split("```json")[1].split("```")[0].strip()
+            
+            judge_data = json.loads(raw_content)
+            return judge_data
+        except Exception as e:
+            print(f"⚠️ Lỗi Judge: {e}")
+            return {"final_score": 3.0, "agreement_rate": 0.5, "reasoning": "Lỗi khi gọi LLM Judge."}
 
 async def run_benchmark_with_results(agent_version: str):
     print(f"🚀 Khởi động Benchmark cho {agent_version}...")
